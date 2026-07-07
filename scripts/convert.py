@@ -64,7 +64,7 @@ OUTPUT_WIDTHS = {
 }
 
 # ── Colour palette ────────────────────────────────────────────────────────────
-HEADER_FILL = PatternFill("solid", fgColor="1F3864")
+HEADER_FILL = PatternFill("solid", fgColor="EF7B88")
 HEADER_FONT = Font(color="FFFFFF", bold=True, size=10)
 THIN        = Side(style="thin", color="D0D0D0")
 BORDER      = Border(left=THIN, right=THIN, top=THIN, bottom=THIN)
@@ -74,19 +74,19 @@ SCORE_TIERS = [
     (55, "FFEB9C", "9C5700"),  # yellow
     (35, "FFCCB3", "833C00"),  # orange
     (20, "FFDDE0", "9C0006"),  # red
-    ( 0, "F2F2F2", "595959"),  # grey
+    ( 0, "FFFFFF", "AAAAAA"),  # white (no fill) — skip/unscored
 ]
 STAGE_FILLS = {
     "drafted": PatternFill("solid", fgColor="BDD7EE"),
     "sent":    PatternFill("solid", fgColor="C6EFCE"),
-    "skip":    PatternFill("solid", fgColor="F2F2F2"),
+    "skip":    PatternFill("solid", fgColor="FFFFFF"),
 }
 STAGE_COLORS_INPUT = {
     "imported": ("E2EFDA", "375623"),
     "research": ("DDEBF7", "1F3864"),
     "drafted":  ("BDD7EE", "1F3864"),
     "sent":     ("C6EFCE", "375623"),
-    "skip":     ("F2F2F2", "595959"),
+    "skip":     ("FFFFFF", "AAAAAA"),
 }
 
 
@@ -252,7 +252,7 @@ def cmd_export():
                 cell.fill = STAGE_FILLS[stage]
                 cell.alignment = Alignment(horizontal="center", vertical="top")
             elif stage == "skip":
-                cell.font = Font(color="AAAAAA")
+                cell.font = Font(color="BBBBBB")
 
     for col_idx, col_name in enumerate(all_cols, start=1):
         ws.column_dimensions[get_column_letter(col_idx)].width = OUTPUT_WIDTHS.get(col_name, 18)

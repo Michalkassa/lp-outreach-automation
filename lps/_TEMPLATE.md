@@ -1,28 +1,35 @@
 # [Company Name]
 updated: YYYY-MM-DD
+score: XX/100
 
-## Company (the receiver)
-- Type / domicile:
-- AUM:
-- Mandate / what they allocate to (their own wording, with source):
-- Private credit / real assets exposure:
-- Recent activity (commitments, statements, last 18 months, sourced):
-- Fit with Valori (1-5 + one line why):
+## Data
+- Type: [Legal type — Pensionskasse, insurer, pension society, etc.]
+- Domicile: [City, Country]
+- Regulator: [FMA / HANFA / CNB / etc.]
+- AUM / Invested assets: [most recent published figure with year]
+- Ownership: [independent / subsidiary of Group X]
+- Alternatives allocation: [% or description, or VERIFY]
+- Private credit / real assets exposure: [specific if known, or VERIFY]
 
-## People (contact candidates, ranked)
-1. [Name], [exact title] — why them, source. Email: [public or
-   "FIND: likely firstname.lastname@domain, verify"]
-2. [Name], [title] — backup, source.
-3. [optional]
+## Investment Strategy
+[3-5 sentences on how they invest: asset allocation framework, alternatives
+approach, any stated preferences or constraints. Use their own language where
+possible. Note anything specific to real assets, infrastructure, or private debt.]
 
-## Bridge candidates (ranked, each sourced)
-1. [the fact that becomes sentence two of the email]
-2.
-3.
+## Recent Activity (last 18 months)
+- [Specific fact: new allocation, strategy shift, fund launch, public statement, hire]
+- [Second fact or VERIFY if nothing found]
 
-## Category label to use
-[niche European private credit strategies | European real asset debt |
-special situations credit] — because [how they name the bucket]
+## Contacts
+1. [Name], [Title]. Email: [confirmed or FIND: pattern@domain]. Why: [one sentence — why this person owns the decision].
+2. [Name], [Title]. Email: [confirmed or FIND: pattern@domain]. Why: [backup reason].
 
-## Notes
--
+## Bridge Candidates
+1. [Best bridge — specific sourced fact connecting their world to Valori's mandate]
+2. [Second option]
+3. [Third option]
+Category label: [niche European private credit strategies / European real asset debt / special situations credit]
+
+## Summary
+[3-4 sentences: who they are, why they fit Valori, best bridge hook for the email,
+and briefly why the score is what it is — key strengths and any caveats.]

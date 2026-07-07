@@ -4,5 +4,8 @@ Log a manual send for the LP in $ARGUMENTS.
    unchanged) and the date.
 2. Save it to /sent/YYYY-MM-DD-<lp-slug>.md with frontmatter: lp,
    contact, bridge, category_label, edits: none|minor|major.
-3. tracker.csv: stage=sent, date_sent.
+3. output.csv: stage=sent, date_sent filled.
 4. If I edited the draft, suggest running /calibrate.
+
+OUTPUT.CSV FORMAT: output.csv uses semicolons (;) as delimiter.
+Columns: company;slug;score;aum;contact_name;contact_title;contact_email;stage;category;bridge;flag;date_sent

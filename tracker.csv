@@ -1,1 +1,46 @@
-company,lp_slug,contact_name,contact_title,contact_email,stage,bridge,category_label,date_sent,notes
+company;contact_name;contact_title;contact_email;stage;score;category;date_sent;flag
+VBV-Pensionskasse AG;Andreas Zakostelsky;General Director;a.zakostelsky@vbv.at;drafted;9/10;niche European private credit;;
+Valida Pensionskasse AG;Martin Sardelic;CEO;martin.sardelic@valida.at;research;7/10;niche European private credit;;
+APK Pensionskasse AG;Beate Wolf;Chairwoman of the Directory;beate.wolf@apk.at;research;8/10;niche European private credit;;
+Bundespensionskasse AG;Marcus Klug;CFO;marcus.klug@bundespensionskasse.at;research;5/10;niche European private credit;;small AUM
+Vienna Insurance Group (VIG);Hartwig Löger;CEO;hartwig.loeger@vig.com;research;8/10;European real asset debt;;
+Uniqa Insurance Group;Andreas Brandstatter;CEO;andreas.brandstatter@uniqa.at;research;7/10;European real asset debt;;
+Grawe Group;Klaus Scheitegel;CEO;klaus.scheitegel@grawe.at;research;8/10;European real asset debt;;
+Bonus Pensionskasse AG;Claudio Gligo;CIO;FIND: c.gligo@bonusvorsorge.at;research;9/10;niche European private credit;;
+Allianz Pensionskasse AG;Andreas Csurda;Chairman (CEO);andreas.csurda@allianz.at;research;8/10;niche European private credit;;
+Raiffeisen Pensionskasse AG;;;VERIFY;research;3/10;niche European private credit;;contact data incorrect — research needed
+VBV Vorsorgekasse AG;Andreas Zakostelsky;General Director;a.zakostelsky@vbv.at;research;6/10;niche European private credit;;capital guarantee limits allocation
+IBM Pensionskasse AG;Gerald Leberbauer;CFO;gerald.leberbauer@ibm.com;skip;1/10;niche European private credit;;absorbed by VBV Jan 2026 — do not contact
+Resaver;Beata Cseresznye;Pension Fund Manager;beata.cseresznye@resaver.eu;research;3/10;niche European private credit;;small AUM — low priority
+Nestle Pensionsfonds AG;;;no contact;skip;1/10;niche European private credit;;integrated into German entity 2015 — do not contact
+Donau Versicherung;Wolfgang Petschko;CIO;w.petschko@donauversicherung.at;research;5/10;European real asset debt;;
+Sozialversicherungspensionskasse AG;Sascha König;CFO;sascha.koenig@svpk.at;research;4/10;niche European private credit;;
+Generali Versicherung AG;Gregor Pilgram;CEO;gregor.pilgram@generali.com;research;5/10;European real asset debt;;verify email typo in import
+Allianz Österreich;Daniel Matic;CEO;daniel.matic@allianz.at;research;5/10;European real asset debt;;
+Ergo Versicherung AG;Philipp Wassenberg;CEO;philipp.wassenberg@ergo-versicherung.at;research;4/10;European real asset debt;;
+Merkur Versicherung AG;Christian Kladiva;CEO;christian.kladiva@merkur.at;research;4/10;European real asset debt;;
+Helvetia Versicherungen;Thomas Neusiedler;CEO;thomas.neusiedler@helvetia.at;research;6/10;European real asset debt;;
+Oberösterreichische Versicherung;Othmar Nagl;CEO;o.nagl@ooev.at;research;6/10;European real asset debt;;
+Zürich Versicherung AG;Luciano Cirinà;CEO;luciano.cirina@at.zurich.com;research;4/10;European real asset debt;;
+Croatia osiguranje d.d.;Davor Tomašković;CEO;davor.tomaskovic@crosig.hr;research;4/10;European real asset debt;;
+Euroherc osiguranje;;CEO;FIND: firstname.lastname@euroherc.hr;research;3/10;European real asset debt;;no contact in import
+Adriatic Osiguranje;Nino Pavić;CEO;nino.pavic@adriatic-osiguranje.hr;research;3/10;European real asset debt;;
+Allianz Hrvatska;Marijana Jakovac;CEO;jakovacm@allianz.hr;research;3/10;European real asset debt;;
+Wiener Osiguranje VIG;Tamara Rendić;CEO;trendic@wiener.at;research;4/10;European real asset debt;;
+Grawe Hrvatska;Nataša Kapetanović;CEO;natasa.kapetanovic@grawe.hr;research;5/10;European real asset debt;;relationship angle via Grawe Austria
+Generali osiguranje;Mario Carini;CEO;mario.carini@generali.hr;research;3/10;European real asset debt;;
+Triglav osiguranje;Tedo Djekanović;Supervisory Board Chairman;tedo.djekanovic@triglav.hr;research;4/10;European real asset debt;;
+Merkur osiguranje (HR);Marko Klemenčič;CEO;marko.klemencic@merkur.hr;research;3/10;European real asset debt;;
+AZ Mandatory Pension Fund;Kristijan Buk;CEO;kristijan.buk@azfond.hr;skip;2/10;niche European private credit;;HANFA mandatory — regulatory barriers
+ABA Mandatory Pension Fund;Dinko Lucić;CEO (PBZ parent);dinko.lucic@pbz.hr;skip;2/10;niche European private credit;;HANFA mandatory — regulatory barriers
+Raiffeisen Voluntary Pension Fund;Gordan Šumanović;CEO;gordan.sumanovic@rmf.hr;research;4/10;niche European private credit;;AUM likely below €10M minimum
+AZ Mandatory B Category;Kristijan Buk;CEO;kristijan.buk@azfond.hr;skip;2/10;niche European private credit;;HANFA mandatory — regulatory barriers
+Erste Mandatory Pension Fund;Petar Vlaić;CEO;petar.vlaic@ersteplavi.hr;skip;3/10;niche European private credit;;HANFA mandatory — regulatory barriers
+AZ Voluntary Pension Fund;Kristijan Buk;CEO;kristijan.buk@azfond.hr;research;4/10;niche European private credit;;AUM likely below €10M minimum
+Erste Voluntary Fund;Petar Vlaić;CEO;petar.vlaic@ersteplavi.hr;research;4/10;niche European private credit;;AUM likely below €10M minimum
+Croatia osiguranje Voluntary;Radojka Hainski;CEO;radojka.hainski@crosig.hr;skip;2/10;niche European private credit;;AUM insufficient for €10M ticket
+ČSOB Penzijní společnost;Marcela Suchanková;CEO;msuchankova@csob.cz;research;5/10;niche European private credit;;alternative fund launch pending
+Allianz Penzijní společnost;Dušan Quis;CEO;dusan.quis@allianz.cz;research;4/10;niche European private credit;;
+Česká spořitelna penzijní;Aleš Poklop;CEO;ales.poklop@csps.cz;research;8/10;niche European private credit;;launched alternative fund Jan 2025
+NN Penzijní společnost;Yoram Schwarz;CEO;yoram.schwarz@nn.cz;research;5/10;niche European private credit;;alternative fund launch pending
+Generali penzijní společnost;Jana Zelinková;CEO;jana.zelinkova@generalipenze.cz;research;7/10;niche European private credit;;first Czech alt fund launch — confirmed mandate

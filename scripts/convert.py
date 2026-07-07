@@ -30,23 +30,24 @@ OUTPUT_XLSX  = ROOT / "output.xlsx"
 # ── Column definitions ────────────────────────────────────────────────────────
 # input.xlsx / lp-import.csv columns (what the user fills in)
 INPUT_COLS = [
-    "Company", "Country", "Website",
+    "Country", "Type", "Company", "Website",
     "First Name", "Last Name", "Title", "Email address", "LinkedIn",
     "Considered",
 ]
-INPUT_WIDTHS = [32, 16, 28, 13, 13, 24, 30, 34, 11]
+INPUT_WIDTHS = [14, 20, 30, 26, 12, 12, 24, 30, 32, 11]
 
 # output.csv / output.xlsx columns
 OUTPUT_COLS = [
-    "company", "country", "slug", "score", "aum",
+    "country", "type", "company", "slug", "score", "aum",
     "contact_name", "contact_title", "contact_email",
     "stage", "category", "bridge", "flag", "date_sent",
 ]
 OUTPUT_DISPLAY = {
-    "company":       "Company",
     "country":       "Country",
+    "type":          "Type",
+    "company":       "Company",
     "slug":          "Slug",
-    "score":         "Score /100",
+    "score":         "Score",
     "aum":           "AUM",
     "contact_name":  "Contact",
     "contact_title": "Title",
@@ -58,7 +59,7 @@ OUTPUT_DISPLAY = {
     "date_sent":     "Date Sent",
 }
 OUTPUT_WIDTHS = {
-    "company": 32, "country": 14, "slug": 24, "score": 10, "aum": 14,
+    "country": 14, "type": 20, "company": 30, "slug": 24, "score": 8, "aum": 14,
     "contact_name": 22, "contact_title": 22, "contact_email": 30,
     "stage": 11, "category": 28, "bridge": 52, "flag": 30, "date_sent": 12,
 }
@@ -74,7 +75,7 @@ SCORE_TIERS = [
     (55, "FFEB9C", "9C5700"),  # yellow
     (35, "FFCCB3", "833C00"),  # orange
     (20, "FFDDE0", "9C0006"),  # red
-    ( 0, "FFFFFF", "AAAAAA"),  # white (no fill) — skip/unscored
+    ( 0, "FFFFFF", "000000"),  # white (no fill) — skip/unscored
 ]
 STAGE_FILLS = {
     "drafted": PatternFill("solid", fgColor="BDD7EE"),
@@ -86,7 +87,7 @@ STAGE_COLORS_INPUT = {
     "research": ("DDEBF7", "1F3864"),
     "drafted":  ("BDD7EE", "1F3864"),
     "sent":     ("C6EFCE", "375623"),
-    "skip":     ("FFFFFF", "AAAAAA"),
+    "skip":     ("FFFFFF", "000000"),
 }
 
 
@@ -105,11 +106,11 @@ def score_fill(score_str):
     try:
         val = int(str(score_str).replace("/100", "").strip())
     except (ValueError, AttributeError):
-        return PatternFill("solid", fgColor="F2F2F2"), Font(color="595959")
+        return PatternFill("solid", fgColor="FFFFFF"), Font(color="000000")
     for threshold, bg, fg in SCORE_TIERS:
         if val >= threshold:
             return PatternFill("solid", fgColor=bg), Font(color=fg, bold=True)
-    return PatternFill("solid", fgColor="F2F2F2"), Font(color="595959")
+    return PatternFill("solid", fgColor="FFFFFF"), Font(color="000000")
 
 
 def load_import_order():
@@ -138,12 +139,12 @@ def cmd_init():
     for i, w in enumerate(INPUT_WIDTHS, start=1):
         ws.column_dimensions[get_column_letter(i)].width = w
 
-    sample = ["Example Pensionskasse AG", "Austria", "https://example.at",
+    sample = ["Austria", "Pension Fund", "Example Pensionskasse AG", "https://example.at",
               "Max", "Mustermann", "CIO", "max.mustermann@example.at",
               "linkedin.com/in/max-mustermann", ""]
     ws.append(sample)
     for cell in ws[2]:
-        cell.font = Font(italic=True, color="AAAAAA")
+        cell.font = Font(italic=True, color="000000")
 
     _add_instructions(wb)
     wb.save(INPUT_XLSX)
@@ -165,11 +166,12 @@ def cmd_import():
 
     # Map column names from header row
     headers = [str(h).strip() if h else "" for h in rows[0]]
-    data_rows = [
-        {headers[i]: (str(v).strip() if v is not None else "") for i, v in enumerate(r)}
-        for r in rows[1:]
-        if r[0] and "Example" not in str(r[0])
-    ]
+    data_rows = []
+    for r in rows[1:]:
+        row_dict = {headers[i]: (str(v).strip() if v is not None else "") for i, v in enumerate(r)}
+        company = row_dict.get("Company", "").strip()
+        if company and "Example" not in company:
+            data_rows.append(row_dict)
 
     # Preserve existing Considered=yes
     existing_yes = set()
@@ -234,7 +236,14 @@ def cmd_export():
     ws.auto_filter.ref = f"A1:{get_column_letter(len(all_cols))}1"
 
     for row in rows:
-        ws.append([row.get(c, "") for c in all_cols])
+        def _fmt(c, v):
+            if c == "score":
+                try:
+                    return int(str(v).replace("/100", "").strip())
+                except (ValueError, AttributeError):
+                    return v
+            return v
+        ws.append([_fmt(c, row.get(c, "")) for c in all_cols])
         row_idx = ws.max_row
         stage   = row.get("stage", "").lower()
 
@@ -252,7 +261,7 @@ def cmd_export():
                 cell.fill = STAGE_FILLS[stage]
                 cell.alignment = Alignment(horizontal="center", vertical="top")
             elif stage == "skip":
-                cell.font = Font(color="BBBBBB")
+                cell.font = Font(color="000000")
 
     for col_idx, col_name in enumerate(all_cols, start=1):
         ws.column_dimensions[get_column_letter(col_idx)].width = OUTPUT_WIDTHS.get(col_name, 18)
@@ -316,9 +325,11 @@ def cmd_sync():
         # Use country from output.csv if import row has none
         country = r.get("Country", "") or info.get("country", "")
 
+        score_int = _to_int(score)
         row_vals = [
-            company,
             country,
+            r.get("Type", ""),
+            company,
             r.get("Website", ""),
             r.get("First Name", ""),
             r.get("Last Name", ""),
@@ -327,27 +338,29 @@ def cmd_sync():
             r.get("LinkedIn", r.get("Linkedin ", "")),
             r.get("Considered", ""),
             stage,
-            score,
+            score_int if score_int else score,
         ]
         ws.append(row_vals)
-        row_idx = ws.max_row
-        bg, fg  = STAGE_COLORS_INPUT.get(stage, ("FFFFFF", "000000"))
+        row_idx   = ws.max_row
+        bg, fg    = STAGE_COLORS_INPUT.get(stage, ("FFFFFF", "000000"))
+        stage_col = len(INPUT_COLS) + 1   # Stage column (1-indexed)
+        score_col = len(INPUT_COLS) + 2   # Score column (1-indexed)
 
         for col_idx, _ in enumerate(row_vals, start=1):
             cell = ws.cell(row=row_idx, column=col_idx)
             cell.border = BORDER
             cell.alignment = Alignment(vertical="top")
-            if col_idx == len(INPUT_COLS):       # Stage (last INPUT_COL + 1)
+            if col_idx == stage_col:
                 cell.fill = PatternFill("solid", fgColor=bg)
                 cell.font = Font(color=fg)
                 cell.alignment = Alignment(horizontal="center", vertical="top")
-            elif col_idx == len(INPUT_COLS) + 1:  # Score
+            elif col_idx == score_col:
                 sfill, sfont = score_fill(score)
                 cell.fill = sfill
                 cell.font = sfont
                 cell.alignment = Alignment(horizontal="center", vertical="top")
             elif stage == "skip":
-                cell.font = Font(color="AAAAAA")
+                cell.font = Font(color="000000")
 
     _add_instructions(wb)
     wb.save(INPUT_XLSX)
@@ -430,7 +443,7 @@ def _add_instructions(wb):
     for i, (text, bold) in enumerate(lines, start=1):
         cell = ws.cell(row=i, column=1, value=text)
         cell.font = Font(bold=True, size=11) if bold else (
-            Font(color="444444") if text.startswith("  ") else Font()
+            Font(color="000000") if text.startswith("  ") else Font()
         )
     ws.column_dimensions["A"].width = 72
 

@@ -228,7 +228,7 @@ Use this step-by-step to arrive at a consistent number.
 
 ### File depth target
 
-Each completed LP file: **600–900 words** of substantive content (excluding headings).
+Each completed LP file: **400–500 words** of substantive content (excluding headings).
 Depth comes from specificity — use their exact language, quote their documents,
 name their committee members. Do not pad with generic sector observations.
 
@@ -309,34 +309,3 @@ The bridge must be:
 - `European real asset debt` — insurers and real asset-focused funds
 - `special situations credit` — sophisticated allocators who know the term
 
----
-
-## Segment-Specific Notes
-
-### Austrian Pensionskassen
-**Best segment.** Fully local decisions. Regulation allows 30%+ in alternatives.
-→ Layer 5 (mandate fit): give maximum score without further evidence.
-→ Layer 2 (alternatives exposure): start at "sector standard [likely]" as a floor.
-Lead with private debt track record and LP alignment.
-
-### Austrian / CEE Insurers (Solvency II)
-**Strong segment.** Focus on capital-efficient yield vs. public bonds.
-Independent insurers (Grawe, Oberösterreichische) score higher than group subsidiaries.
-→ Layer 5: give near-maximum for Solvency II entities >€500M assets.
-→ Layer 4: independent entities score top tier; group subsidiaries score middle tier.
-
-### Czech Pension Societies
-**Changed significantly post-2024** — new legislation enables alternative funds.
-Česká spořitelna and Generali already launched; others are actively preparing.
-→ Do NOT apply old "conservative Czech pension" default. Re-score based on current evidence.
-→ Layer 2: if alt fund launched, score as "confirmed local allocation."
-
-### Croatian Insurers (Solvency II)
-**Most are subsidiaries.** Score Layer 4 (operational fit) lower but note parent as warm path.
-Croatian subsidiaries of GRAWE, VIG score higher due to strong parent alternatives mandate.
-→ Layer 2: parent confirmation counts for subsidiary [likely].
-
-### Croatian Mandatory Pension Funds (Pillar II)
-**Hard cap: 25/100.** Mark as skip in data/output.csv unless AUM >€1B and alternatives confirmed.
-Voluntary funds (Pillar III) have more flexibility but AUM is usually too small.
-→ Layer 5: mandatory = restricted. Apply strong negative adjustment.

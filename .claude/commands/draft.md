@@ -16,4 +16,5 @@ Draft the one-time first-touch email for the LP in $ARGUMENTS.
 5. output.csv: stage=drafted. Note 3 drafts saved, nothing sent.
 
 DATA FILE: data/output.csv — semicolons (;) as delimiter. No semicolons inside field values.
-Columns: company;country;slug;score;aum;contact_name;contact_title;contact_email;stage;category;bridge;flag;date_sent
+Columns: country;company;type;slug;score;aum;contact_name;contact_title;contact_email;stage;category;bridge;flag;date_sent
+Score is a plain integer 1-100 (not "90/100").

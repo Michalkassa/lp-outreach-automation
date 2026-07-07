@@ -4,8 +4,8 @@ LP Outreach — Excel/CSV converter for Valori Capital pipeline.
 
 Usage:
   python scripts/convert.py init     # Create blank input.xlsx template
-  python scripts/convert.py import   # input.xlsx → lps/lp-import.csv
-  python scripts/convert.py export   # output.csv → output.xlsx  (input order, not score order)
+  python scripts/convert.py import   # input.xlsx → data/lp-import.csv
+  python scripts/convert.py export   # data/output.csv → output.xlsx  (input order, not score order)
   python scripts/convert.py sync     # Populate input.xlsx from lp-import.csv + output.csv stage data
 """
 
@@ -23,8 +23,8 @@ except ImportError:
 
 ROOT         = Path(__file__).resolve().parent.parent
 INPUT_XLSX   = ROOT / "input.xlsx"
-LP_IMPORT    = ROOT / "lps" / "lp-import.csv"
-OUTPUT_CSV   = ROOT / "output.csv"
+LP_IMPORT    = ROOT / "data" / "lp-import.csv"
+OUTPUT_CSV   = ROOT / "data" / "output.csv"
 OUTPUT_XLSX  = ROOT / "output.xlsx"
 
 # ── Column definitions ────────────────────────────────────────────────────────
@@ -403,14 +403,14 @@ def _add_instructions(wb):
         ("1. Add rows to the Prospects sheet: Company, Country, Website, contact details.", False),
         ("2. Leave Considered blank for new rows. Stage and Score are auto-filled by sync.", False),
         ("3. Save, then run:  .venv/bin/python scripts/convert.py import", False),
-        ("   This writes lps/lp-import.csv preserving existing Considered=yes rows.", False),
+        ("   This writes data/lp-import.csv preserving existing Considered=yes rows.", False),
         ("", False),
         ("HOW TO RUN RESEARCH IN CLAUDE", True),
         ("4. In Claude Code, run /import-lps  — creates stub .md files for new rows.", False),
         ("5. Run /research <Company Name>  — web research, score 1-100, full context file.", False),
         ("", False),
         ("HOW TO GET THE OUTPUT", True),
-        ("6. .venv/bin/python scripts/convert.py export   →  output.xlsx (pipeline view)", False),
+        ("6. .venv/bin/python scripts/convert.py export   →  output.xlsx (from data/output.csv)", False),
         ("7. .venv/bin/python scripts/convert.py sync     →  update THIS file with Stage + Score", False),
         ("", False),
         ("STAGE MEANINGS", True),

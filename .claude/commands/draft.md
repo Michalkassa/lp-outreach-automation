@@ -15,5 +15,5 @@ Draft the one-time first-touch email for the LP in $ARGUMENTS.
    with frontmatter: lp, contact, bridge, category_label, word_count.
 5. output.csv: stage=drafted. Note 3 drafts saved, nothing sent.
 
-OUTPUT.CSV FORMAT: output.csv uses semicolons (;) as delimiter.
-Columns: company;slug;score;aum;contact_name;contact_title;contact_email;stage;category;bridge;flag;date_sent
+DATA FILE: data/output.csv — semicolons (;) as delimiter. No semicolons inside field values.
+Columns: company;country;slug;score;aum;contact_name;contact_title;contact_email;stage;category;bridge;flag;date_sent

@@ -76,37 +76,77 @@ Total = 100 points maximum.
 
 ## What to find for each LP
 
-### Company
-- Legal type (Pensionskasse, insurer, Vorsorgekasse, pension society, etc.)
-- Domicile and regulator
-- Total AUM or invested assets (most recent published figure)
-- Ownership structure (independent vs. subsidiary — note parent)
-- Alternatives allocation % or private credit allocation % (their own words if possible)
-- Investment strategy: how they describe their approach publicly
-- Recent activity (last 18 months): new allocations, strategy shifts, public statements,
-  fund launches, hires. Source everything.
-  Searches: "{company} alternatives investment 2024 2025"
-             "{company} private credit real estate debt annual report"
-             "{company} strategy investment outlook CIO"
+### Minimum searches (6-8 per company)
 
-### People
-- Primary: person who owns private markets / alternatives / credit allocation
-  (CIO, Head of Private Markets, Head of Alternatives, Head of Fixed Income,
-  CFO if small fund, CEO if independent small fund)
-- Secondary: backup or investment committee member
-- For each: why them (what their title/role tells us about decision access)
-- Never guess email — use import data first; mark FIND with likely pattern
+Always run:
+1. "{company} investment strategy AUM annual report 2024 2025"
+2. "{company} private credit alternatives real estate debt"
+3. Visit their actual website — find annual report, investor relations, or strategy page
+4. "{contact name} {company} LinkedIn" — visit their LinkedIn profile directly
+5. "{company} CIO investment committee alternatives 2025"
+6. "{company} {CEO/CIO name} interview conference private markets statement"
 
-### Bridge hook
-- One specific, sourced fact about the LP connecting to Valori's mandate
-- Must be in their own vocabulary
-- Strong bridge examples:
-  - Named private debt as a strategic priority
-  - Launched alternative fund (real assets, infrastructure debt, credit)
-  - Yield gap vs. peers — their returns underperformed
-  - Preference stated for managers with LP alignment or institutional roots
-  - ESG / sustainability mandate that real asset debt supports
-  - New alternatives hire or changed investment guidelines
+For likely score >40 — also run:
+7. "{company} annual report 2023 2024 investment portfolio allocation breakdown"
+8. "{company} private equity infrastructure debt real assets fund commitment"
+
+For likely score >65 — also run:
+9. "{company} ESG sustainability responsible investment mandate long-term"
+10. "{company} LP alternatives fund commitment 2024 2025 new allocation"
+
+### File depth target
+Each completed LP file should contain 600-900 words of substantive content.
+Depth comes from specificity — use their exact language, quote their documents,
+name their committee members. Do not pad with generic sector observations.
+
+### From the company website — extract:
+- Exact AUM or invested assets (with year and page/document name as source)
+- Asset allocation table if published (% equities, bonds, alternatives, real estate)
+- Their exact terminology for the alternatives or private credit bucket
+- Target returns or yield language (even approximate)
+- Direct quotes about investment philosophy — copy verbatim, cite page/document
+- Names and titles of investment committee or board members
+- Any investor relations publications, strategy letters, or sustainability reports
+- Governance section: investment committee structure, quorum, sign-off for alternatives
+
+### From LinkedIn — extract per contact:
+- Full career history: every previous firm, role title, and approximate tenure
+- How long in current role (month and year joined if shown)
+- Any posts, articles, or comments about private markets, credit, or real assets
+- Education background (institution, degree, graduation year)
+- Mutual connections or shared background with Valori team (if any)
+- Specific remit: what allocation decisions they own, not just their title
+
+### From news / press / conference sources:
+- Any public statement about alternatives or private credit strategy (with date)
+- Fund commitments or new manager relationships announced (with fund name and date)
+- Strategic direction changes, new investment guidelines, regulatory updates
+- Conference appearances or interviews — quote the statement, name the conference
+- New hire announcements for investment or alternatives roles
+- Annual report headlines: return figures, allocation changes, new mandates
+
+### Bridge hook requirements
+The bridge must be:
+- Specific to THIS company — not a generic sector observation
+- Verifiable — something they said, published, or announced
+- Directly relevant to Valori's mandate (distressed credit, European real estate, bilateral)
+- In their vocabulary — use the same words they use for their alternatives bucket
+
+Strong bridge examples:
+- Named private debt or real asset debt as a strategic priority (cite document)
+- Launched an alternative fund or mandate in the last 18 months (cite date)
+- Yield gap vs. peers — their published returns underperformed peers
+- Stated preference for managers with LP alignment or institutional roots
+- ESG or long-term capital mandate that real asset debt supports
+- New hire for private markets or alternatives role
+- Published target allocation % to alternatives that they have not yet reached
+
+### Accuracy rules
+- Never invent AUM figures — if not found publicly, write [VERIFY — not found; check annual report]
+- Never guess email addresses — use import data first; for others, write FIND: pattern@domain
+- Mark every unverified fact [VERIFY] and note exactly what source would confirm it
+- If website or LinkedIn contradicts web search results, use the direct source
+- Do not pad with generic sector commentary — every sentence must be specific to this LP
 
 ---
 

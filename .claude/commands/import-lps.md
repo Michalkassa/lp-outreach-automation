@@ -1,4 +1,4 @@
-Read /lps/lp-import.csv and process all rows where considered = no (or blank).
+Read /data/lp-import.csv and process all rows where considered = no (or blank).
 
 For each unprocessed row:
 1. Create /lps/<lp-slug>.md using the supplied data (no web search needed):
@@ -9,10 +9,10 @@ For each unprocessed row:
    - Summary: [TO BE WRITTEN — run /research or fill manually]
    - Score: [UNSCORED]
 2. Add row to output.csv (stage=imported, score blank).
-3. Mark the row as considered=yes in lp-import.csv.
+3. Mark the row as considered=yes in data/lp-import.csv.
 
 After processing, print a summary table: company | slug | contact | status.
 Do not run web searches. Do not draft emails. Import only.
 
-OUTPUT.CSV FORMAT: output.csv uses semicolons (;) as delimiter.
-Columns: company;slug;score;aum;contact_name;contact_title;contact_email;stage;category;bridge;flag;date_sent
+DATA FILE: data/output.csv — semicolons (;) as delimiter. No semicolons inside field values.
+Columns: company;country;slug;score;aum;contact_name;contact_title;contact_email;stage;category;bridge;flag;date_sent

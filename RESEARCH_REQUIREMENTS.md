@@ -204,59 +204,46 @@ Use this step-by-step to arrive at a consistent number.
 
 ## What to Find for Each LP
 
-### Minimum searches (6–8 per company)
+### Searches (4–6 per company)
 
 **Always run (Tier 1 — company overview):**
 1. `"{company}" investment strategy AUM annual report 2024 2025`
-2. `"{company}" private credit alternatives real estate debt investment`
-3. Visit their actual website — find Annual Report, Investor Relations, About Us, Investment Philosophy
+2. `"{company}" private credit alternatives real estate debt`
+3. Visit their website — AUM, allocation breakdown, strategy statements
 
 **Always run (Tier 2 — people and org):**
-4. `"{first name} {last name} {company}" LinkedIn` — visit their LinkedIn profile directly
+4. `"{contact name}" "{company}" LinkedIn` — career history, role, posts
 5. `"{company}" CIO investment committee alternatives 2024 2025`
-6. `"{company}" "{CEO/CIO name}" interview conference statement private credit`
 
-**Run for likely score >40 (Tier 3):**
-7. `"{company}" annual report 2023 2024 investment portfolio allocation breakdown`
-8. `"{company}" private equity infrastructure debt real assets fund commitment`
-
-**Run for likely score >65 (Tier 4):**
-9. `"{company}" ESG sustainability responsible investment mandate long-term`
-10. `"{company}" LP alternatives fund commitment 2024 2025 new allocation`
+**Run for likely score >50 (Tier 3):**
+6. `"{company}" annual report portfolio allocation breakdown`
+7. `"{company}" ESG sustainability responsible investment`
 
 ---
 
 ### File depth target
 
-Each completed LP file: **400–500 words** of substantive content (excluding headings).
-Depth comes from specificity — use their exact language, quote their documents,
-name their committee members. Do not pad with generic sector observations.
+Each completed LP file: **400–600 words** of substantive content (excluding headings).
+Specific facts and quotes over volume. Write for someone scanning before a call.
 
 ---
 
-### From the company website — extract:
-- Exact AUM or invested assets (with year and document name as source)
-- Asset allocation table if published (% equities, bonds, alternatives, real estate)
-- Their exact terminology for the alternatives or private credit bucket
-- Target returns or yield language (even approximate)
-- Direct quotes about investment philosophy — copy verbatim, cite page / document
-- Names and titles of investment committee or board members
-- Governance section: investment committee structure, quorum, sign-off for alternatives
+### What to extract
 
-### From LinkedIn — extract per contact:
-- Full career history: every previous firm, role title, and approximate tenure
-- How long in current role (month and year joined if shown)
-- Any posts, articles, or comments about private markets, credit, or real assets
-- Education background (institution, degree, graduation year)
-- Specific remit: what allocation decisions they own — not just their title
+**Company website / annual report:**
+- AUM with year and source
+- Asset allocation (% alternatives, real estate, private credit)
+- Their own words for the alternatives bucket (quoted)
+- Names of investment decision-makers
 
-### From news / press / conference sources:
-- Any public statement about alternatives or private credit strategy (with date)
-- Fund commitments or new manager relationships announced (with fund name and date)
-- Strategic direction changes, new investment guidelines, regulatory updates
-- Conference appearances or interviews — quote the statement, name the conference
-- New hire announcements for investment or alternatives roles
-- Annual report headlines: return figures, allocation changes, new mandates
+**LinkedIn (contact):**
+- Career path: previous firms, how long in current role
+- Any posts or statements about private markets or credit
+
+**News / press:**
+- Allocation changes or new mandates (with date)
+- Leadership moves
+- Strategy statements (quoted, with source)
 
 ---
 

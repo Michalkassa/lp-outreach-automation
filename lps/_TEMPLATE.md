@@ -13,6 +13,7 @@ score: XX/100
 - Private credit / real assets exposure: [confirmed % or named asset class, or VERIFY]
 - Fixed income / bond allocation: [if relevant to positioning our product]
 - Regulatory constraints: [any known limits on illiquid or alternative investments]
+- Language override: [blank = auto from country | en | sk | de]
 
 ## Investment Strategy
 [8-12 sentences. This is the core of the file — write it as if briefing a partner before

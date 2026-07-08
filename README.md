@@ -118,6 +118,21 @@ No manual step is needed.
 | Austria, Germany | German | `templates/voice-de.md` |
 | All others | English | `templates/voice.md` |
 
+**Overriding the language:**
+
+One-off (this draft only — does not save):
+```
+/draft <Company Name> en
+/draft <Company Name> sk
+/draft <Company Name> de
+```
+
+Permanent (add to the LP's `.md` file under Data):
+```
+Language override: en
+```
+Leave blank to use auto-detection.
+
 **Rules that apply in every language:**
 - Full translation — intro, bullets, subject line, and close are all translated.
 - `Partner, Valori Capital` in the sign-off stays in English (it is the official title).

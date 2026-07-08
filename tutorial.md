@@ -66,6 +66,16 @@ Every file change becomes recoverable.
 - Austria, Germany → German
 - All other countries → English
 
+To override for a specific LP permanently, add this to the LP's `.md` file under Data:
+```
+Language override: en
+```
+To override for a single draft run without saving anything:
+```
+/draft <Company Name> en
+```
+Valid codes: `en`, `sk`, `de`.
+
 **Rules:**
 - One row = one LP. If a company has two relevant contacts, add two rows.
 - Leave Considered blank for any row you want Claude to process.

@@ -1,0 +1,21 @@
+company;slug;field;display_field;current_value;verified_value;source;affects_score;status
+Bonus Pensionskasse AG;bonus-pensionskasse-ag;contact_email;Email;FIND: c.gligo@bonusvorsorge.at;;;no;
+Donau Versicherung;donau-versicherung;aum;AUM;VERIFY;;;yes;
+Generali Versicherung AG;generali-versicherung-ag;aum;AUM;~€3B (VERIFY);;;yes;
+Generali Versicherung AG;generali-versicherung-ag;flag;Flag;verify email in import;;;no;
+Wiener Osiguranje VIG;wiener-osiguranje-vig;aum;AUM;VERIFY;;;yes;
+Allianz Österreich;allianz-oesterreich;aum;AUM;VERIFY;;;yes;
+Grawe Hrvatska;grawe-hrvatska;aum;AUM;VERIFY;;;yes;
+Ergo Versicherung AG;ergo-versicherung;aum;AUM;VERIFY;;;yes;
+Zürich Versicherung AG;zuerich-versicherung;aum;AUM;VERIFY;;;yes;
+Merkur Versicherung AG;merkur-versicherung;bridge;Bridge;Independent Austrian health insurer — Solvency II mandate — alternatives mandate [VERIFY];;;no;
+Allianz Hrvatska;allianz-hrvatska;aum;AUM;VERIFY;;;yes;
+Generali osiguranje;generali-osiguranje;aum;AUM;VERIFY;;;yes;
+Raiffeisen Pensionskasse AG;raiffeisen-pensionskasse-ag;aum;AUM;VERIFY;;;yes;
+Raiffeisen Pensionskasse AG;raiffeisen-pensionskasse-ag;contact_name;Contact Name;VERIFY;;;yes;
+Raiffeisen Pensionskasse AG;raiffeisen-pensionskasse-ag;contact_title;Contact Title;VERIFY;;;no;
+Raiffeisen Pensionskasse AG;raiffeisen-pensionskasse-ag;contact_email;Email;VERIFY;;;no;
+Triglav osiguranje;triglav-osiguranje;aum;AUM;VERIFY;;;yes;
+Euroherc osiguranje;euroherc-osiguranje;contact_name;Contact Name;VERIFY;;;yes;
+Euroherc osiguranje;euroherc-osiguranje;contact_email;Email;FIND: firstname.lastname@euroherc.hr;;;no;
+AZ Mandatory B Category;az-mandatory-b-category;aum;AUM;VERIFY;;;yes;

@@ -3,10 +3,12 @@
 LP Outreach — Excel/CSV converter for Valori Capital pipeline.
 
 Usage:
-  python scripts/convert.py init     # Create blank input.xlsx template
-  python scripts/convert.py import   # input.xlsx → data/lp-import.csv
-  python scripts/convert.py export   # data/output.csv → output.xlsx  (input order, not score order)
-  python scripts/convert.py sync     # Populate input.xlsx from lp-import.csv + output.csv stage data
+  python scripts/convert.py init            # Create blank input.xlsx template
+  python scripts/convert.py import          # input.xlsx → data/lp-import.csv
+  python scripts/convert.py export          # data/output.csv → output.xlsx
+  python scripts/convert.py sync            # Populate input.xlsx with Stage + Score from output.csv
+  python scripts/convert.py verify-export   # Scan output.csv for VERIFY/FIND items → verify.xlsx
+  python scripts/convert.py verify-import   # Read verify.xlsx confirmed values → patch output.csv
 """
 
 import csv
@@ -26,6 +28,8 @@ INPUT_XLSX   = ROOT / "input.xlsx"
 LP_IMPORT    = ROOT / "data" / "lp-import.csv"
 OUTPUT_CSV   = ROOT / "data" / "output.csv"
 OUTPUT_XLSX  = ROOT / "output.xlsx"
+VERIFY_CSV   = ROOT / "data" / "verify.csv"
+VERIFY_XLSX  = ROOT / "verify.xlsx"
 
 # ── Column definitions ────────────────────────────────────────────────────────
 # input.xlsx / lp-import.csv columns (what the user fills in)
@@ -63,6 +67,28 @@ OUTPUT_WIDTHS = {
     "contact_name": 22, "contact_title": 22, "contact_email": 30,
     "stage": 11, "category": 28, "bridge": 52, "flag": 30, "date_sent": 12,
 }
+
+# ── Verify columns ────────────────────────────────────────────────────────────
+# Fields in output.csv that may carry VERIFY / FIND: markers, and whether
+# confirming the value should trigger a rescore of that LP.
+VERIFY_FIELDS = [
+    ("aum",           "AUM",           True),
+    ("contact_name",  "Contact Name",  True),
+    ("contact_title", "Contact Title", False),
+    ("contact_email", "Email",         False),
+    ("bridge",        "Bridge",        False),
+    ("flag",          "Flag",          False),
+]
+VERIFY_CSV_COLS = [
+    "company", "slug", "field", "display_field",
+    "current_value", "verified_value", "source", "affects_score", "status",
+]
+VERIFY_XLSX_HEADERS = [
+    "Company", "Slug", "Field", "What to Verify",
+    "Current Value", "Your Verified Value", "Source",
+    "Affects Score", "Status",
+]
+VERIFY_WIDTHS = [28, 22, 14, 16, 36, 36, 30, 14, 10]
 
 # ── Colour palette ────────────────────────────────────────────────────────────
 HEADER_FILL = PatternFill("solid", fgColor="EF7B88")
@@ -448,12 +474,236 @@ def _add_instructions(wb):
     ws.column_dimensions["A"].width = 72
 
 
+# ── VERIFY-EXPORT — scan output.csv for VERIFY/FIND items → verify.xlsx ───────
+def _needs_verify(value):
+    """Return True if a field value contains a VERIFY or FIND: marker."""
+    if not value:
+        return False
+    v = str(value).upper()
+    return "VERIFY" in v or "FIND:" in v
+
+
+def cmd_verify_export():
+    if not OUTPUT_CSV.exists():
+        print(f"output.csv not found at {OUTPUT_CSV}")
+        sys.exit(1)
+
+    with open(OUTPUT_CSV, newline="", encoding="utf-8") as f:
+        out_rows = list(csv.DictReader(f, delimiter=";"))
+
+    # Preserve any previously confirmed values from existing verify.csv
+    existing = {}
+    if VERIFY_CSV.exists():
+        with open(VERIFY_CSV, newline="", encoding="utf-8") as f:
+            for r in csv.DictReader(f, delimiter=";"):
+                key = (r.get("slug", ""), r.get("field", ""))
+                existing[key] = r
+
+    verify_rows = []
+    for row in out_rows:
+        slug    = row.get("slug", "")
+        company = row.get("company", "")
+        for field_key, display_field, affects_score in VERIFY_FIELDS:
+            value = row.get(field_key, "")
+            if _needs_verify(value):
+                key  = (slug, field_key)
+                prev = existing.get(key, {})
+                verify_rows.append({
+                    "company":       company,
+                    "slug":          slug,
+                    "field":         field_key,
+                    "display_field": display_field,
+                    "current_value": value,
+                    "verified_value": prev.get("verified_value", ""),
+                    "source":        prev.get("source", ""),
+                    "affects_score": "yes" if affects_score else "no",
+                    "status":        prev.get("status", ""),
+                })
+
+    # Write backing CSV
+    VERIFY_CSV.parent.mkdir(exist_ok=True)
+    with open(VERIFY_CSV, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=VERIFY_CSV_COLS, delimiter=";",
+                                extrasaction="ignore")
+        writer.writeheader()
+        for r in verify_rows:
+            writer.writerow(r)
+
+    # Write user-editable XLSX
+    EDITABLE_FILL = PatternFill("solid", fgColor="FFFACD")   # light yellow
+    SCORE_FLAG    = PatternFill("solid", fgColor="FFEB9C")   # amber
+
+    wb = openpyxl.Workbook()
+    ws = wb.active
+    ws.title = "Verify"
+    make_header(ws, VERIFY_XLSX_HEADERS)
+    ws.freeze_panes = "A2"
+    for i, w in enumerate(VERIFY_WIDTHS, start=1):
+        ws.column_dimensions[get_column_letter(i)].width = w
+
+    for vr in verify_rows:
+        ws.append([
+            vr["company"], vr["slug"], vr["field"], vr["display_field"],
+            vr["current_value"], vr["verified_value"], vr["source"],
+            vr["affects_score"], vr["status"],
+        ])
+        row_idx = ws.max_row
+        for col_idx in range(1, 10):
+            cell = ws.cell(row=row_idx, column=col_idx)
+            cell.border = BORDER
+            cell.alignment = Alignment(vertical="top", wrap_text=(col_idx in (5, 6)))
+            if col_idx in (6, 7, 9):          # user fills these
+                cell.fill = EDITABLE_FILL
+            if col_idx == 8 and vr["affects_score"] == "yes":
+                cell.fill = SCORE_FLAG
+                cell.font = Font(color="9C5700", bold=True)
+
+    # Instructions sheet
+    inst = wb.create_sheet("Instructions")
+    lines = [
+        ("HOW TO USE THIS FILE", True),
+        ("1. Fill in 'Your Verified Value' (column F) with the confirmed fact.", False),
+        ("2. Add the source URL or document name in 'Source' (column G).", False),
+        ("3. Set 'Status' (column I) to 'done' when the value is confirmed.", False),
+        ("4. Save this file.", False),
+        ("", False),
+        ("THEN IN CLAUDE CODE:", True),
+        ("5. Run:  .venv/bin/python scripts/convert.py verify-import", False),
+        ("   This patches data/output.csv with your confirmed values.", False),
+        ("6. Claude will tell you which LPs need /rescore after the update.", False),
+        ("", False),
+        ("AFFECTS SCORE column:", True),
+        ("  yes = this field feeds into the scoring rubric — run /rescore after confirming", False),
+        ("  no  = informational only — no rescore needed", False),
+    ]
+    for i, (text, bold) in enumerate(lines, start=1):
+        cell = inst.cell(row=i, column=1, value=text)
+        cell.font = Font(bold=True, size=11) if bold else Font()
+    inst.column_dimensions["A"].width = 76
+
+    wb.save(VERIFY_XLSX)
+
+    score_count = sum(1 for r in verify_rows if r["affects_score"] == "yes")
+    print(f"Found {len(verify_rows)} items to verify → {VERIFY_XLSX}")
+    print(f"Backing CSV: {VERIFY_CSV}")
+    if score_count:
+        print(f"  {score_count} items affect scoring — run /rescore for each after confirming")
+    print("Fill in 'Your Verified Value' + 'Source', set Status=done, then run verify-import.")
+
+
+# ── VERIFY-IMPORT — read verify.xlsx confirmed rows → patch output.csv ─────────
+def cmd_verify_import():
+    if not VERIFY_XLSX.exists() and not VERIFY_CSV.exists():
+        print("No verify file found. Run:  .venv/bin/python scripts/convert.py verify-export")
+        sys.exit(1)
+
+    # Prefer xlsx (user edits there); fall back to csv
+    verify_rows = []
+    if VERIFY_XLSX.exists():
+        wb = openpyxl.load_workbook(VERIFY_XLSX, data_only=True)
+        ws = wb["Verify"]
+        raw = list(ws.iter_rows(values_only=True))
+        if len(raw) < 2:
+            print("No data rows in verify.xlsx.")
+            return
+        headers = [str(h).strip() if h else "" for h in raw[0]]
+        xlsx_to_csv = {
+            "Company": "company", "Slug": "slug", "Field": "field",
+            "What to Verify": "display_field", "Current Value": "current_value",
+            "Your Verified Value": "verified_value", "Source": "source",
+            "Affects Score": "affects_score", "Status": "status",
+        }
+        for r in raw[1:]:
+            d = {headers[i]: (str(v).strip() if v is not None else "") for i, v in enumerate(r)}
+            verify_rows.append({xlsx_to_csv.get(k, k): v for k, v in d.items()})
+    else:
+        with open(VERIFY_CSV, newline="", encoding="utf-8") as f:
+            verify_rows = list(csv.DictReader(f, delimiter=";"))
+
+    # Only rows marked done with a confirmed value
+    actionable = [r for r in verify_rows
+                  if r.get("status", "").strip().lower() == "done"
+                  and r.get("verified_value", "").strip()]
+
+    if not actionable:
+        print("No rows marked 'done' with a verified value. Nothing to import.")
+        return
+
+    if not OUTPUT_CSV.exists():
+        print(f"output.csv not found at {OUTPUT_CSV}")
+        sys.exit(1)
+
+    with open(OUTPUT_CSV, newline="", encoding="utf-8") as f:
+        reader    = csv.DictReader(f, delimiter=";")
+        out_rows  = list(reader)
+        fieldnames = reader.fieldnames or OUTPUT_COLS
+
+    # Build patch map: slug → {field: verified_value}
+    patches: dict[str, dict] = {}
+    rescore_slugs: list[str] = []
+    for r in actionable:
+        slug  = r.get("slug",  "").strip()
+        field = r.get("field", "").strip()
+        val   = r.get("verified_value", "").strip()
+        if slug and field and val:
+            patches.setdefault(slug, {})[field] = val
+            if r.get("affects_score", "").strip().lower() == "yes":
+                if slug not in rescore_slugs:
+                    rescore_slugs.append(slug)
+
+    patched_companies = []
+    for row in out_rows:
+        slug = row.get("slug", "").strip()
+        if slug in patches:
+            for field, val in patches[slug].items():
+                row[field] = val
+            patched_companies.append(row.get("company", slug))
+
+    with open(OUTPUT_CSV, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames, delimiter=";",
+                                extrasaction="ignore")
+        writer.writeheader()
+        for row in out_rows:
+            writer.writerow(row)
+
+    # Update verify.csv status to "done" for patched rows
+    for r in verify_rows:
+        slug  = r.get("slug",  "")
+        field = r.get("field", "")
+        if slug in patches and field in patches.get(slug, {}):
+            r["status"] = "done"
+
+    with open(VERIFY_CSV, "w", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(f, fieldnames=VERIFY_CSV_COLS, delimiter=";",
+                                extrasaction="ignore")
+        writer.writeheader()
+        for r in verify_rows:
+            writer.writerow(r)
+
+    print(f"Patched {len(patched_companies)} LP(s) in output.csv:")
+    for c in patched_companies:
+        print(f"  - {c}")
+
+    if rescore_slugs:
+        # Find company names for display
+        slug_to_company = {r.get("slug", ""): r.get("company", "") for r in out_rows}
+        print("\nThese LPs have score-affecting changes — run /rescore for each:")
+        for slug in rescore_slugs:
+            print(f"  /rescore {slug_to_company.get(slug, slug)}")
+    else:
+        print("\nNo score-affecting changes — no rescore needed.")
+
+    print(f"\nRun:  .venv/bin/python scripts/convert.py export   to regenerate output.xlsx")
+
+
 # ── Entry point ───────────────────────────────────────────────────────────────
 COMMANDS = {
-    "init":   cmd_init,
-    "import": cmd_import,
-    "export": cmd_export,
-    "sync":   cmd_sync,
+    "init":          cmd_init,
+    "import":        cmd_import,
+    "export":        cmd_export,
+    "sync":          cmd_sync,
+    "verify-export": cmd_verify_export,
+    "verify-import": cmd_verify_import,
 }
 
 if __name__ == "__main__":

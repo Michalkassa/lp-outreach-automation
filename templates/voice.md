@@ -52,6 +52,7 @@ or public mandate. Then the conditional close.
 - Plain, direct language. No corporate filler.
 - No contractions. No em-dashes. No semicolons.
 - No exclamation marks. No fragments (except inside bullets).
+- No "not just X, it is Y" constructions.
 - Every claim carries a number. No superlative without one nearby.
 - Subject: "Valori Capital, [category label], first vintage"
 

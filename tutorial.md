@@ -171,8 +171,19 @@ For each researched LP with score 35 or above:
 /draft <Company Name>
 ```
 
-Claude writes 3 variations (A, B, C) each using a different bridge angle
-from the LP file. Each draft:
+Claude writes up to 3 variations (A, B, C), each using a different
+bridge angle from the LP file. Default is 3 — to get fewer, add a
+number to the command:
+```
+/draft <Company Name> 2
+/draft <Company Name> en 1     ← combinable with a language code
+```
+Or set it permanently for an LP in its `.md` file under Data:
+```
+Draft count: 2
+```
+Fewer drafts always use the highest-ranked bridge angles first.
+Each draft:
 - 200-230 words (body only, not subject line, salutation, or sign-off)
 - Follows the voice.md structure: intro / 3-4 bullets / values close
 - Written in the correct language based on the LP's country
@@ -310,7 +321,7 @@ To pull current stage and score back into `input.xlsx`:
 | `/import-lps` | Create stub `.md` files from `lp-import.csv` |
 | `/research <LP>` | Full research + score, update `output.csv` |
 | `/rescore <LP>` | Recalculate score with 6-layer rubric, show working per layer |
-| `/draft <LP>` | 3 email drafts (A/B/C) to `drafts/`, update `output.csv` |
+| `/draft <LP>` | 1-3 email drafts (default 3) to `drafts/`, update `output.csv` |
 | `/review-packet` | Compile all drafts into `drafts/REVIEW-PACKET.md` |
 | `/log-sent <LP>` | Store sent version in `sent/`, update `output.csv` to sent |
 | `/calibrate` | Learn from edits, update `learnings.md` |

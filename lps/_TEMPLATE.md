@@ -12,6 +12,7 @@ score: XX/100
 - Private credit / real assets: [confirmed or VERIFY]
 - Regulatory constraints: [any known limits on illiquid investments]
 - Language override: [blank = auto from country | en | sk | de]
+- Draft count: [blank = 3 | 1 | 2 | 3]
 
 ## Investment Strategy
 [5-8 sentences. Brief but specific. Cover:

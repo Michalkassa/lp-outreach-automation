@@ -47,7 +47,8 @@ If no defensible bridge exists after 10 minutes, downgrade to B and
 move on. A generic bridge is worse than no email.
 
 ## STEP 3 — Draft (same day)
-/draft <LP name> in Claude Code, or fill templates/email-master.md by
+/draft <LP name> in Claude Code (add a number for fewer variants,
+e.g. /draft <LP name> 1), or fill templates/email-master.md by
 hand. Either way, run the Draft QA check in voice-examples.md yourself,
 top to bottom. Read the email aloud once. If any sentence sounds like
 it was written for "an LP" rather than THIS LP, fix the bridge.

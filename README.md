@@ -133,6 +133,23 @@ Language override: en
 ```
 Leave blank to use auto-detection.
 
+**Choosing the number of drafts:**
+
+Default is 3 variations (A/B/C), one per bridge angle from the LP file.
+
+One-off (this run only):
+```
+/draft <Company Name> 2
+/draft <Company Name> en 2     ← combinable with a language code
+```
+
+Permanent for an LP (add to its `.md` file under Data):
+```
+Draft count: 2
+```
+Leave blank to get 3. Fewer drafts always use the highest-ranked
+bridge angles first.
+
 **Rules that apply in every language:**
 - Full translation — intro, bullets, subject line, and close are all translated.
 - `Partner, Valori Capital` in the sign-off stays in English (it is the official title).
@@ -165,7 +182,7 @@ Type these inside the Claude session. Replace `<LP>` with the company name.
 |---|---|
 | `/import-lps` | Read `lp-import.csv`, create stub `.md` files for any new rows |
 | `/research <LP>` | Web-research the LP, score 1-100, write full context file to `lps/` |
-| `/draft <LP>` | Write 3 email draft variations (A/B/C) to `drafts/`, update `output.csv` |
+| `/draft <LP>` | Write 1-3 email draft variations (default 3) to `drafts/`, update `output.csv` |
 | `/rescore <LP>` | Recalculate the score for one LP using the 6-layer rubric, show working |
 | `/review-packet` | Compile all pending drafts into one printable file at `drafts/REVIEW-PACKET.md` |
 | `/log-sent <LP>` | Store the final sent version in `sent/`, update `output.csv` to `sent` |

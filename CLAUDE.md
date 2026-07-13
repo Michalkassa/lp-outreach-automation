@@ -21,8 +21,9 @@
 1. /research <LP>  → context file in /lps/: the RECEIVER. Company (type,
    AUM, mandate, recent activity) and person (2-3 named contact
    candidates with titles and sources).
-2. /draft <LP>     → one draft file in /drafts/ built from that context
-   file + templates/voice.md + templates/learnings.md.
+2. /draft <LP> [n] → 1-3 draft variants (default 3, one per bridge
+   angle) in /drafts/, built from that context file +
+   templates/voice.md + templates/learnings.md.
 3. I review the draft file, edit, send manually.
 4. /log-sent <LP>  → I paste my final sent version, you store it in /sent/
    and update tracker.csv.
@@ -37,7 +38,7 @@ One email per LP. No follow-ups. No reply tracking.
   templates/learnings.md. If no LP file exists, run /research first.
 - Never invent facts about the LP (their file only) or Valori (Fund facts
   only, exact numbers).
-- Drafts are files: /drafts/YYYY-MM-DD-<lp-slug>.md
+- Drafts are files: /drafts/YYYY-MM-DD-<lp-slug>-A.md (-B, -C)
 - Only /calibrate edits learnings.md. Never edit voice.md or this file
   yourself: propose the change, wait for my yes.
 - tracker.csv stages: research → drafted → sent. Nothing else.

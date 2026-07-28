@@ -42,13 +42,36 @@ INPUT_WIDTHS = [14, 20, 30, 26, 12, 12, 24, 30, 32, 11]
 
 # output.csv / output.xlsx columns
 OUTPUT_COLS = [
-    "country", "type", "company", "slug", "score", "aum",
+    "country", "language", "type", "list", "company", "slug", "score", "aum",
     "contact_name", "contact_title", "contact_email",
     "stage", "category", "bridge", "flag", "date_sent",
 ]
+# Country decides the email language. Keep this in step with the same rule in
+# .claude/commands/draft.md and scripts/build_packet.py.
+LANG_BY_COUNTRY = {"Slovakia": "sk", "Czech Republic": "sk",
+                   "Austria": "de", "Germany": "de"}
+LANGUAGES = ["en", "sk", "de"]
+
+# There are exactly two source lists. Entity type is descriptive detail only:
+# a bank or development agency belongs to whichever list it came in on, it is
+# never a list of its own. Mirrors FOLDER ROUTING in .claude/commands/draft.md.
+LISTS = ["Insurance", "Pension funds"]
+LIST_FOLDER = {"Insurance": "insurance", "Pension funds": "pension-funds"}
+
+
+def language_for(country: str) -> str:
+    return LANG_BY_COUNTRY.get((country or "").strip(), "en")
+
+
+def list_for(lp_type: str) -> str:
+    return "Pension funds" if "pension" in (lp_type or "").lower() else "Insurance"
+
+
 OUTPUT_DISPLAY = {
     "country":       "Country",
+    "language":      "Lang",
     "type":          "Type",
+    "list":          "List",
     "company":       "Company",
     "slug":          "Slug",
     "score":         "Score",
@@ -63,7 +86,8 @@ OUTPUT_DISPLAY = {
     "date_sent":     "Date Sent",
 }
 OUTPUT_WIDTHS = {
-    "country": 14, "type": 20, "company": 30, "slug": 24, "score": 8, "aum": 14,
+    "country": 14, "language": 7, "type": 20, "list": 14,
+    "company": 30, "slug": 24, "score": 8, "aum": 14,
     "contact_name": 22, "contact_title": 22, "contact_email": 30,
     "stage": 11, "category": 28, "bridge": 52, "flag": 30, "date_sent": 12,
 }
@@ -196,7 +220,8 @@ def cmd_import():
     for r in rows[1:]:
         row_dict = {headers[i]: (str(v).strip() if v is not None else "") for i, v in enumerate(r)}
         company = row_dict.get("Company", "").strip()
-        if company and "Example" not in company:
+        # skip blanks, the template example row, and stray pasted header rows
+        if company and "Example" not in company and company.lower() != "company":
             data_rows.append(row_dict)
 
     # Preserve existing Considered=yes
@@ -253,44 +278,68 @@ def cmd_export():
     # Columns: use OUTPUT_COLS, then any extras from CSV not already listed
     all_cols = OUTPUT_COLS + [c for c in csv_cols if c not in OUTPUT_COLS]
 
-    wb = openpyxl.Workbook()
-    ws = wb.active
-    ws.title = "LP Pipeline"
-
-    make_header(ws, [OUTPUT_DISPLAY.get(c, c.replace("_", " ").title()) for c in all_cols])
-    ws.freeze_panes = "A2"
-    ws.auto_filter.ref = f"A1:{get_column_letter(len(all_cols))}1"
-
+    # Backfill language and list for rows written before those columns existed.
     for row in rows:
-        def _fmt(c, v):
-            if c == "score":
-                try:
-                    return int(str(v).replace("/100", "").strip())
-                except (ValueError, AttributeError):
-                    return v
-            return v
-        ws.append([_fmt(c, row.get(c, "")) for c in all_cols])
-        row_idx = ws.max_row
-        stage   = row.get("stage", "").lower()
+        if not (row.get("language") or "").strip():
+            row["language"] = language_for(row.get("country", ""))
+        if not (row.get("list") or "").strip():
+            row["list"] = list_for(row.get("type", ""))
+
+    def fill_sheet(ws, sheet_rows):
+        make_header(ws, [OUTPUT_DISPLAY.get(c, c.replace("_", " ").title()) for c in all_cols])
+        ws.freeze_panes = "A2"
+        ws.auto_filter.ref = f"A1:{get_column_letter(len(all_cols))}1"
+
+        for row in sheet_rows:
+            def _fmt(c, v):
+                if c == "score":
+                    try:
+                        return int(str(v).replace("/100", "").strip())
+                    except (ValueError, AttributeError):
+                        return v
+                return v
+            ws.append([_fmt(c, row.get(c, "")) for c in all_cols])
+            row_idx = ws.max_row
+            stage   = row.get("stage", "").lower()
+
+            for col_idx, col_name in enumerate(all_cols, start=1):
+                cell = ws.cell(row=row_idx, column=col_idx)
+                cell.alignment = Alignment(vertical="top", wrap_text=(col_name == "bridge"))
+                cell.border = BORDER
+
+                if col_name == "score":
+                    fill, font = score_fill(row.get("score", ""))
+                    cell.fill = fill
+                    cell.font = font
+                    cell.alignment = Alignment(horizontal="center", vertical="top")
+                elif col_name == "stage" and stage in STAGE_FILLS:
+                    cell.fill = STAGE_FILLS[stage]
+                    cell.alignment = Alignment(horizontal="center", vertical="top")
+                elif stage == "skip":
+                    cell.font = Font(color="000000")
 
         for col_idx, col_name in enumerate(all_cols, start=1):
-            cell = ws.cell(row=row_idx, column=col_idx)
-            cell.alignment = Alignment(vertical="top", wrap_text=(col_name == "bridge"))
-            cell.border = BORDER
+            ws.column_dimensions[get_column_letter(col_idx)].width = OUTPUT_WIDTHS.get(col_name, 18)
 
-            if col_name == "score":
-                fill, font = score_fill(row.get("score", ""))
-                cell.fill = fill
-                cell.font = font
-                cell.alignment = Alignment(horizontal="center", vertical="top")
-            elif col_name == "stage" and stage in STAGE_FILLS:
-                cell.fill = STAGE_FILLS[stage]
-                cell.alignment = Alignment(horizontal="center", vertical="top")
-            elif stage == "skip":
-                cell.font = Font(color="000000")
+    wb = openpyxl.Workbook()
+    ws = wb.active
+    ws.title = "All LPs"
+    fill_sheet(ws, rows)
 
-    for col_idx, col_name in enumerate(all_cols, start=1):
-        ws.column_dimensions[get_column_letter(col_idx)].width = OUTPUT_WIDTHS.get(col_name, 18)
+    # Tabs mirror the folder layout: one per list, then one per language bucket.
+    per_list = {}
+    for name in LISTS:
+        subset = [r for r in rows if r.get("list") == name]
+        if subset:
+            fill_sheet(wb.create_sheet(name), subset)
+            per_list[name] = len(subset)
+
+    per_lang = {}
+    for code in LANGUAGES:
+        subset = [r for r in rows if r.get("language") == code]
+        if subset:
+            fill_sheet(wb.create_sheet(code.upper()), subset)
+            per_lang[code] = len(subset)
 
     _add_score_legend(wb)
     wb.save(OUTPUT_XLSX)
@@ -298,6 +347,9 @@ def cmd_export():
     active  = sum(1 for r in rows if r.get("stage") != "skip")
     skipped = len(rows) - active
     print(f"Exported {len(rows)} rows → {OUTPUT_XLSX}  ({active} active, {skipped} skipped)")
+    print("Tabs: All LPs, "
+          + ", ".join(f"{k} ({n})" for k, n in per_list.items()) + ", "
+          + ", ".join(f"{c.upper()} ({n})" for c, n in per_lang.items()))
     print("Score distribution:")
     for label, lo, hi in [("75-100 (top)", 75, 100), ("55-74 (strong)", 55, 74),
                            ("35-54 (medium)", 35, 54), ("20-34 (low)", 20, 34), ("<20 (skip)", 0, 19)]:
@@ -313,17 +365,24 @@ def cmd_sync():
         print(f"lp-import.csv not found at {LP_IMPORT}. Nothing to sync.")
         sys.exit(1)
 
-    # Load stages + scores + country from output.csv
-    out_data = {}
+    # Load stages + scores + country from output.csv.
+    # Keyed on (company, country), because company alone is not unique: two rows
+    # are both "Eurolife FFH" (Greece and Romania) and matching on the name only
+    # let the Romanian row's stage overwrite the Greek one's "sent".
+    out_data, out_by_name, ambiguous = {}, {}, set()
     if OUTPUT_CSV.exists():
         with open(OUTPUT_CSV, newline="", encoding="utf-8") as f:
             for r in csv.DictReader(f, delimiter=";"):
-                key = r.get("company", "").strip().lower()
-                out_data[key] = {
-                    "stage":   r.get("stage", ""),
-                    "score":   r.get("score", ""),
-                    "country": r.get("country", ""),
-                }
+                name = r.get("company", "").strip().lower()
+                info = {"stage": r.get("stage", ""), "score": r.get("score", ""),
+                        "country": r.get("country", "")}
+                out_data[(name, info["country"].strip().lower())] = info
+                if name in out_by_name:
+                    ambiguous.add(name)
+                out_by_name[name] = info
+    if ambiguous:
+        print(f"note: {len(ambiguous)} company name(s) appear more than once, "
+              f"matched on company+country: {', '.join(sorted(ambiguous))}")
 
     with open(LP_IMPORT, newline="", encoding="utf-8") as f:
         import_rows = list(csv.DictReader(f, delimiter=";"))
@@ -345,7 +404,12 @@ def cmd_sync():
         company = r.get("Company", "").strip()
         if not company:
             continue
-        info    = out_data.get(company.lower(), {})
+        row_country = (r.get("Country", "") or "").strip().lower()
+        info = out_data.get((company.lower(), row_country))
+        if info is None:
+            # No country on the import row, or it disagrees. Fall back to the
+            # name, which is exact for every company that appears only once.
+            info = out_by_name.get(company.lower(), {})
         stage   = info.get("stage", "imported")
         score   = info.get("score", "")
         # Use country from output.csv if import row has none
@@ -393,7 +457,10 @@ def cmd_sync():
 
     counts = {}
     for r in import_rows:
-        s = out_data.get(r.get("Company", "").strip().lower(), {}).get("stage", "imported")
+        name = r.get("Company", "").strip().lower()
+        country = (r.get("Country", "") or "").strip().lower()
+        info = out_data.get((name, country)) or out_by_name.get(name, {})
+        s = info.get("stage", "imported")
         counts[s] = counts.get(s, 0) + 1
     print(f"Synced {len(import_rows)} rows → {INPUT_XLSX}")
     print("Stages: " + ", ".join(f"{s}={n}" for s, n in counts.items()))

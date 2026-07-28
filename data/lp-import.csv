@@ -5,12 +5,12 @@ Austria;Pension Fund;APK Pensionskasse AG;https://www.apk-pensionskasse.at;Beate
 Austria;Pension Fund;Bonus Pensionskasse AG;https://www.bonuspensionskasse.at;Michael;Scherhammer;Chairman (CEO);michael.scherhammer@bonusvorsorge.at;;yes
 Austria;Pension Fund;Allianz Pensionskasse AG;https://www.allianz.at;Andreas;Csurda;Chairman (CEO);andreas.csurda@allianz.at;;yes
 Austria;Pension Fund;Raiffeisen Pensionskasse AG;https://www.raiffeisen-pk.at;Martin;Sardelic;CEO;Martin.sardelic@valida.at;;yes
-Austria;Vorsorgekasse;VBV Vorsorgekasse AG;https://www.vorsorgekasse.at;Andreas;Zakostelsky;General Director;a.zakostelsky@vbv.at;;yes
-Austria;Corporate Pension;IBM Pensionskasse AG;https://www.ibm.com/us-en;Gerald;Leberbauer;CFO;gerald.leberbauer@ibm.com;;yes
-Austria;Pension Fund;Bundespensionskasse AG;https://bundespensionskasse.at/;Marcus;Klug;CFO;marcus.klug@bundespensionskasse.at;linkedin.com/in/marcusklug;yes
-EU;Pension Fund;Resaver;https://www.resaver.eu/;Beata;Cseresznye;Pension Fund Manager;beata.cseresznye@resaver.eu;;yes
-Austria;Corporate Pension;Nestle Pensionsfonds AG;;;;;;;;yes
-Austria;Insurance Company;Donau Versicherung;https://www.donauversicherung.at/;Wolfgang;Petschko;CIO;w.petschko@donauversicherung.at;linkedin.com/in/wolfgang-petschko-12077aba;yes
+Austria;Pension Fund;VBV Vorsorgekasse AG;https://www.vorsorgekasse.at;Andreas;Zakostelsky;General Director;a.zakostelsky@vbv.at;;yes
+Austria;Pension Fund;IBM Pensionskasse AG;https://www.ibm.com/us-en;Gerald;Leberbauer;CFO;gerald.leberbauer@ibm.com;;yes
+Austria;Pension Fund;Bundespensionskassa AG;https://bundespensionskasse.at/;Marcus;Klug;CFO;marcus.klug@bundespensionskasse.at;linkedin.com/in/marcusklug;yes
+Austria;Pension Fund;Resaver;https://www.resaver.eu/;Beata;Cseresznye;Pension Fund Manager;beata.cseresznye@resaver.eu;;yes
+Austria;Pension Fund;Nestle Pensionsfonds AG;;;;;;;yes
+Austria;Pension Fund;Donau;https://www.donauversicherung.at/;Wolfgang;Petschko;CIO;w.petschko@donauversicherung.at;linkedin.com/in/wolfgang-petschko-12077aba;yes
 Austria;Pension Fund;Sozialversicherungspensionskasse AG;https://www.svpk.at/;Sascha;König;CFO;sascha.koenig@svpk.at;;yes
 Austria;Insurance Company;Vienna Insurance Group (VIG);https://group.vig.com;Hartwig;Löger;CEO;hartwig.loeger@vig.com;;yes
 Austria;Insurance Company;Uniqa Insurance Group;https://www.uniqa.at;Andreas;Brandstatter;CEO;andreas.brandstatter@uniqa.at;;yes
@@ -18,7 +18,7 @@ Austria;Insurance Company;Generali Versicherung AG;https://www.generali.at;Grego
 Austria;Insurance Company;Allianz Österreich;https://www.allianz.at;Daniel;Matic;CEO;daniel.matic@allianz.at;linkedin.com/in/daniel-matić-2478642b2;yes
 Austria;Insurance Company;Grawe Group;https://www.grawe.at;Klaus;Scheitegel;CEO;klaus.scheitegel@grawe.at;;yes
 Austria;Insurance Company;Ergo Versicherung AG;https://www.ergo-versicherung.at;Philipp;Wassenberg;CEO;philipp.wassenberg@ergo-versicherung.at;linkedin.com/in/philipp-wassenberg-333639aa;yes
-Austria;Insurance Company;Merkur Versicherung AG;https://www.merkur.at;Christian;Kladiva;CEO;christian.kladiva@merkur.at;linkedin.com/in/christian-kladiva-b018b21b9;yes
+Austria;Insurance Company;Merkur Versicherung AG;https://www.merkur.at;Chrsitian;Kladiva;CEO;christian.kladiva@merkur.at;linkedin.com/in/christian-kladiva-b018b21b9;yes
 Austria;Insurance Company;Helvetia Versicherungen;https://www.helvetia.at;Thomas;Neusiedler;CEO;thomas.neusiedler@helvetia.at;linkedin.com/in/thomas-neusiedler-28b65082;yes
 Austria;Insurance Company;Oberösterreichische Versicherung;https://www.ooev.at;Othmar;Nagl;CEO;o.nagl@ooev.at;linkedin.com/in/othmarnagl;yes
 Austria;Insurance Company;Zürich Versicherung AG;https://www.zurich.at;Luciano;Cirinà;CEO;luciano.cirina@at.zurich.com;linkedin.com/in/luciano-cirinà-515425158;yes
@@ -31,16 +31,199 @@ Croatia;Insurance Company;Grawe Hrvatska;https://www.grawe.hr;Nataša;Kapetanovi
 Croatia;Insurance Company;Generali osiguranje;https://www.generali.hr;Mario;Carini;CEO;mario.carini@generali.hr;linkedin.com/in/mario-carini-6030513;yes
 Croatia;Insurance Company;Triglav osiguranje;https://www.triglav.hr;Tedo;Djekanović;Chairman of the Supervisory Board;tedo.djekanovic@triglav.hr;linkedin.com/in/tedo-djekanovic-0691aa2b2;yes
 Croatia;Insurance Company;Merkur osiguranje;https://www.merkur.hr;Marko;Klemenčič;CEO;marko.klemencic@merkur.hr;linkedin.com/in/marko-klemenčič-a230757a;yes
-Croatia;Mandatory Pension Fund;AZ Mandatory Pension Fund;https://www.azfond.hr;Kristijan;Buk;CEO;kristijan.buk@azfond.hr;;yes
-Croatia;Mandatory Pension Fund;ABA Mandatory Pension Fund;https://www.pbz.hr;Dinko;Lucić;CEO;dinko.lucic@pbz.hr;linkedin.com/in/dinko-lucic-phd-aa009085;yes
-Croatia;Voluntary Pension Fund;Raiffeisen Voluntary Pension Fund;https://www.rmf.hr/;Gordan;Šumanović;CEO;gordan.sumanovic@rmf.hr;linkedin.com/in/gordan-sumanovic-cfa-1916676;yes
-Croatia;Mandatory Pension Fund;AZ Mandatory B Category;https://www.azfond.hr;Kristijan;Buk;CEO;kristijan.buk@azfond.hr;;yes
-Croatia;Mandatory Pension Fund;Erste Mandatory Pension Fund;https://www.pbz.hr;Petar;Vlaić;CEO;petar.vlaic@ersteplavi.hr;linkedin.com/in/petar-vlaić-cfa-02498216;yes
-Croatia;Voluntary Pension Fund;AZ Voluntary Pension Fund;https://www.azfond.hr;Kristijan;Buk;CEO;kristijan.buk@azfond.hr;;yes
-Croatia;Voluntary Pension Fund;Erste Voluntary Fund;https://www.erstebank.hr;Petar;Vlaić;CEO;petar.vlaic@ersteplavi.hr;;yes
-Croatia;Voluntary Pension Fund;Croatia osiguranje Voluntary;https://www.crosig-trecistup.hr/;Radojka;Hainski;CEO;radojka.hainski@crosig.hr;linkedin.com/in/radojka-hainski-frm-79289522;yes
-Czech Republic;Pension Society;ČSOB Penzijní společnost;https://www.csob-penze.cz;Marcela;Suchanková;CEO;msuchankova@csob.cz;linkedin.com/in/marcela-suchankova-49b6b012;yes
-Czech Republic;Pension Society;Allianz Penzijní společnost;https://www.allianz.cz;Dušan;Quis;CEO;dusan.quis@allianz.cz;linkedin.com/in/dusan-quis-9625355b;yes
-Czech Republic;Pension Society;Česká spořitelna - penzijní;https://www.csps.cz/cs/penzijni-sporeni;Aleš;Poklop;CEO;ales.poklop@csps.cz;linkedin.com/in/aleš-poklop-45690a255;yes
-Czech Republic;Pension Society;NN Penzijní společnost;https://www.nn.cz;Yoram;Schwarz;CEO;yoram.schwarz@nn.cz;linkedin.com/in/yoram-schwarz-a925021;yes
-Czech Republic;Pension Society;Generali penzijní společnost;https://www.generalipenze.cz/;Jana;Zelinková;CEO;jana.zelinkova@generalipenze.cz;linkedin.com/in/jana-zelinkova-76920b1a6;yes
+Croatia;Pension Fund;AZ Mandatory Pension Fund;https://www.azfond.hr;Kristijan;Buk;CEO;kristijan.buk@azfond.hr;;yes
+Croatia;Pension Fund;ABA Mandatory Pension Fund;https://www.pbz.hr;Dinko;Lucić;CEO;dinko.lucic@pbz.hr;linkedin.com/in/dinko-lucic-phd-aa009085;yes
+Croatia;Pension Fund;Raifeisen Voluntary Pension Fund;https://www.rmf.hr/;Gordan;šumanović;CEO;gordan.sumanovic@rmf.hr;linkedin.com/in/gordan-sumanovic-cfa-1916676;yes
+Croatia;Pension Fund;AZ Mandatory B Category;https://www.azfond.hr;Kristijan;Buk;CEO;kristijan.buk@azfond.hr;;yes
+Croatia;Pension Fund;Erste Mandatory Pension Fund;https://www.pbz.hr;Petar;Vlaić;CEO;petar.vlaic@ersteplavi.hr;linkedin.com/in/petar-vlaić-cfa-02498216;yes
+Croatia;Pension Fund;AZ Voluntary Pension Fund;https://www.azfond.hr;Kristijan;Buk;CEO;kristijan.buk@azfond.hr;;yes
+Croatia;Pension Fund;Erste Voluntary Fund;https://www.erstebank.hr;Petar;Vlaić;CEO;petar.vlaic@ersteplavi.hr;;yes
+Croatia;Pension Fund;Croatia osiguranje Voluntary;https://www.crosig-trecistup.hr/;Radojka;Hainski;CEO;radojka.hainski@crosig.hr;linkedin.com/in/radojka-hainski-frm-79289522;yes
+Czech Republic;Pension Fund;ČSOB Penzijní společnost;https://www.csob-penze.cz;Marcela;Suchanková;CEO;msuchankova@csob.cz;linkedin.com/in/marcela-suchankova-49b6b012;yes
+Czech Republic;Pension Fund;Allianz Penzijní společnost;https://www.allianz.cz;Dušan;Quis;CEO;dusan.quis@allianz.cz;linkedin.com/in/dusan-quis-9625355b;yes
+Czech Republic;Insurance Company;ČSOB Pojišťovna;https://www.csobpoj.cz;Jiři;Střelický;CEO;jiri.strelicky@csobpoj.cz;linkedin.com/in/jiristrelicky;yes
+Czech Republic;Insurance Company;Allianz pojišťovna;https://www.allianz.cz;Dušan;Quis;CEO;dusan.quis@allianz.cz;;yes
+Czech Republic;Insurance Company;Kooperativa pojišťovna;https://www.koop.cz;Martin;Diviš;CEO;mdivis@koop.cz;;yes
+Czech Republic;Insurance Company;Generali Česká pojišťovna;https://www.generaliceska.cz;Roman;Juráš;CEO;roman.juras@generaliceska.cz;linkedin.com/in/roman-juras;yes
+Czech Republic;Insurance Company;Uniqa pojišťovna;https://www.uniqa.cz;Rastislav;Havran;CEO;rhavran@uniqa.cz;linkedin.com/in/rastislav-havran-797640269;yes
+Czech Republic;Insurance Company;NN Životní pojišťovna;https://www.nn.cz;Yoram;Schwarz;CEO;yoram.schwarz@nn.cz;;yes
+Czech Republic;Insurance Company;Direct pojišťovna;https://www.direct.cz;Michal;Řezníček;CEO;michal.reznicek@direct.cz;linkedin.com/in/michal-řezníček-3b9b9113b;yes
+Czech Republic;Insurance Company;ČPP (Česká podnikatelská);https://www.cpp.cz;Pavel;Wiesner;CEO;pavel.wiesner@cpp.cz;linkedin.com/in/pavel-wiesner-528a0128b;yes
+Czech Republic;Insurance Company;Slavia pojišťovna;https://www.slavia-pojistovna.cz;Karel;Waisser;CEO;karel.waisser@slavia-pojistovna.cz;linkedin.com/in/waisser-karel-40b495b;yes
+Czech Republic;Insurance Company;Triglav pojišťovna;https://www.triglav.cz;Andrej;Slapar;CEO;;linkedin.com/in/andrej-slapar-91b36bb2;yes
+Czech Republic;Insurance Company;SV pojišťovna;https://www.svpojistovna.cz/;Jana;Jenšová;CEO;jana.jensova@svpojistovna.cz;linkedin.com/in/jana-jenšová-584b1a119;yes
+Czech Republic;Insurance Company;MetLife pojišťovna;https://www.metlife.cz;Pavol;Dorčák;CEO;pavol.dorcak@metlife.cz;linkedin.com/in/dorcak-pavol-27b07394;yes
+Czech Republic;Insurance Company;Mutumutu (startup/NN);https://www.mutumutu.cz;Jindřich;Lenz;CEO;jindirch.lenz@mutumutu.cz;;yes
+Greece;Insurance Company;Ethniki Asfalistiki;https://www.ethniki-asfalistiki.gr;Dimitris;Mazarakis;CEO;d.mazarakis@ethnikiasfalistiki.gr;;yes
+Greece;Insurance Company;Eurolife FFH;https://www.eurolife.gr;Alexandros;Sarrigeorgiou;CEO;alexandros.sarrigeorgiou@eurolife.gr;;yes
+Greece;Insurance Company;Interamerican;https://www.interamerican.gr;Yiannis;Kantoros;CEO;kantorosy@interamerican.gr;;yes
+Greece;Insurance Company;Groupama Phoenix;https://www.groupama.gr;Hassène;Feki;CEO;fekih@groupama.gr;linkedin.com/in/hassène-feki-a833861b5;yes
+Greece;Insurance Company;Allianz Hellas;https://www.allianz.gr;Vasilis;Christidis;CEO;;;yes
+Greece;Insurance Company;Generali Hellas;https://www.generali.gr;Panos;Dimitriou;CEO;panos.dimitriou@generali.gr;linkedin.com/in/panos-dimitriou-26244011b;yes
+Greece;Insurance Company;AXA Greece (now part of Generali);https://www.axa.gr;Panos;Dimitriou;CEO;panos.dimitriou@generali.gr;;yes
+Greece;Insurance Company;Prime Insurance;https://www.primeins.gr;Abdul;Hamid;CEO;;linkedin.com/in/abdul-hamid-fca-34903b52;yes
+Greece;Insurance Company;European Reliance;https://www.europaikipisti.gr;Christos;Georgakopoulos;CEO;;;yes
+Greece;Insurance Company;Ydrogeios Insurance;https://www.ydrogeios.gr;Pavlos;Kaskarelis;CEO;kaskarelis@ydrogios.gr;linkedin.com/in/pavlos-kaskarelis-01231827;yes
+Greece;Insurance Company;Interlife Insurance;https://www.interlife.gr;Ioannis;Votsaridis;CEO;ivotsaridis@interlife.gr;linkedin.com/in/ioannis-votsaridis-30a68485;yes
+Greece;Insurance Company;NP Insurance;https://www.np-asfalistiki.gr;Nikolaos;Zachos;CEO;nzachos@np-asfalistiki.gr;;yes
+Greece;Insurance Company;ARAG Hellas;https://www.arag.gr;Dimitrios;Tsekouras;CEO;tsekouras@arag.gr;;yes
+Greece;Insurance Company;Syneteristiki Insurance;https://www.syneteristiki.gr;Dimitrios;Zorbas;CEO;;linkedin.com/in/dimitrios-zorbas-05a43452;yes
+Greece;Pension Fund;TEA Interamerican;https://www.interamerican.gr;Evangelos;Thompolous;Board Director;thompolouse@interamerican.gr;;yes
+Greece;Pension Fund;TEA TMEDE;https://www.teatmede.gr;Konstantinos;Makedos;President of the Fund;;;yes
+Greece;Pension Fund;TEA OTE;https://www.ote.gr;Kostas;Nebis;President / CEO;knebis@cosmote.gr;linkedin.com/in/kostas-nebis;yes
+Greece;Pension Fund;TEA ELTA;https://www.elta.gr;Bernadout;Daniel;Chairman of the Supervisory Board;;;yes
+Hungary;Insurance Company;Generali Biztosító Zrt.;https://www.generali.hu;Mihály;Erdős;CEO;mihaly.erdos@generali.hu;linkedin.com/in/mihaly-erdos-396b661a;yes
+Hungary;Insurance Company;Allianz Hungária Zrt.;https://www.allianz.hu;Bacsó;Gergely;CEO;bacso.gergely@allianz.hu;;yes
+Hungary;Insurance Company;Groupama Biztosító Zrt.;https://www.groupama.hu;Alexandre;Jeanjean;CEO;alexandre.jeanjean@groupama.hu;;yes
+Hungary;Insurance Company;Union Vienna Insurance Group;https://www.unionbiztosito.hu;Gabor;Havas;General Director;havas.gabor@union.hu;linkedin.com/in/gabor-havas-42a76918;yes
+Hungary;Insurance Company;Aegon Magyarország;https://www.aegon.hu;Zatyko;Péter;CEO;;;yes
+Hungary;Insurance Company;UNIQA Biztosító Zrt.;https://www.uniqa.hu;Kurtisz;Krisztán;CEO;kurtizs.krisztan@uniqa.hu;linkedin.com/in/krisztian-kurtisz-48049014;yes
+Hungary;Insurance Company;CIG Pannónia;https://www.cigpannonia.hu;István;Fedák;CEO;istvan@cigpannonia.hu;;yes
+Hungary;Insurance Company;KÖBE Biztosító;https://www.kobe.hu;Zámbó Ákos;József;CEO;zamboa@kobe.hu;;yes
+Hungary;Insurance Company;Wáberer Hungária;https://www.waberer.hu;Bence;Nyilasy;CEO;bencenyilasy@wabererbiztosito.hu;linkedin.com/in/bence-nyilasy-b93a6a70;yes
+Hungary;Insurance Company;Medicover Biztosító;https://www.medicover.hu;John;Stubbington;CEO;john.stubbington@medicare-group.hu;linkedin.com/in/john-stubbington-4291823;yes
+Hungary;Insurance Company;HUNInsurance;https://www.huninsurance.hu;Erik;Keszthelyi;CEO;keszthelyi.erik@hungarikumalkusz.hu;linkedin.com/in/erik-keszthelyi-19a540216;yes
+Hungary;Insurance Company;MKB Union;https://www.mkbbank.hu;Zsolt;Barna;CEO;barna.zsolt@mbhbank.hu;linkedin.com/in/dr-zsolt-barna;yes
+Hungary;Insurance Company;Posta Biztosító;https://www.postabiztosito.hu;Zsolt;Kovacs;General Director;kovacs.zsolt@mpb.hu;linkedin.com/in/zsolt-kovacs-26696857;yes
+Hungary;Insurance Company;SIGNAL Biztosító;https://www.signal.hu;Daniel;Wilfried-Kempchen;CEO;wilfried-kempchen.daniel@signal.hu;linkedin.com/in/daniel-kempchen-05a131161;yes
+Hungary;Insurance Company;MetLife Hungary;https://www.metlife.hu;Monika;Spadlo-Kolano;CEO;spadlo-kolano@metlife.hu;linkedin.com/in/monika-spadlo-kolano-897206a;yes
+Hungary;Pension Fund;Allianz Hungária Pénztár;https://www.allianz.hu;Marusinecz;Tamás;CEO;tamas.marusinecz@allianz.hu;;yes
+Hungary;Pension Fund;OTP Nyugdíjpénztár;https://www.otpbank.hu;Jószef;Budai;CEO;jozsef.budai@otpbank.hu;;yes
+Hungary;Pension Fund;Aegon Nyugdíjpénztár;https://www.aegon.hu;Zatyko;Péter;CEO;;;yes
+Hungary;Pension Fund;MKB Nyugdíjpénztár;https://www.mkbnyp.hu;Tamás;Simon;CIO;tamas@mbhnyp.hu;;yes
+Hungary;Pension Fund;Aranykor Pénztár;https://www.aranykornyp.hu/;Marta;Hanák;CEO;marta.hanak@aranykornyp.hu;linkedin.com/in/hanák-márta-9152b491;yes
+Hungary;Private Pension Fund;Horizont;https://horizontmagannyugdijpenztar.hu/;Timea;Pataki;President;timea.pataki@horizontpenztar.hu;;yes
+Hungary;Pension Fund;Honvéd Nyugdíjpénztár;https://www.honvedpenztar.hu;Póda;Jenő;CEO;poda.jeno@hnyp.hu;;yes
+Hungary;Pension Fund;Vasutas Nyugdíjpénztár;https://www.vasutaspenztar.hu;Sziliva;Tohai;CEO;tohai.szilvia@vnyp.hu;linkedin.com/in/szilvia-tohai-ll-m-350174140;yes
+Italy;Insurance Company;Generali Italia;https://www.generali.it;Francesco;Martorana;CIO;francesco.martorana@generali.it;linkedin.com/in/francesco-martorana-cfa-caia-a924075;yes
+Italy;Insurance Company;UnipolSai Assicurazioni;https://www.unipolsai.it;Riccardo;Baudi;CIO;baudir@pec.unipol.it;;yes
+Italy;Insurance Company;Allianz Italia;https://www.allianz.it;Alberto;Vacca;CIO;alberto.vacca@allianz.it;linkedin.com/in/alberto-vacca-47235821;yes
+Italy;Insurance Company;Poste Vita;https://www.postevita.it;Camillo;Greco;CFO;camillo.greco@posteitaliane.it;linkedin.com/in/alberto-vacca-47235821;yes
+Italy;Insurance Company;Intesa Sanpaolo Assicura;https://www.intesasanpaolo.com;Virginia;Borla;CEO;virginia.borla@intesasanpaolo.com;linkedin.com/in/virginia-borla-6262bb25;yes
+Italy;Insurance Company;Zurich Italia;https://www.zurich.it;Paolo;Semenzato;CEO;psemenzato@zurich.it;;yes
+Italy;Insurance Company;HDI Assicurazioni;https://www.hdiassicurazioni.it;Stephan;Albergo;CEO;stephan@hdiassicurazioni.it;;yes
+Italy;Insurance Company;Helvetia Italia;https://www.helvetia.com/it;Marco;Signorini;CEO;signorinimarco@helvetia.it;;yes
+Italy;Insurance Company;Nobis Compagnia;https://www.nobis.it;Marco;Nostini;CEO;marco.nostini@nobisassicurazioni.it;;yes
+Italy;Insurance Company;Genertel;https://www.genertel.it;Giacomo;Trovato;CEO;giacomo.trovato@genertel.it;;yes
+Italy;Pension Fund;Cometa;https://www.cometafondo.it;Federico;Spiniello;CEO;federico.spiniello@cometafondo.it;;yes
+Italy;Pension Fund;Fonchim;https://www.fonchim.it;Paolo;Tomasolli;CEO;paolotomassoli@fonchim.it;;yes
+Italy;Pension Fund;Fondo Espero;https://www.fondoespero.it;Riccardo;Rescinti;President;riccardo.resciniti@fondoespero.it;;yes
+Italy;Pension Fund;Fondenergia;https://www.fondenergia.it;Mario;Cribari;President (CEO);mario.cribari@fondenergia.it;;yes
+Italy;Pension Fund;Fondo Arco;https://www.fondoarco.it;Manfredo;Turchetti;CEO;manfredo.turchetti@fondarco.it;;yes
+Italy;Pension Fund;Fondo Pegaso;https://www.fondoppegaso.it;Luca;Pasquadibisceglie;CEO;lpasquadibisceglie@fondopegaso.it;;yes
+Italy;Pension Fund;Fondo Priamo;https://www.fondopriamo.it;Matteo;Colamussi;CEO;matteo.colamussi@fondopriamo.it;;yes
+Italy;Pension Fund;Previprof;https://www.previprof.it;;;;;;yes
+Italy;Pension Fund;Fondo Solidarietà Veneto;https://www.fondosolidarietaveneto.it;Giuseppe;Covre;CEO;giuseppe.covre@solidarietaveneto.it;;yes
+Italy;Pension Fund;F.I.L.Coop Sanitario;https://www.filcoopsanitario.it/;Sabina;Valentini;CEO;sabina.valentini@filcoopsanitario.it;;yes
+Italy;Pension Fund;Fondo Alifond;https://www.alifond.it;Fabio;Barigazzi;CEO;fabio.barigazzi@alifond.it;;yes
+Italy;Pension Fund;Fondo BCC;https://www.fondobcc.it;Giuseppe;Longo;CEO;giuseppe.longo@fondopensionebcc.it;linkedin.com/in/giuseppe-longo-81447012b;yes
+Italy;Pension Fund;Fondo Telemaco;https://www.fondotelemaco.it/;Claudio;Varani;President;claudiovarani@fondotelemaco.it / c.varani70@gmail.com  (found on linked in);linkedin.com/in/claudio-varani-5337665;yes
+Italy;Pension Fund;Solidarieta Veneto;https://www.solidarietaveneto.it/;Paolo;Stefan;CEO;paolo.stefan@solidarietaveneto.it;linkedin.com/in/paolo-stefan-63a61536;yes
+Italy;Pension Fund;Previ Moda;https://www.previmoda.it/;Fabio;Cappuccio;General Director;fabio.cappuccio@previmoda.it;linkedin.com/in/fabio-cappuccio-55749a43;yes
+Italy;Pension Fund;Previbank;https://www.previbank.it/;Andrea;Laruccia;Board Member;andrea.laruccia@previbank.it;linkedin.com/in/andrea-laruccia-000923;yes
+Italy;Pension Fund;Prevedi;https://www.prevedi.it/;Diego;Ballarin;CEO;d.ballarin@prevedi.it;;yes
+Italy;Pension Fund;Prevaer;https://prevaer.it/;Marco;Barlafante;CEO;marco@prevaer.it;;yes
+Italy;Pension Fund;Fondo Perseo Sirio;https://www.fondoperseosirio.it/;Riccardo;Realfonzo;CEO;riccardor@fondoperseosirio.it;linkedin.com/in/riccardo-realfonzo-132aa8b6;yes
+Italy;Pension Fund;Fondo Fonte;https://www.fondofonte.it/;Maurizio;Grifoni;CEO;m.grifoni@fondofonte.it;linkedin.com/in/maurizio-grifoni-a0b18648;yes
+Italy;Pension Fund;Fondo Sanita;https://www.fondosanita.it/;Stefano;Mirenghi;CEO;s.mirenghi@fondosanita.it;linkedin.com/in/stefano-mirenghi-14b988327;yes
+Italy;Pension Fund;Fondo Eurofer;https://fondoeurofer.it/;Stefano;Pierini;CEO;spierini@fondoeurofer.it;linkedin.com/in/stefano-pierini-0526a214;yes
+Italy;Pension Fund;Fondo Poste;https://www.fondoposte.it/;Matteo;Del Fante;CEO;dm@posteitaliane.it;;yes
+Italy;Pension Fund;Fondo Gomma Plastica;https://www.fondogommaplastica.it/;Massimiliano;Spadari;CEO;massimiliano.spadari@fondogommaplastica.it;;yes
+Italy;Pension Fund;Foncer;https://www.foncer.it/;James;Giovanardi;CEO;james.giovanardi@foncer.it;;yes
+Italy;Pension Fund;Previdenza Cooperativa;https://www.previdenzacooperativa.it/;Giorgio;Budassi;CEO;budassi@previdenzacooperativa.it;;yes
+Italy;Pension Fund;Fondo Byblos;https://www.fondobyblos.it/;Aldo;Gentile;CEO;a.gentile@fondobyblos.it;linkedin.com/in/aldo-gentile-7a0b1a42;yes
+Italy;Pension Fund;Fondo Laborfonds;https://www.laborfonds.it;Stefano;Pavesi;CEO;stefano.pavesi@laborfonds.it;linkedin.com/in/stefano-pavesi-b515621a0;yes
+Poland;Insurance Company;PZU SA;https://www.pzu.pl;Andrzej;Klesyk;CEO;andrzej.klesyk@pzu.pl;linkedin.com/in/andrzej-klesyk-864b19110;yes
+Poland;Insurance Company;Warta;https://www.warta.pl;Jaroslaw;Parkot;CEO;jaroslaw.parkot@warta.pl;;yes
+Poland;Insurance Company;Allianz Polska;https://www.allianz.pl;Tomasz;Krzaczkowski;CIO;tomasz.krzaczkowski@allianz.pl;linkedin.com/in/tomasz-krzaczkowski-2a28013a;yes
+Poland;Insurance Company;Generali Polska;https://www.generali.pl;Roger;Hodgkiss;CEO;roger.hodgkiss@generali.pl;linkedin.com/in/roger-hodgkiss-20473414;yes
+Poland;Insurance Company;Compensa TU;https://www.compensa.pl;Anna;Wlodarczyk-Moczkowska;CEO;anna.wlodarczyk-moczkowska@compensa.pl;linkedin.com/in/anna-włodarczyk-moczkowska-059a2246;yes
+Poland;Insurance Company;InterRisk;https://www.interrisk.pl;Piotr;Narloch;CEO;piotr.narloch@interrisk.pl;linkedin.com/in/piotr-narloch-92398822b;yes
+Poland;Insurance Company;AXA Poland;https://www.axa.pl;;;;;;yes
+Poland;Insurance Company;TUZ Ubezpieczenia;https://www.tuz.pl;Jaroslaw;Matusiewicz;CEO;jaroslaw.matusiewicz@tuz.pl;linkedin.com/in/jarek-matusiewicz;yes
+Poland;Insurance Company;Link4;https://www.link4.pl;Grazyna;Sudzinska;CEO;sudzinska.grazyna@link4.pl;;yes
+Poland;Insurance Company;Benefia;https://www.benefia.pl;Mariusz;Kurowski;CEO;mariusz.kurowski@benefia.pl;;yes
+Poland;Insurance Company;ERGO Hestia;https://www.ergohestia.pl;Artur;Borowisński;CEO;artur.borowinski@ergohestia.pl;;yes
+Poland;Insurance Company;Pocztowe TU;https://www.pocztowetowarzystwo.pl;Daniel;Zahorenko;CEO;daniel.zahorenko@pocztowenazycie.pl / zahorenko@wp.pl (linkedin);linkedin.com/in/daniel-zahorenko-79882074;yes
+Poland;Insurance Company;Polisa Życie;https://www.polisazycie.pl;Bernard;Banaśkiewicz;CEO;bbanaskiewicz@polisa-zycie.pl;linkedin.com/in/bernard-banaśkiewicz-3b41944a;yes
+Poland;Pension Fund;PZU OFE;https://www.pzu.pl;Andrzej;Klesyk;CEO;andrzej.klesyk@pzu.pl;linkedin.com/in/andrzej-klesyk-864b19110;yes
+Poland;Pension Fund;Generali OFE;https://www.generali.pl;Kazimierz;Fedak;CEO;kazimierz.fedak@generali.pl;https://www.linkedin.com/in/fedak/;yes
+Poland;Pension Fund;NN OFE;https://www.nn.pl;Jacek;Koronkiewicz;CIO;jacek.koronkiewicz@nn.pl;https://www.linkedin.com/in/jacek-koronkiewicz-9114a430/;yes
+Poland;Pension Fund;PKO BP Bankowy OFE;https://www.pkobp.pl;Wojciech;Rostworowski;CEO;vw.rostworowski@pkopte.pl;;yes
+Poland;Pension Fund;Skarbiec Emerytura;https://www.skarbiecemerytura.pl;Piotr;Szulec;CEO;piotr.szulec@skarbiec.pl;https://www.linkedin.com/in/piotr-szulec-36b672/;yes
+Poland;Pension Fund;Credit Agricole OFE;https://www.ca-ofe.pl;Piotr;Kwiatkowski;CEO;piotr.kwiatkowski@credit-agricole.pl;linkedin.com/in/piotr-kwiatkowski-b62579a2;yes
+Poland;Pension Fund;Pocztylion-Arka OFE;https://www.pocztylion.pl;Adam;Gola;CEO;adam.gola@pocztylion.com;https://www.linkedin.com/in/adam-g-329786132/;yes
+Poland;Pension Fund;Vienna OFE;https://www.viennapte.pl/;Dorota;Dziugiell;CEO;dorota.dziugiell@viennapte.pl;;yes
+Poland;Pension Fund;UNIQA OFE;https://www.uniqa.pl/;Marcin;Nedwidek;CEO;marcin.nedwidek@uniqa.pl;;yes
+Poland;Pension Fund;Santander OFE;https://www.santander.pl;Marcin;Groniewski;CEO;marcin.groniewski@santander.pl;https://www.linkedin.com/in/marcin-groniewski/;yes
+Romania;Insurance Company;Allianz-Țiriac Asigurări;https://www.allianztiriac.ro;Virgil;Soncutean;CEO;virgil.soncutean@allianztiriac.ro;linkedin.com/in/virgilsoncutean;yes
+Romania;Insurance Company;Groupama Asigurări;https://www.groupama.ro;Calin;Matei;CEO;calin.matei@groupama.ro;linkedin.com/in/calin-matei-a768744;yes
+Romania;Insurance Company;Generali Romania;https://www.generali.ro;Adrian;Marin;CEO;adrian.marin@generali.ro;linkedin.com/in/adrian-marin-a35925187;yes
+Romania;Insurance Company;Asirom Vienna Insurance Group;https://www.asirom.ro;Madalin;Rosu;CEO;madalin.rosu@asirom.ro;http://linkedin.com/in/madalin-rosu-96b83566;yes
+Romania;Insurance Company;Omniasig VIG;https://www.omniasig.ro;Mihai;Tecau;CEO;mihai.tecau@omniasig.ro;linkedin.com/in/mihai-tecau-9b186010;yes
+Romania;Insurance Company;Signal Iduna;https://www.signal-iduna.ro;Mesut;Yetsikul;CEO;mesut.yetiskul@signal-iduna.ro;;yes
+Romania;Insurance Company;Uniqa Asigurări;https://www.uniqa.ro;Paul;Cazacu;President;paul.cazacu@uniqa.ro;linkedin.com/in/paul-cazacu-b4133910;yes
+Romania;Insurance Company;Grawe Romania;https://www.grawe.ro;Dragos-Marius;Calin;CEO;dragos-marius.calin@grawe.ro;linkedin.com/in/dragos-calin-a7027213;yes
+Romania;Insurance Company;NN Asigurări de Viață;https://www.nn.ro;Kuldeep;Kahusik;CEO;kuldeep.kaushik@nn.ro;;yes
+Romania;Insurance Company;BCR Asigurări de Viață;https://www.bcr.ro;Stefan;Stavrositu;CEO;stavrositus@bcrasigviata.ro;;yes
+Romania;Insurance Company;Eurolife FFH;https://www.eurolife-asigurari.ro;Anita;Nitulescu;CEO;anita@eurolife-asigurari.ro;linkedin.com/in/anita-nitulescu-561aa77;yes
+Romania;Insurance Company;BRD Asigurări;https://www.brd.ro;;;;;;yes
+Romania;Pension Fund;NN Pensii;https://www.nn.ro;Mihai;Tantaru;CIO;mihai.tantaru@nn.ro;linkedin.com/in/mihai-tantaru-cfa-3465a546;yes
+Romania;Pension Fund;AZT Viitorul Tău;https://www.allianztiriac.ro;Ciprian;Pop;CEO;ciprian.pop@allianztiriac.ro;linkedin.com/in/ciprian-pop-80235a12;yes
+Romania;Pension Fund;BCR Pensii;https://www.bcr.ro;Mugur;Popescu;CIO;mugur.popescu@bcr.ro;linkedin.com/in/mugurpopescu;yes
+Romania;Pension Fund;BRD Pensii;https://www.brd.ro;Raluca;Morar;CEO;raluca.morar@brd.ro;linkedin.com/in/raluca-morar-aa356b17;yes
+Romania;Pension Fund;Metropolitan Life Pensii;https://www.metropolitanlife.ro;Carmina;Dargomir;CEO;carmina.dragomir@metropolitanlife.ro;linkedin.com/in/carmina-dragomir-1104373;yes
+Romania;Pension Fund;Raiffeisen Pensii;https://www.raiffeisen.ro;Adrian;Negru;CEO;adrian.negru@raiffeisen.ro;linkedin.com/in/adrian-negru-08871133;yes
+Romania;Pension Fund;Generali Pensii;https://www.generali.ro;Anne-Marie;Mancas;CEO;anne-marie.mancas@generali.ro;linkedin.com/in/anne-marie-mancas-49b17a21a;yes
+Romania;Pension Fund;Carpathia;https://www.carpathiapensii.ro/;Marius;Ratiu;CEO;marius.ratiu@carpathiapensii.ro;;yes
+Romania;Pension Fund;BT Pensii;https://www.bancatransilvania.ro;Corina;Cojocaru;CEO;corina@btpensii.ro;linkedin.com/in/corinacojocaru;yes
+Romania;Pension Fund;Concordia Pensii;https://www.concordia.ro;Dan;Sucu;President;dan.sucu@confederatia-concordia.ro;;yes
+Slovenia;Pension Fund;Pokojninska družba A;https://www.pokojninska.si;Blaž;Hribar;CEO;blaz.hribar@pd-a.si;;yes
+Slovenia;Pension Fund;Modra Zavarovalnica (Pension);https://www.modra.si;Matej Golob;Matzele;CEO;matej.golob-matzele@modra.si;linkedin.com/in/matejgolobmatzele;yes
+Slovenia;Pension Fund;Zavarovalnica Triglav (Pension);https://www.triglav.si;Uroš;Ivanc;CFO;urosh@triglav.eu;linkedin.com/in/uros-ivanc-3811927;yes
+Slovenia;Pension Fund;ZPIZ;https://www.zpiz.si;Marijan;Papež;CEO;marijan.papezh@zpiz.si;;yes
+Slovenia;Pension Fund;Prva Pokojninska družba;https://www.prva.si;Gregor;Rovanšek;CEO;gregor.rovansek@prva.si;linkedin.com/in/gregor-rovansek-146aa463;yes
+Slovenia;Pension Fund;Kapitalska Družba (KAD);https://www.kapitalska-druzba.si;Gregor;Bajraktaverić;CIO/CEO;gregor.bajraktarevic@kapitalska-druzba.si;;yes
+Slovenia;Pension Fund;Generali Pokojninski;https://www.generali-investments.si/;Sašo;šmigić;Member of the Management Board;saso.smigic@generali-investments.si;linkedin.com/in/saso-smigic;yes
+Slovenia;Pension Fund;Sava Pokojninska;https://www.sava.si;Andrej;Plos;CEO;andrej@sava-pokojninska.si;;yes
+Slovenia;Pension Fund;Triglav Pokojninska;https://www.triglav.si;Aljoša;Uršič;CEO;aljosha.urshic@triglav.si;;yes
+Slovenia;Insurance Company;Zavarovalnica Triglav;https://www.triglav.eu;Andrej;SLapar;President;andrej@triglav.eu;linkedin.com/in/andrej-slapar-91b36bb2;yes
+Slovenia;Insurance Company;Generali Zavarovalnica;https://www.generali.si;Vanja;Horvat;CEO;vanja.horvat@generali.com;linkedin.com/in/vanja-hrovat-28651941;yes
+Slovenia;Insurance Company;Grawe Zavarovalnica;https://www.grawe.si;David;Kastelic;CEO;david.kastelic@grawe.si;;yes
+Slovenia;Insurance Company;VZAJEMNA zdravstvena;https://www.vzajemna.si;Matija;šenk;CEO;matija.senk@vzajemna.si;;yes
+Slovenia;Insurance Company;Prva Osebna Zavarovalnica;https://www.prva.si;Nataša;Hajdinjak;President of the Management Board;natasa.hajdinjak@prva.si;linkedin.com/in/nataša-hajdinjak-26202081;yes
+Slovenia;Insurance Company;Modra Zavarovalnica;https://www.modra.si;Matej Golob;Matzele;CEO;matej.golob-matzele@modra.si;linkedin.com/in/matejgolobmatzele;yes
+Slovenia;Insurance Company;Zav Vita (Pension);https://www.zav-vita.si;Barbara;Smolnikar;CEO;barbara.smolnikar@zav-vita.si;linkedin.com/in/barbara-smolnikar;yes
+Slovakia;Pension Fund;Allianz – Slovenská dôchodková správcovská spoločnosť, a.s.;https://www.asdss.sk/;Miroslav;Kotov;CEO;miroslav.kotov@asdss.sk;linkedin.com/in/miroslav-kotov;yes
+Slovakia;Pension Fund;KOOPERATIVA dôchodková správcovská spoločnosť, a.s.;https://kooperativadss.sk/;Matej;Varga;CEO;vargam@dsskoop.sk;linkedin.com/in/matej-varga-phd-cfa-13402034;yes
+Slovakia;Pension Fund;NN dôchodková správcovská spoločnosť, a.s.;https://www.nn.sk/;Peter;Brudňák;CEO;peter.brudnak@nn.sk;linkedin.com/in/peter-brudnak-27aa3981;yes
+Slovakia;Pension Fund;UNIQA d.s.s., a.s.;https://www.uniqa.sk/;Rastislav;Havran;CEO;rastislav.havran@uniqa.sk;linkedin.com/in/rastislav-havran-797640269;yes
+Slovakia;Pension Fund;VÚB Generali dôchodková správcovská spoločnosť, a.s.;https://www.vubgenerali.sk/;Valdimir;Mlynek;CEO-CFA;vladimir.mlynek@vubgenerali.sk;linkedin.com/in/vladimir-mlynek-cfa-197a0932;yes
+Slovakia;Pension Fund;Doplnková dôchodková spoločnosť Tatra banky, a.s.;https://www.tatrabanka.sk/sk/dds;Marek;Prokopec;CEO;marek_prokopec@ddstatrabanky.sk;linkedin.com/in/marekprokopec;yes
+Slovakia;Pension Fund;STABILITA, d.d.s., a.s.;https://www.stabilita.sk/sk/;Marian;Melicharek;CEO;mmelicharek@stabilita.sk;;yes
+Slovakia;Insurance Company;Allianz – Slovenská poisťovňa, a.s.;https://www.allianz.sk/sk/sukromne-osoby.html;Todor;Todorov;CEO;todor.todorov@allianz.sk;linkedin.com/in/todor-todorov-41988715a;yes
+Slovakia;Insurance Company;KOOPERATIVA poisťovňa, a.s. (part of Vienna Insurance Group);https://kooperativa.sk/;Valdimir;Bakes;CEO;vladimir@kooperativa.sk;linkedin.com/in/vladimir-bakes;yes
+Slovakia;Insurance Company;NN Životná poisťovňa, a.s.;https://www.nn.sk/;Peter;Brudňák;CEO;peter.brudnak@nn.sk;;yes
+Slovakia;Insurance Company;Union poisťovňa, a.s.;https://www.union.sk/;Michal;špaňár;CEO;michal.spanar@union.sk;linkedin.com/in/michal-spanar-5b192211;yes
+Slovakia;Insurance Company;ČSOB Poisťovňa, a.s.;https://www.csob.sk/;Richard;Daubner;CEO;richarddaubner@csob.sk;linkedin.com/in/richard-daubner-2225b31;yes
+Slovakia;Insurance Company;KOMUNÁLNA poisťovňa, a.s.;https://www.kpas.sk/;Slávka;Miklošková;CEO;miklosovaslavka@kpas.sk;linkedin.com/in/slavka-miklosova-a5087112;yes
+Slovakia;Insurance Company;Wüstenrot poisťovňa, a.s.;https://www.wuestenrot.sk/;Marian;Hrotka;CEO;marian.hrotka@wuestenrot.sk;linkedin.com/in/marian-hrotka;yes
+Slovakia;Insurance Company;NOVIS Poisťovňa a.s.;https://www.novis.eu/sk;Siegfried;Fatzi;CEO;sfatzi@novis.eu;linkedin.com/in/siegfried-fatzi-8a9b89199;yes
+Slovakia;Insurance Company;BNP Paribas Cardif Poisťovňa, a.s.;https://bnpparibascardif.sk/;Zdeněk;Janoš;CEO;;;yes
+Slovakia;Insurance Company;Swiss Re Europe branch in Slovakia;https://www.swissre.com/;Lucia;Groneova;General Manager;lucia_groneova@swissre.com;linkedin.com/in/lucia-groneova-5b39565;yes
+Slovakia;Insurance Company;PARTNERS poisťovňa, a.s.;https://www.partnerspoistovna.sk/;Pavel;Gašpar;CEO;pavel.gaspar@partnerspoistovna.sk;;yes
+Slovenia;Insurance Company;Wiener Städtische zavarovalnica;https://www.wiener.si;;;;;;yes
+Austria;Pension Fund;NÖPAG Niederösterreichische Pensionskasse AG;https://www.noepag.at;Karin;Schlemaier;CEO;k.schlemaier@noevk.at / k.schlemaier@gmx.at (second mail found on linked in);linkedin.com/in/karin-schlemaier-553255138;yes
+Austria;Pension Fund;BAWAG Pensionskasse AG;https://www.bawag.at;Anas;Abuzaakouk;CEO;anas.abuzaakouk@bawaggroup.com;linkedin.com/in/anasabuzaakouk;yes
+Switzerland;Development Bank;SIFEM - Swiss Investment Fund for Emerging Markets;www.sifem.ch;Jörg;Frieden;CEO & Investment Board Committee;jfrieden@sifem.ch;linkedin.com/in/joergfrieden;yes
+Austria;Development Bank;OeEB - Österreichische Entwicklungsbank AG;www.oe-eb.at;Sabine;Gaber;CEO;sabine.gaber@oe-eb.at;linkedin.com/in/sabine-gaber;yes
+Italy;National Promotional Bank;CDP - Cassa Depositi e Prestiti;www.cdp.it;Dario;Scannapieco;CEO;dario.scannapieco@cdp.it;;yes
+Latvia;Development Bank;ALTUM;www.altum.lv;Reinis;Berzins;CEO;reinis.berzins@altum.lv;;yes
+Lithuania;Development Bank;ILTE - Public Investment Development Agency;www.ilte.lt;Dainius;Vilčinskas;CEO;dainius.vilcinskas@ilte.lt;linkedin.com/in/dainius-vilčinskas-97668721;yes
+EU - Wide;Multilateral Development Bank;EIB - European Investment Bank;www.eib.org;Nadia;Calviño;President;n.calvino@eib.org;linkedin.com/in/nadiacalvino;yes
+Croatia;National Promotional Bank;HBOR - Croatian Bank for Reconstruction and Development;www.hbor.hr;Hrvoje;Čuvalo;CEO;chrvoje@hbor.hr;linkedin.com/in/čuvalo-hrvoje-b8a7b729;yes
+Malta;Commercial Bank;BOV - Bank of Valletta;www.bov.com;Kenneth;Farrugia;CEO;kenneth.farrugia@bov.com;linkedin.com/in/kenneth-farrugia-03457214;yes
+Spain;National Promotional Bank;ICO - Instituto de Crédito Oficial;www.ico.es;Manuel Illueca;Muñoz;CEO;manuel.munoz@ico.es;;yes
+EU - Wide;Multilateral Development Bank;CEB - Council of Europe Development Bank;www.coebank.org;Wioletta;Barwicka-Lofthouse;CEO;wioletta.barwicka-lofthouse@coebank.org;;yes
+North Macedonia;Development Bank;DBNM - Development Bank of North Macedonia;www.mbdp.com.mk;Kire;Naumov;CEO;kire.naumov@mbdp.com.mk;;yes
+Slovenia;Insurance Company;Zavarovalnica Sava (Pension);https://www.zav-sava.si;Jošt;Dolničar;CEO;jost.dolnicar@zav-sava.si;;yes

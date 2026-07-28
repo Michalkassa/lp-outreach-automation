@@ -1,0 +1,12 @@
+# Saved Outlook login session for scripts/make_draft.py. Never commit this:
+# it contains live session cookies for the sending mailbox.
+.browser-profile/
+
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+~$*
+
+# Archived drafts removed from the working set. Safe to delete.
+.archive/

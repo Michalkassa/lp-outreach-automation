@@ -1,36 +1,46 @@
 # Bonus Pensionskasse AG
-updated: 2026-07-08
-score: 88
-
+updated: 2026-07-14
+score: 90/100
 ## Data
-- Type: Multi-employer occupational pension fund (Pensionskasse). Top 3 in Austria (~14% market share) after acquiring fair-finance Vorsorgekasse. Owned 50/50 by Generali Versicherung AG and Zurich Versicherungs-AG.
+- Type: Pensionskasse (multi-employer, part of BONUS Group with Vorsorgekasse)
 - Domicile: Vienna, Austria
-- AUM: >€2.7B combined (post fair-finance merger, Sep 2025; source: BONUS press release via OTS, Jun 2025). Pensionskasse alone was €1.72B at FY2023 (source: IPE). Fair-finance contributed ~€1.2B in Vorsorgekasse assets (476,000+ beneficiaries).
-- Regulation: Austrian Pensionskassen Act (PKG); supervised by FMA.
+- Website: https://www.bonusvorsorge.at/pensionskasse/
+- Regulator: FMA (Pensionskassengesetz, PKG)
+- AUM: Pensionskasse ~€1.7B; BONUS Group ~€4.6B incl. Vorsorgekasse and fair-finance acquisition (altss/OTS, 2024–25)
+- Ownership: 50% Generali Versicherung AG, 50% Zürich Versicherungs-AG — but group CIO in Vienna holds overall asset responsibility
+- Alternatives allocation: [VERIFY — % not published]; stated focus on infrastructure equity (incl. renewables) and infrastructure debt (IPE, Oct 2025)
+- Private credit / real assets: NOT CONFIRMED — CIO cautious on private debt: "The volume issued in private debt has increased massively, and it remains to be seen how this segment will develop" (Gligo, IPE Oct 2025); infrastructure debt viewed favorably for "protection through collateral and strong covenants"
+- Regulatory constraints: PKG prudent-person regime — no blocker [likely]
+- Language override:
+- Draft count:
 
 ## Investment Strategy
-Strategic asset allocation (2023 annual report, per IPE): 38% euro-zone bonds, 28% equities, 10% held-to-maturity securities / money market / loans, 5% convertible bonds, 3% global government bonds, 16% "other investments" (alternatives bucket including infrastructure, real estate, private debt). Alternatives exposure across Austrian Pensionskassen averaged 26.1% of €28.5B in sector assets as of late 2025, with private debt growing 31.7% year-on-year and private equity growing 55.1% (IPE, Oct 2025). Bonus explicitly allocates within the alternatives bucket to infrastructure debt, European commercial real estate, private debt, and renewable energy infrastructure equity. CIO Claudio Gligo told IPE (Oct 2025): "Including these asset classes can have a very positive impact on the overall portfolio. There is certainly return potential, especially in the equity area." On infrastructure debt specifically, Gligo stated that "high-quality infrastructure debt provides protection through collateral and strong covenants," which has made the asset class "a long-term component" of Bonus's portfolio. Infrastructure equity exposure is focused on renewable energy generation -- wind and photovoltaic in developed markets -- though Gligo noted potential "also applies in part to projects outside the renewable energy segment." Multi-manager approach. In 2023, Bonus posted 7.13% returns, above the multi-employer scheme average of 6.52% (IPE). The fund cut European and EM equities exposure in 2023, shifting toward global equities and gradually increasing bond duration.
+BONUS runs a sustainability-first strategy (UN PRI and Montréal Pledge signatory, ESG monitoring platform, "highest ecological, ethical and social standards" since 2003). 2025 performance was 5.56% vs. the 4.88% industry average, attributed by Scherhammer to consistent USD hedging, "strong focus on European markets," and deliberate underweighting of interest rate risk (OTS, Jan 2026). On alternatives, CIO Claudio Gligo sees "return potential, especially in the equity area," favors infrastructure equity, and values infrastructure debt for its "protection through collateral and strong covenants" — but is explicitly cautious on both private equity and private debt (IPE, Oct 2025). In June 2025 the group acquired fair-finance Vorsorgekasse (€1.2B, 476,000 beneficiaries), lifting group assets toward €4.6B. Sector context: Austrian pension alternatives average 26.1% of assets (FMA via IPE) — BONUS discloses no comparable figure [VERIFY].
 
-## People & Org Structure
-Two-person executive board (Vorstand): DI Georg Daurer and Michael Scherhammer (also an actuary). CIO Claudio Gligo reports to the board as Head of Asset Management, overseeing all assets across both Pensionskasse and Vorsorgekasse. DI Karin Munk also serves in a senior capacity [VERIFY exact title]. Supervisory board (Aufsichtsrat) includes Axel Sima, who is CIO and board member of Generali Versicherung AG -- meaning Generali has direct investment-level oversight. Approximately 110 employees across the BONUS Group.
+## People & Org
+Two-member group board: Michael Scherhammer and Georg Daurer, with Claudio Gligo as group CIO / Head of Asset Management since 2017, responsible for all ~€4.6B across Pensionskasse and Vorsorgekasse. Ownership sits with Generali and Zurich, but allocation decisions are made by the Vienna team.
 
 ## Contacts
-1. **Claudio Gligo, Chief Investment Officer / Head of Asset Management** -- CFA Charterholder with 25+ years of investment experience. CIO of the BONUS Group since November 2017, overseeing all assets (~€2.7B). Previously: Head of Institutional Asset Management at Union Investment Austria GmbH (Jan 2016 - Oct 2017); Bereichsleiter Asset Management at VB Invest KAG (Apr 2009 - Dec 2015); Board member at Victoria-Volksbanken Pensionskassen AG and Vorsorgekasse AG (Mar 2006 - Dec 2015); Head of Institutional Asset Management at Osterreichische Volksbanken AG (Sep 1997 - Mar 2009). Speaker at Impact Days 2024 and SIS5 Austria (Institutional Capital Forum). He is the decision-maker for alternatives allocation and the right contact for a fund like Valori. Email: [VERIFY] c.gligo@bonusvorsorge.at.
+1. **Michael Scherhammer** — Board Member (CEO), BONUS Group. Email: michael.scherhammer@bonusvorsorge.at (import, confirmed).
+   LinkedIn: FIND.
+   Background: Board member of the BONUS and Concisa group since May 2021 (OTS); public face of the 2025 outperformance story and the European-markets positioning.
+   Why them: confirmed email at board level; owns the strategy narrative.
 
-2. **Michael Scherhammer, Board Member (Vorstand)** -- 35+ years in the Austrian financial sector. Appointed to the boards of BONUS Pensionskassen AG, BONUS Vorsorgekasse AG, and Concisa Vorsorgeberatung und Management AG effective May 1, 2021. Previously served 10 years on the advisory board of BONUS Vorsorgekasse. On appointment he stated: "The BONUS Group is a very successful and sustainable company. I am pleased to be able to make a significant contribution in the coming years. The focus here is on even more customer orientation, social responsibility, and further expansion of digitalization." Useful as escalation contact or if values alignment is the lead angle. Email: [VERIFY] michael.scherhammer@bonusvorsorge.at.
+2. **Claudio Gligo** — CIO / Head of Asset Management, BONUS Group. Email: FIND: claudio.gligo@bonusvorsorge.at (pattern per michael.scherhammer@bonusvorsorge.at).
+   Background: Group CIO since 2017 with overall responsibility for ~€4.6B; speaks publicly on alternatives, favoring collateralized infrastructure debt while questioning crowded private debt issuance (IPE, Oct 2025).
+   Why them: the person any credit allocation must convince — and his stated concern (crowded mega-fund private debt) is exactly what Valori's fragmented €10–50M niche answers.
 
-## Recent Activity
-- [Sep 2025] Fair-finance Vorsorgekasse fully merged into BONUS Vorsorgekasse; entry in commercial register completed Sep 24, 2025. All fair-finance employees retained. (OTS / Exelerating)
-- [Jun 2025] BONUS Pensionskassen AG acquires all shares of fair-finance Vorsorgekasse AG from the Sinnova Group, adding €1.2B in assets and 476,000+ beneficiaries. (OTS press release, Jun 12, 2025)
-- [Oct 2025] Gligo quoted in IPE on Austrian pension funds stepping up private equity and illiquids -- infrastructure debt described as "long-term component" of portfolio. (IPE)
-- [2024] Bonus Pensionskasse participated in Impact Days 2024 conference (Gligo as speaker). (b2match)
-- [2023] Posted 7.13% return, above multi-employer average of 6.52%. Reduced European and EM equity, increased global equity and bond duration. (IPE)
-- [2022] Announced expansion of impact investments; reinforced ESG monitoring in line with EU taxonomy and SFDR. (IPE)
+## Recent Activity (last 18 months)
+- Jan 2026 — 2025 result 5.56% vs. 4.88% industry average; strategy credited to USD hedging and European focus (OTS press release).
+- Oct 2025 — IPE: Gligo cautious on private debt volume growth; favors infrastructure equity and collateralized infrastructure debt.
+- Jun 2025 — Acquired fair-finance Vorsorgekasse from Sinnova Group: +€1.2B assets, +476,000 beneficiaries (fair-finance/BUSINESSART).
+- 2025 — Continued ESG leadership positioning: PRI signatory, ESG monitoring platform, warning that "ESG-Daten geben falsche Sicherheit" (Institutional Investment).
 
 ## Bridge Candidates
-1. **Infrastructure debt as "long-term component"** -- Gligo's own words. Valori's European real-estate-backed credit with collateral and covenants maps directly onto what he says he values in infrastructure debt. This is the strongest alignment point. (Source: IPE, Oct 2025)
-2. **ESG / values alignment** -- BONUS signed the UN PRI in 2019, holds the OGUT Sustainability Certificate for Pension Funds and the Austrian Environmental Label for Sustainable Financial Products. They use a proprietary "BONUS ESG-Cockpit." Scherhammer emphasizes "social responsibility." Valori's Christian-values foundation and commitment to giving back to society provides a credible values bridge. (Source: bonusvorsorge.at sustainability page)
-3. **Bilateral, collateralized deal structure** -- Gligo explicitly prizes "protection through collateral and strong covenants." Valori's bilateral, highly protected European real estate credit deals are structurally aligned. This differentiates Valori from pooled private credit funds. (Source: IPE, Oct 2025)
+1. Answer Gligo's own objection: his concern is massive issuance in mainstream private debt (IPE, Oct 2025) — Valori's €10–50M bilateral distressed/special-situations segment is precisely the part of the market mega-fund volume never reaches, with the collateral protection he praises in infrastructure debt.
+2. Collateral vocabulary: Gligo values infra debt for "protection through collateral and strong covenants" — Valori's real-estate-backed, highly protected bilateral deals speak that exact language.
+3. Values/ESG: BONUS invests to "highest ecological, ethical and social standards" and signed the Montréal Pledge — Valori's Christian-values foundation and profit give-back align with a values-screened manager roster.
+Category label: European real asset debt
 
 ## Summary
-Bonus Pensionskasse is Austria's third-largest Pensionskasse (€2.7B AUM post fair-finance merger) with a confirmed, active allocation to infrastructure debt, private debt, and European commercial real estate within a ~16% alternatives bucket. CIO Claudio Gligo is a 25-year veteran who publicly describes infrastructure debt as a "long-term component" of the portfolio and values collateral and covenant protection -- mapping directly to Valori's bilateral, real-estate-backed credit strategy. The ESG/values angle is strong: BONUS is a UN PRI signatory with multiple sustainability certifications, and board member Scherhammer explicitly prioritizes "social responsibility." The fit score of 88 reflects excellent mandate overlap and accessible CIO, discounted slightly for Generali/Zurich ownership (Generali CIO Axel Sima sits on the supervisory board, which may add a layer of group-level approval for new manager relationships). Primary contact: Claudio Gligo. Lead bridge: infrastructure debt alignment with collateral focus.
+Vienna-based BONUS Group (€1.7B Pensionskasse, ~€4.6B group) is a sustainability-first allocator owned by Generali and Zurich but run locally by CIO Claudio Gligo. No confirmed private credit — Gligo is publicly skeptical of crowded private debt but explicitly values collateralized credit (infrastructure debt), which is the bridge: Valori's asset-backed, off-the-beaten-path niche answers his stated objection. Scherhammer (confirmed email) is the door; Gligo is the decision-maker. Main caveat: alternatives allocation unpublished and private credit unconfirmed — score 72, capped below 75 by unconfirmed alternatives despite confirmed €1.7B+ AUM, ticket-size sweet spot, local authority, and strong ESG hook.

@@ -1,4 +1,9 @@
-# FINAL MASTER TEMPLATE - first touch, one-time email
+# DEPRECATED (2026-07-21). This v1 slot template is superseded by the
+# Structure v4 voice in templates/voice.md — the canon for all drafts.
+# Its opener ("Given [Firm]'s focus…") is now a banned pattern. Kept only
+# for historical reference. Do NOT draft from this file.
+#
+# FINAL MASTER TEMPLATE - first touch, one-time email (LEGACY)
 # [square brackets] = variable slots. Everything else stays as written.
 
 Subject: Valori Capital, [category label], first vintage

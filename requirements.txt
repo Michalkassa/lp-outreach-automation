@@ -1,8 +1,10 @@
 openpyxl>=3.1.0
+playwright>=1.40.0
 
 # Setup (one time):
 #   python3 -m venv .venv
 #   .venv/bin/pip install -r requirements.txt
+#   .venv/bin/playwright install chromium   # browser for scripts/make_draft.py
 #
 # Then run:
 #   .venv/bin/python scripts/convert.py init     # create input.xlsx template

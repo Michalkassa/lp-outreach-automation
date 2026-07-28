@@ -48,23 +48,82 @@ move on. A generic bridge is worse than no email.
 
 ## STEP 3 — Draft (same day)
 /draft <LP name> in Claude Code (add a number for fewer variants,
-e.g. /draft <LP name> 1), or fill templates/email-master.md by
-hand. Either way, run the Draft QA check in voice-examples.md yourself,
-top to bottom. Read the email aloud once. If any sentence sounds like
+e.g. /draft <LP name> 1). Either way, run the Draft QA check in
+templates/voice.md yourself, top to bottom (structure v4). Read the email
+aloud once, and ask: does it flow? If any sentence sounds like
 it was written for "an LP" rather than THIS LP, fix the bridge.
 
+## STEP 3b — Readiness check (once per sending session, 1 min)
+Before loading anything into Outlook:
+
+  .venv/bin/python scripts/pipeline_status.py
+
+Read the CONSISTENCY block at the bottom. Anything other than "all clear" means
+a draft, a sent record and the tracker disagree. Fix that first.
+
+A draft is ready only when all of these hold:
+  - `to:` is a real address, not FIND. make_draft.py refuses FIND by design.
+  - The three bullet labels are wrapped in ** so the .html twin renders bold.
+  - The .html twin is newer than its .md. The bot reads the .html, so a stale
+    twin sends the old text. scripts/respace.py --all rebuilds them.
+  - The subject ending is a current one from templates/caption.md.
+    "first vintage" is retired, and a batch of identical subjects reads as mass-sent.
+  - The sign-off matches the language of the draft.
+  - The file sits in drafts/<lang>/<list>/ matching the LP's country rule.
+
+TWO LPs, ONE PERSON: some contacts cover several entities (a CEO over both the
+carrier and the pension arm). The tracker flags these in its `flag` column.
+Send ONE email to that person, not one per entity, and mark the other row
+skipped with a note. This is the easiest way to look careless in front of an LP.
+
 ## STEP 4 — Send (manually, from the approved mailbox)
+Build the queue first. It applies every STEP 3b check to all unsent drafts and
+prints the commands in score order, holding shared recipients and excluding
+anything that fails a check:
+
+  .venv/bin/python scripts/send_queue.py                 # today's 5
+  .venv/bin/python scripts/send_queue.py --lang en       # one language
+  .venv/bin/python scripts/send_queue.py --script today.sh   # runnable script
+
+Then load each draft into a compose window (see "Loading a draft into Outlook
+automatically" in README.md):
+
+  .venv/bin/python scripts/make_draft.py drafts/<lang>/<list>/<file>.html
+
+It fills To, Subject and the body, then stops. It never sends and never attaches
+the deck. Run it from your own terminal, not from inside Claude Code, so it can
+wait for a login if the session has expired. One browser at a time: Chromium
+allows a single process per profile and the script will tell you if one is
+already running.
+
   - Deck attached. Correct deck version. Check the attachment is there.
   - Salutation spelling of the surname, triple-checked.
   - Send Tue to Thu, 08:30 to 10:30 their local time when possible.
   - Max 5 sends per day. Quality of the bridge beats volume, and low
     daily volume from a normal mailbox also keeps deliverability clean.
 
-## STEP 5 — Log (immediately after each send, 1 min)
-  - Spreadsheet: STATUS = sent, DATE_SENT, confirm BRIDGE_HOOK and
-    CATEGORY_LABEL are filled.
-  - Claude Code: /log-sent <LP name> and paste the final version.
-  Never batch this for "later". Later does not happen.
+## STEP 5 — Log (now automatic, confirm with one keystroke)
+When you close the compose window, make_draft.py reads the body back out of it
+and asks:
+
+  Did you send it to <LP>? [y/N]
+
+Answer y and it writes sent/<lang>/ (.md and .html), sets stage=sent and
+DATE_SENT in the tracker, and records edits: none|minor|major by comparing the
+sent text against the draft. Anything else leaves the row as drafted, so the LP
+stays in tomorrow's queue.
+
+It asks rather than assuming because closing a window is not proof of a send. A
+false "sent" drops that LP out of the pipeline silently.
+
+Because the record comes from the compose window and not from the draft file,
+edits you make in Outlook are captured, and /calibrate has something real to
+learn from. Copying the draft across is what made the 2026-07-22 batch produce
+zero calibration signal.
+
+If something goes wrong, log it by hand:
+  .venv/bin/python scripts/log_sent.py drafts/<lang>/<list>/<file>.html
+Never batch this for "later". Later does not happen.
 
 ## STEP 6 — Replies
   - Positive or neutral reply → STATUS = replied, REPLY filled, respond

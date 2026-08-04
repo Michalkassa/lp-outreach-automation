@@ -63,6 +63,11 @@ Variants follow bridge-candidate rank: 1 draft = top bridge only,
      .venv/bin/python scripts/respace.py <each .md path you wrote>
 6. output.csv: stage=drafted. Note how many drafts were saved (each with its
    .html twin), nothing sent.
+7. Refresh the workbooks so the new stage is visible to Michal:
+     .venv/bin/python scripts/convert.py export
+     .venv/bin/python scripts/convert.py sync
+   A draft that exists but still reads `research` in input.xlsx and output.xlsx
+   is a draft he cannot see.
 
 FOLDER ROUTING — every draft lives at drafts/<language>/<list>/.
 Language bucket first, then the list it belongs to:
@@ -95,3 +100,17 @@ Only REVIEW-PACKET files live at those two levels.
 DATA FILE: data/output.csv — semicolons (;) as delimiter. No semicolons inside field values.
 Columns: country;language;type;list;company;slug;score;aum;contact_name;contact_title;contact_email;stage;category;bridge;flag;date_sent
 Score is a plain integer 1-100 (not "90/100").
+
+STAGE CHANGES MUST REACH BOTH WORKBOOKS — never skip this.
+data/output.csv is the source of truth, but Michal reads input.xlsx and
+output.xlsx. A stage written only to the CSV is invisible to him, and the two
+files then disagree until something happens to resync them. Immediately after
+any stage change, run BOTH:
+
+  .venv/bin/python scripts/convert.py export   # data/output.csv -> output.xlsx
+  .venv/bin/python scripts/convert.py sync     # stage + score  -> input.xlsx
+
+Then confirm the three sources agree. `scripts/pipeline_status.py` reports the
+funnel; the two workbooks must show the same counts. If Excel has either file
+open the write fails silently for him, so say so in your reply when that is
+possible.

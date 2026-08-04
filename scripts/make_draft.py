@@ -4,16 +4,22 @@ LP Outreach — load a draft .html into an Outlook on the web compose window.
 
   .venv/bin/python scripts/make_draft.py drafts/insurance/2026-07-22-adriatic-osiguranje.html
 
-It opens a browser, clicks New mail, and fills in To, Subject and the body
-with the bold labels and bullet list intact. Then it STOPS and leaves the
-window open for you. It never clicks Send, and it never attaches the deck.
-You do the final check, attach the deck, and send by hand.
+It opens a browser, clicks New mail, fills in To, Subject and the body with the
+bold labels and bullet list intact, and attaches the deck. Then it STOPS and
+leaves the window open for you. It never clicks Send. You do the final check and
+send by hand.
+
+The deck is the newest .pdf in deck/, or whatever --deck points at. The body ends
+with the signature and legal footer from templates/signature.md, added when the
+.html twin is built.
 
 First run opens Outlook and waits for you to log in. The session is saved to
 .browser-profile/ so later runs go straight to the compose window.
 
 Options:
   --dry-run     parse the file and print To/Subject/body, no browser
+  --deck PATH   deck to attach (default: newest .pdf in deck/)
+  --no-deck     do not attach anything
   --url URL     mailbox URL (default https://outlook.office.com/mail/)
   --profile DIR browser profile directory (default .browser-profile/)
 """
@@ -42,6 +48,188 @@ DEFAULT_PROFILE = ROOT / ".browser-profile"
 # Present in the sign-off of every draft in every language, so it is the one
 # safe "did the body land" marker. Do not swap it for a localised phrase.
 SIGNOFF_MARKER = "Partner, Valori Capital"
+
+# The deck. Shared by both programmes: one mailbox, one presentation.
+DECK_DIR = ROOT / "deck"
+
+# OWA exposes SEVERAL file inputs: one restricted to images for inline pictures,
+# and the real attachment input. Feeding a PDF to the image one is what produces
+# "wrong file type", so the accept attribute has to be checked, not just the tag.
+JS_FILE_INPUTS = """
+() => Array.from(document.querySelectorAll('input[type="file"]')).map((el, i) => ({
+  i, accept: el.getAttribute('accept') || '', multiple: el.multiple,
+  name: el.getAttribute('name') || '', id: el.id || '',
+  label: el.getAttribute('aria-label') || ''
+}))
+"""
+
+# Buttons that open the attach flow, in several UI languages.
+SEL_ATTACH_BUTTON = [
+    'button[aria-label*="Attach" i]',
+    'button[aria-label*="Anfüg" i]',
+    'button[aria-label*="Anlage" i]',
+    'button[aria-label*="Priloži" i]',
+    'button[aria-label*="Príloh" i]',
+    'button[aria-label*="Přilož" i]',
+    '[data-testid*="attach" i]',
+    'button:has-text("Attach")',
+]
+
+
+def resolve_deck(explicit: str | None):
+    """Path to the deck to attach, or None. Newest PDF in deck/ by default."""
+    if explicit:
+        p = Path(explicit).expanduser().resolve()
+        if not p.exists():
+            sys.exit(f"error: no deck at {p}")
+        return p
+    pdfs = sorted(DECK_DIR.glob("*.pdf"), key=lambda x: x.stat().st_mtime, reverse=True)
+    return pdfs[0] if pdfs else None
+
+
+def _accepts(accept: str, suffix: str) -> bool:
+    """Would an input with this accept attribute take a file with this suffix?
+
+    Handles the three forms browsers allow: a bare extension, a full MIME type,
+    and a "type/*" wildcard. Getting the wildcard wrong is what sends a PDF into
+    the inline-image input.
+    """
+    import mimetypes
+    a = (accept or "").strip().lower()
+    if not a or "*/*" in a:
+        return True                                   # no restriction
+    suffix = suffix.lower()
+    mime = (mimetypes.guess_type("x" + suffix)[0] or "").lower()
+    for token in (x.strip() for x in a.split(",")):
+        if not token:
+            continue
+        if token.startswith("."):
+            if token == suffix:
+                return True
+        elif token.endswith("/*"):
+            if mime.startswith(token[:-1]):           # "image/" prefix match
+                return True
+        elif token == mime:
+            return True
+    return False
+
+
+# Once one draft has found the working attach route, every later draft in the
+# same run reuses it. Rediscovering it each time was most of the delay.
+_ATTACH_ROUTE = {"kind": None, "frame_url": None, "sel": None, "index": None}
+
+
+def attachment_present(page, name: str) -> bool:
+    """Cheap presence probe. textContent avoids the layout pass innerText forces
+    and the full-document serialisation page.content() does."""
+    try:
+        return bool(page.evaluate(
+            "(n) => (document.body && document.body.textContent || '').toLowerCase().includes(n)",
+            name.lower()))
+    except Exception:
+        return False
+
+
+def _await_attachment(page, name: str, timeout_ms: int) -> bool:
+    """Poll until the attachment shows up. Short interval, cheap probe."""
+    deadline = time.time() + timeout_ms / 1000
+    while time.time() < deadline:
+        if attachment_present(page, name):
+            return True
+        page.wait_for_timeout(150)
+    return False
+
+
+def _try_input(frame, index, deck, page, timeout) -> bool:
+    try:
+        frame.locator('input[type="file"]').nth(index).set_input_files(
+            str(deck), timeout=timeout)
+    except Exception:
+        return False
+    return _await_attachment(page, deck.name, timeout)
+
+
+def _try_button(frame, sel, deck, page, timeout) -> bool:
+    try:
+        btn = frame.locator(sel).first
+        if btn.count() == 0:
+            return False
+        # A chooser opens immediately or not at all. Waiting 6s on each candidate
+        # was pure dead time whenever the first selector was the wrong one.
+        with page.expect_file_chooser(timeout=2500) as fc:
+            btn.click(timeout=2000)
+        fc.value.set_files(str(deck))
+    except Exception:
+        return False
+    return _await_attachment(page, deck.name, timeout)
+
+
+def attach_deck(page, deck: Path, timeout=30000) -> bool:
+    """Attach the deck to the open compose window. True once Outlook shows it.
+
+    Two routes, in order:
+      1. Click the Attach control and answer the file chooser. This is what a
+         person does and it always targets the attachment path, never the
+         inline-image one.
+      2. Fall back to setting a file input directly, skipping any input whose
+         accept attribute rules out a PDF.
+
+    The route that works is remembered for the rest of the run.
+    """
+    suffix = deck.suffix
+
+    # -- fast path: whatever worked on the previous draft
+    if _ATTACH_ROUTE["kind"]:
+        for frame in frames_of(page):
+            if _ATTACH_ROUTE["frame_url"] not in (None, frame.url):
+                continue
+            ok = (_try_button(frame, _ATTACH_ROUTE["sel"], deck, page, timeout)
+                  if _ATTACH_ROUTE["kind"] == "button"
+                  else _try_input(frame, _ATTACH_ROUTE["index"], deck, page, timeout))
+            if ok:
+                return True
+        _ATTACH_ROUTE.update(kind=None, frame_url=None, sel=None, index=None)
+
+    # -- route 1: the real attach flow
+    for frame in frames_of(page):
+        for sel in SEL_ATTACH_BUTTON:
+            if _try_button(frame, sel, deck, page, timeout):
+                _ATTACH_ROUTE.update(kind="button", frame_url=frame.url, sel=sel)
+                return True
+
+    # -- route 2: a file input that will actually take this file type
+    for frame in frames_of(page):
+        try:
+            inputs = frame.evaluate(JS_FILE_INPUTS)
+        except Exception:
+            continue
+        usable = [d for d in inputs if _accepts(d["accept"], suffix)]
+        # prefer multi-file inputs, they are the attachment ones far more often
+        usable.sort(key=lambda d: (not d["multiple"], d["i"]))
+        for d in usable:
+            if _try_input(frame, d["i"], deck, page, timeout):
+                _ATTACH_ROUTE.update(kind="input", frame_url=frame.url, index=d["i"])
+                return True
+    return False
+
+
+def inspect_attachment_inputs(page):
+    """Print every file input with its accept attribute, for diagnosis."""
+    print("\n--- file inputs visible to the script ---")
+    for frame in frames_of(page):
+        try:
+            rows = frame.evaluate(JS_FILE_INPUTS)
+        except Exception:
+            continue
+        if not rows:
+            continue
+        print(f"  frame: {frame.url[:70] or '(main)'}")
+        for d in rows:
+            ok = "takes .pdf" if _accepts(d["accept"], ".pdf") else "REJECTS .pdf"
+            print(f"    [{d['i']}] accept={d['accept']!r} multiple={d['multiple']} "
+                  f"id={d['id']!r} label={d['label']!r}  -> {ok}")
+    print("--- end ---\n")
+
 
 # Each entry is tried in order until one is visible. OWA's DOM shifts between
 # releases, so every field has fallbacks rather than one brittle selector.
@@ -474,6 +662,12 @@ def main():
                     help="seconds to wait for the message body before giving up (default 5)")
     ap.add_argument("--no-log", action="store_true",
                     help="do not offer to log the send when the window closes")
+    ap.add_argument("--deck", metavar="PATH",
+                    help="deck to attach (default: newest .pdf in deck/)")
+    ap.add_argument("--no-deck", action="store_true",
+                    help="do not attach a deck. The email still says one is attached.")
+    ap.add_argument("--inspect-attach", action="store_true",
+                    help="list every file input in the compose window and stop")
     args = ap.parse_args()
 
     path = Path(args.draft).resolve()
@@ -485,10 +679,20 @@ def main():
 
     to, subject, body_html = parse_draft(path)
 
+    deck = None
+    if not args.no_deck:
+        deck = resolve_deck(args.deck)
+        if deck is None:
+            sys.exit("error: no deck found in deck/ and --deck not given.\n"
+                     "       The email says \"Please find attached our presentation\", so\n"
+                     "       sending without one is worse than not mentioning it.\n"
+                     "       Put a PDF in deck/, pass --deck PATH, or use --no-deck.")
+
     print(f"draft   : {path.name}")
     print(f"to      : {to}")
     print(f"subject : {subject}")
     print(f"body    : {len(body_html)} chars html")
+    print(f"deck    : {deck.name if deck else 'NONE (--no-deck)'}")
 
     if args.dry_run:
         print("\n--- body html ---")
@@ -605,9 +809,19 @@ def main():
                 print("warning: body insert failed, paste it by hand from the .html")
                 print("         run again with --inspect to dump the fields, and send me the output.")
 
+        if args.inspect_attach:
+            inspect_attachment_inputs(page)
+            hold_open(ctx)
+            return
+
+        if deck is not None:
+            ok = attach_deck(page, deck)
+            print(f"attached: {deck.name}" if ok
+                  else f"warning: could not attach {deck.name}, add it by hand")
+
         print("\n" + "=" * 62)
         print("STOPPED. Nothing was sent. The draft is open in the browser.")
-        print("Your turn:  check it  ->  attach the deck  ->  send by hand.")
+        print("Your turn:  check it  ->  confirm the attachment  ->  send by hand.")
         print("Outlook autosaves it to Drafts.")
         if not args.no_log:
             print("When you close this, I will ask whether it went out and log it.")

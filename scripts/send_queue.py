@@ -27,8 +27,10 @@ import shlex
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
-OUTPUT_CSV = ROOT / "data" / "output.csv"
+import program
+
+ROOT = program.ROOT
+OUTPUT_CSV = program.OUTPUT_CSV
 DATED = re.compile(r"^\d{4}-\d{2}-\d{2}-")
 DAILY_CAP = 5                      # PIPELINE.md: max 5 sends per day
 
@@ -39,6 +41,27 @@ RETIRED_ENDINGS = ("first vintage", "prvý vintage", "erste fondsgeneration")
 def load_rows():
     with open(OUTPUT_CSV, newline="", encoding="utf-8") as f:
         return list(csv.DictReader(f, delimiter=";"))
+
+
+def already_contacted(rows):
+    """(addresses, domains) that a sent email has already gone to.
+
+    The queue dedupes within itself, but that misses the case that actually
+    burns: a row whose recipient was emailed on a previous day. Same address is
+    a hard hold. Same domain is a warning, since a second person at the same
+    firm is a judgement call rather than a duplicate.
+    """
+    addrs, domains = {}, {}
+    for r in rows:
+        if r.get("stage") != "sent":
+            continue
+        email = (r.get("contact_email") or "").strip().lower()
+        if "@" not in email:
+            continue
+        addr = email.split("/")[0].strip()
+        addrs.setdefault(addr, r.get("company", ""))
+        domains.setdefault(addr.split("@")[-1], r.get("company", ""))
+    return addrs, domains
 
 
 def draft_map():
@@ -87,6 +110,7 @@ def main():
                     help=f"how many to queue (default {DAILY_CAP}, the daily cap)")
     ap.add_argument("--all", action="store_true", help="ignore the limit, queue everything ready")
     ap.add_argument("--script", metavar="PATH", help="write a runnable shell script instead")
+    program.add_argument(ap)
     args = ap.parse_args()
 
     rows = load_rows()
@@ -114,14 +138,20 @@ def main():
     ready.sort(key=lambda e: (-e["score"], e["company"].lower()))
 
     # One person, one email. Keep the highest score, hold the rest.
-    seen, queue, held = {}, [], []
+    sent_addrs, sent_domains = already_contacted(rows)
+    seen, queue, held, warn = {}, [], [], []
     for e in ready:
         key = e["to"].lower()
-        if key in seen:
-            held.append((e, seen[key]))
+        if key in sent_addrs:
+            held.append((e, f"already sent to this address ({sent_addrs[key]})"))
+        elif key in seen:
+            held.append((e, f"shares {e['to']} with {seen[key]['company']}"))
         else:
             seen[key] = e
             queue.append(e)
+            firm = sent_domains.get(key.split("@")[-1])
+            if firm:
+                warn.append((e, firm))
 
     if not args.all:
         queue = queue[:max(args.limit, 0)]
@@ -143,15 +173,23 @@ def main():
                 print(f"        {p}")
 
     if held:
-        print("\nHELD — same recipient as an earlier draft, send one email only")
-        for e, kept in held:
-            print(f"  [{e['score']}] {e['company']}  shares {e['to']} with {kept['company']}")
+        print("\nHELD — one email per person")
+        for e, why in held:
+            print(f"  [{e['score']}] {e['company']}: {why}")
+
+    if warn:
+        print("\nWARNING — this firm has already had an email, different person")
+        for e, firm in warn:
+            print(f"  [{e['score']}] {e['company']} <{e['to']}>  firm already emailed via {firm}")
 
     if not queue:
         print("\nnothing to queue.")
         return
 
-    cmds = [f".venv/bin/python scripts/make_draft.py {shlex.quote(str(e['path'].relative_to(ROOT)))}"
+    # Paths are printed relative to the REPO, not the programme root, because you
+    # run these from the repo root whichever programme they belong to.
+    cmds = [f".venv/bin/python scripts/make_draft.py "
+            f"{shlex.quote(str(e['path'].relative_to(program.REPO)))}"
             for e in queue]
 
     if args.script:

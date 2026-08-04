@@ -9,7 +9,7 @@ LP Outreach — open up the spacing in draft bodies.
 Four breaks, so the email breathes on a phone screen:
   1. after the salutation                (already standard, left alone)
   2. after the opening sentence          the hook stands on its own line
-  3. before the closing sentence         the ask stands on its own line
+  3. before the closing block            the CTA stands apart, and is never split
   4. after "Kind regards,"               the name sits apart from the sign-off
 
 Idempotent: running it twice changes nothing. It only moves whitespace, never
@@ -22,8 +22,10 @@ import re
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(ROOT / "scripts"))
+REPO = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(REPO / "scripts"))
+import program
+ROOT = program.ROOT
 import format_html as fh   # noqa: E402
 
 SIGNOFFS = ("Kind regards,", "Mit freundlichen Grüßen,", "S pozdravom,")
@@ -77,7 +79,10 @@ def respace(text: str) -> str:
             lines = [l.strip() for l in b.splitlines() if l.strip()]
             out.append(lines[0] + "\n\n" + "\n".join(lines[1:]) if len(lines) > 1 else b)
         elif sign_idx is not None and i == sign_idx - 1 and not is_bullets:
-            out.append(split_last_sentence(b))       # closing paragraph
+            # v5's closing block is a deliberate two-sentence CTA (deck sentence
+            # plus the call ask) and must stay together. Splitting it here is what
+            # v4 wanted, not v5.
+            out.append(b)
         else:
             out.append(b)
 
@@ -96,12 +101,16 @@ def main():
     ap.add_argument("files", nargs="*", help="draft .md paths")
     ap.add_argument("--all", action="store_true", help="every draft under drafts/")
     ap.add_argument("--preview", action="store_true", help="print the result, write nothing")
+    program.add_argument(ap)
     args = ap.parse_args()
 
-    paths = ([Path(p) for p in glob.glob(str(ROOT / "drafts" / "**" / "*.md"), recursive=True)
+    paths = ([Path(p) for p in glob.glob(str(program.DRAFTS / "**" / "*.md"), recursive=True)
               if "REVIEW" not in p] if args.all
              else [Path(f).resolve() for f in args.files])
     if not paths:
+        if args.all:
+            print(f"no drafts under {program.DRAFTS}, nothing to respace")
+            return
         ap.error("give some .md files or --all")
 
     changed, touched = 0, []

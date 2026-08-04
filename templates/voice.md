@@ -1,11 +1,14 @@
-# VOICE — canon. Structure v4 (2026-07-21), from live drafting calibration.
+# VOICE — canon. Structure v5 (2026-08-03), set by Michal.
+# v5 replaces the v4 structure. The v4 openers and the mid-motion personal touch
+# are retired. The deck is referenced again, but only inside the two-sentence CTA
+# in part 5. Do not reintroduce v4 shapes from older drafts or from
+# templates/sent-examples.md, which is a v4 archive.
 
 ## The feel we are going for
-A short, human email from one partner to one investor. It should read like someone
-who did their homework wrote it in one sitting: a clear reason for the note, a
-confident but unforced pitch, and an easy close. It flows. It is not a form filled in.
-If a draft reads like it was assembled from slots, loosen it until it sounds like a
-person talking.
+A short, plain email from one partner to one investor. It states what we are
+raising, why it might fit, what stands behind it, and asks for a short call.
+No build-up, no salesmanship. If a sentence is not doing one of those four jobs,
+cut it.
 
 ## Output format (every draft)
 - Frontmatter carries `to:` = recipient email. Always present.
@@ -13,96 +16,120 @@ person talking.
   `.html` whenever the `.md` changes: the sending bot reads the `.html`, so a
   stale twin puts the old wording or spacing into Outlook.
 - The three bullets are a real list with the label before the colon in bold.
-- Four breaks in every body, so it breathes on a phone screen: after the
-  salutation, after the opening sentence, before the closing sentence, and after
-  the sign-off line so the name sits apart. `scripts/respace.py` applies these.
+- Four breaks in every body: after the salutation, after the opening sentence,
+  before the closing block, and after the sign-off line so the name sits apart.
+  `scripts/respace.py` applies these. The closing block is two sentences and is
+  never split.
 
-## How it usually flows (a guide, not a fixed order)
-- **The opener — the "I'm reaching out" method (this tested best, use it).**
-  Open with the READER'S situation and the payoff they would want, so the first
-  thing they read is why they should care — not what we do. Lead with the fit,
-  then the product. Pattern:
-    "I'm reaching out because our approach fits [a general framing of their situation
-    that carries the benefit]. We provide private credit backed by European real
-    estate, secured and bilateral, in tickets of €10M to €50M."
-  Worked example (this is the model):
-    "Dear Mr. Greco,
-     I'm reaching out because our approach fits a large book that wants more yield
-     without taking on more risk. We provide private credit backed by European real
-     estate, secured and bilateral, in tickets of €10M to €50M, protection ahead of yield."
-  Rules for the opener:
-  - The fit clause comes from the LP's research, framed GENERALLY, and IMPLIES we can
-    help without ever saying "we can help you" — e.g. "a large book that wants more
-    yield without more risk," "a book already active in real assets," "a fund with
-    room to put private capital to work." It changes per LP; that is the main variety.
-  - Vary only lightly within the family: "I'm reaching out because…" / "I wanted to
-    reach you because…" / "there may be a fit for…". Do NOT reach for clever
-    fit-first openers ("A large book can…", "Yield is hard to find…") — they read cheesy.
-  - The product line is "private credit backed by European real estate" (the correct
-    term — NOT "secured European real estate credit" alone, and never "private debt"
-    as the label). Never open with what we do or with the LP's company name, and never
-    quote their figures or deals.
-- **Second opener (rotate with the first — keep BOTH for variety).** Sometimes lead
-  with what we run and tie it to their portfolio, based on their research:
-    "We run a private credit strategy backed by European real estate, which would be a
-    natural fit to [a research-based framing of their portfolio]."
-  Use the present tense ("We run", "We provide") — never "we are building". The fund is
-  a first vintage, but the TEAM is experienced (€1.35B underwritten at 19% IRR). Frame
-  fundraising as "our first vintage under the Valori brand", not "our first fund" — the
-  brand is new, the team is not. The "[…]" changes per LP from their research (e.g.
-  "a large, bond-led book," "a book already active in real assets," "a fund with room
-  to put private capital to work"). Alternate with the "I'm reaching out" opener so no
-  two in a row are alike.
-- **Into motion.** Bring the fund in mid-motion — the first vintage is underway
-  (raising, placing, building, assembling), with the status woven in and one genuine
-  personal touch (handling it himself, the partners' own €1M in the fund, a region or
-  segment note, a personal offer of time).
-- **The proof — three bullets.** The trust block below, carried as a real list.
-- **The close — deck + explicit ask for a call (fixed).** One short closing that
-  attaches the deck and explicitly asks for a call:
-    "Our deck is attached. If a specialised European real asset debt manager fits your
-    current mandate or co-investment interests, I would welcome a brief introductory call."
-  Keep it verbatim. It must explicitly request the call (not a soft "happy to chat").
-  Drop "or co-investment interests" only for a pension/insurer with clearly no
-  co-invest programme.
+## The structure (v5 — five parts, in this order)
 
-Let the order breathe. If the pitch reads better before the fit line, or the personal
-touch belongs in the close, or the ticket size sits best in the hook — move it. The
-point is flow, not sequence. Just do not skip the fixed points below.
+**1. What we are raising.** Opens the body. Product first, no preamble.
+
+    "We are currently fundraising for our European opportunistic private credit
+    fund backed by real estate collateral, in tickets of €10M to €50M."
+
+  - The product name is **"European opportunistic private credit fund backed by
+    real estate collateral"**. Use it in full.
+  - The €10M to €50M tickets belong in this sentence.
+  - **The word "bilateral" is retired.** It does not appear anywhere in the body.
+
+**2. Why it might fit.** One sentence, hedged, generic.
+
+    "We think our strategy might fit into your portfolio and may nicely
+    complement [a general framing of their situation]."
+
+  - Keep "we think" and "might" / "may". The fit is offered, not asserted.
+  - The framing after "complement" is the one part that changes per LP, drawn
+    from their research file and stated GENERALLY: "a book taking its first steps
+    into alternatives", "a large, bond-led portfolio", "a fund with room to put
+    private capital to work".
+  - Do not name the institution, quote their figures, or describe their own
+    position back to them.
+
+**3. Where the raise stands.** Its own short paragraph.
+
+    "We are targeting €400M by April 2027. €50M is committed and €1M is our own."
+
+  - Vary the wording lightly, never the numbers.
+  - Present tense. Never "we are building".
+
+**4. The proof — three bullets.** The trust block below, as a real list.
+
+**5. The ask.** The closing block, on its own. TWO sentences, ONE block.
+
+    "Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call."
+
+  - Keep it verbatim. The deck sentence and the call ask stay together on one
+    block, not split across two.
+  - "If you are interested" is the hinge: it makes the call conditional rather
+    than presumed.
+  - It asks for a specific, small commitment. Keep the 20 minutes.
+  - The deck IS referenced again, so it must actually be attached at send time.
 
 ## The three bullets (the trust block — exact numbers, these three)
 - **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
 - **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
 
 ## Fixed points (do not drift on these)
 - Fund-facts numbers verbatim; never improvise a figure.
-- The three bold bullets above, and the deck line exactly once.
+- The three bold bullets above, exactly as written.
 - Never open the body with the LP's company name.
-- Research shows through the angle, never quoted back at them, never framed as
-  something they asked for or showed interest in.
-- No em-dashes. No semicolons.
+- Research shows through the framing in part 2, never quoted back at them, never
+  framed as something they asked for or showed interest in.
+- No em-dashes. No semicolons. No "bilateral".
 - Salutation "Dear Mr./Ms. Surname" (surname only). Sign-off "Kind regards," /
   Jozef Martinak / Partner, Valori Capital (English always).
-- Body roughly 120–190 words. Secular values only. Contractions optional and light.
+- Body roughly 100–150 words. Secular values only.
 
 ## Vary, always (this is a style, not a template)
-- No two consecutive LPs should share an opener framing, a mid-motion verb, a personal
-  touch, or a close. If a line could be pasted into any email, cut it.
-- Pick the angle — protection, real-asset credit, reliable yield, yield-without-risk —
-  that fits THIS LP's file.
+- Parts 1, 4 and 5 are close to fixed. The variety lives in part 2's framing and
+  lightly in part 3's wording.
+- No two consecutive LPs should share the framing after "complement". If a line
+  could be pasted into any email, cut it.
+
+## Retired in v5 (do not reintroduce)
+- The "I'm reaching out because our approach fits…" opener.
+- The second opener, "We run a private credit strategy… which would be a natural
+  fit to…".
+- The mid-motion paragraph and its personal touch (handling it himself, a region
+  note, an offer of time).
+- The old close, "Our deck is attached." followed by "If a specialised European
+  real asset debt manager fits your current mandate or co-investment
+  interests…". Replaced by the single two-sentence CTA in part 5.
+- The word "bilateral", and "in transactions ranging from €10M to €50M".
 
 ## Banned lines
-- Sales clichés: "exactly where we fit," "built for," "clear line between what you do
-  and what we offer," "the problem we solve," "I'd rather test that than assume it."
-- Needy lines: "I'd love to," "hope this finds you well," "worth both our time,"
-  "at your earliest convenience," "please don't hesitate."
+- Sales clichés: "exactly where we fit," "built for," "the problem we solve."
+- Needy lines: "I'd love to," "hope this finds you well," "at your earliest
+  convenience," "please don't hesitate."
 - Market-narrative filler, or any line describing the LP back to themselves.
 
 ## A light QA — read it aloud, does it flow?
-- `to:` present; `.html` generated. Three bullet labels bold, a real list.
-- The hook names the fit through a general research-framing — no company name first,
-  no quoted LP facts.
-- One genuine personal touch, not reused from the last LP.
-- No em-dashes, no semicolons. Body 120–190 words. Deck line once. Numbers all match
-  Fund facts. No banned lines. Close is confident and different from recent drafts.
+- `to:` present; `.html` newer than the `.md`. Three bullet labels bold, a real list.
+- Five parts, in order. No "bilateral" anywhere.
+- Part 2 is hedged and generic — no company name, no quoted LP facts.
+- No em-dashes, no semicolons. Body 100–150 words. Numbers all match Fund facts.
+- The close is the CTA verbatim, one block, deck sentence included.
+
+## Example
+Dear Mr. Gentile,
+
+We are currently fundraising for our European opportunistic private credit fund
+backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a
+book taking its first steps into alternatives.
+
+We are targeting €400M by April 2027. €50M is committed and €1M is our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital

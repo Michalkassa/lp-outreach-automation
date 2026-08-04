@@ -4,6 +4,10 @@ Self-correction pass. Drafts nothing, sends nothing.
    file in /drafts/. Drafts sit at drafts/<language>/<list>/ (e.g.
    drafts/en/pension-funds/, drafts/de/insurance/), so search every language
    bucket and every type folder inside it for the slug.
+   ALSO search .archive/ . Once an LP is sent its draft is moved out of the
+   working folder into .archive/sent-drafts-for-calibration/ so that /drafts/
+   only ever shows pending work. Those archived drafts are the other half of
+   every diff: skip them and calibration silently finds nothing to compare.
    Compare like with like: a Slovak sent email against its Slovak draft. When
    you report a pattern, say which language bucket it came from, since register
    and phrasing edits rarely transfer across languages.

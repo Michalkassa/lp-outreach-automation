@@ -10,8 +10,10 @@ Opens ONE browser session and walks the whole queue: for each LP it opens a
 compose window, fills To, Subject and the body, saves it to Outlook Drafts, and
 moves on. You are not asked anything between drafts.
 
-It NEVER sends and it NEVER attaches the deck. Every message lands in your
-Outlook Drafts folder for you to check, attach the deck, and send by hand.
+It NEVER sends. Every message lands in your Outlook Drafts folder with the deck
+already attached, for you to check and send by hand.
+
+The deck is the newest .pdf in deck/, or whatever --deck points at.
 
 It also never marks anything as sent. Stage stays `drafted` until the email
 actually goes out, which you log with scripts/log_sent.py or /log-sent.
@@ -41,15 +43,20 @@ def build_queue(args):
     drafts = sq.draft_map()
     folder_of = {"Insurance": "insurance", "Pension funds": "pension-funds"}
 
-    ready, blocked, held = [], [], []
+    only = {s.strip() for s in args.only.split(",")} if getattr(args, "only", None) else None
+    include_sent = getattr(args, "include_sent", False)
+    ready, blocked, held, warn = [], [], [], []
     seen = {}
     candidates = []
+    wanted_stages = {"drafted", "sent"} if include_sent else {"drafted"}
     for r in rows:
-        if r.get("stage") != "drafted":
+        if r.get("stage") not in wanted_stages:
             continue
         if args.lang and r.get("language") != args.lang:
             continue
         if args.lp_list and folder_of.get(r.get("list")) != args.lp_list:
+            continue
+        if only and r["slug"] not in only:
             continue
         path = drafts.get(r["slug"])
         if not path:
@@ -64,31 +71,48 @@ def build_queue(args):
             candidates.append(item)
 
     candidates.sort(key=lambda e: (-e["score"], e["company"].lower()))
+    sent_addrs, sent_domains = sq.already_contacted(rows)
+    if include_sent:
+        # These rows are marked sent but the emails have not actually gone out,
+        # which is the whole reason for the flag. Their own addresses must not
+        # count as prior contact or every single one would be held.
+        building = {e["to"].lower() for e in candidates}
+        building_firms = {e["company"] for e in candidates}
+        sent_addrs = {a: c for a, c in sent_addrs.items() if a not in building}
+        # Same for the domain warning, or a firm ends up warned against itself.
+        sent_domains = {d: c for d, c in sent_domains.items()
+                        if c not in building_firms}
     for e in candidates:
         key = e["to"].lower()
-        if key in seen:
-            held.append((e, seen[key]))
+        if key in sent_addrs:
+            held.append((e, f"already sent to this address ({sent_addrs[key]})"))
+        elif key in seen:
+            held.append((e, f"shares {e['to']} with {seen[key]['company']}"))
         else:
             seen[key] = e
             ready.append(e)
+            firm = sent_domains.get(key.split("@")[-1])
+            if firm:
+                warn.append((e, firm))
 
-    if not args.all:
+    if not args.all and not only:
         ready = ready[:max(args.limit, 0)]
-    return ready, held, blocked
+    return ready, held, blocked, warn
 
 
-def save_draft(page):
+def save_draft(page, settle_ms=350):
     """Ask Outlook to persist the message to Drafts before we navigate away.
 
     OWA autosaves on its own, but an explicit save plus a short settle makes the
     difference between a draft that is there and one that lost its last edit.
+    A long fixed sleep here was costing more than the save actually needs.
     """
     combo = "Meta+S" if sys.platform == "darwin" else "Control+S"
     try:
         page.keyboard.press(combo)
     except Exception:
         pass
-    page.wait_for_timeout(1200)
+    page.wait_for_timeout(settle_ms)
 
 
 def main():
@@ -100,23 +124,46 @@ def main():
     ap.add_argument("--limit", type=int, default=sq.DAILY_CAP,
                     help=f"how many to build (default {sq.DAILY_CAP})")
     ap.add_argument("--all", action="store_true", help="ignore the limit, build everything ready")
+    ap.add_argument("--only", metavar="SLUGS",
+                    help="comma-separated slugs to build, ignoring the score order and limit")
     ap.add_argument("--dry-run", action="store_true", help="list the queue and exit, no browser")
     ap.add_argument("--url", default=DEFAULT_URL, help=f"mailbox URL (default {DEFAULT_URL})")
     ap.add_argument("--profile", default=str(ROOT / ".browser-profile"),
                     help="browser profile directory")
-    ap.add_argument("--pause", type=float, default=1.0, metavar="SECS",
-                    help="seconds to settle between drafts (default 1)")
+    ap.add_argument("--pause", type=float, default=0.2, metavar="SECS",
+                    help="seconds to settle between drafts (default 0.2)")
     ap.add_argument("--keep-open", action="store_true",
                     help="leave the browser open at the end instead of closing it")
+    ap.add_argument("--deck", metavar="PATH",
+                    help="deck to attach to every draft (default: newest .pdf in deck/)")
+    ap.add_argument("--no-deck", action="store_true",
+                    help="do not attach a deck. The emails still say one is attached.")
+    ap.add_argument("--inspect-attach", action="store_true",
+                    help="on the first draft, list every file input and stop")
+    ap.add_argument("--include-sent", action="store_true",
+                    help="also build rows already marked sent. For when the tracker "
+                         "was updated ahead of the actual send.")
+    sq.program.add_argument(ap)
     args = ap.parse_args()
 
-    ready, held, blocked = build_queue(args)
+    deck = None
+    if not args.no_deck:
+        deck = md.resolve_deck(args.deck)
+        if deck is None:
+            sys.exit("error: no deck found in deck/ and --deck not given.\n"
+                     "       The emails say \"Please find attached our presentation\", so\n"
+                     "       building them without one sets up a broken send.\n"
+                     "       Put a PDF in deck/, pass --deck PATH, or use --no-deck.")
+
+    ready, held, blocked, warn = build_queue(args)
 
     print(f"to build : {len(ready)}")
     print(f"held     : {len(held)}   (shared recipient, one email per person)")
     print(f"blocked  : {len(blocked)} (failed a readiness check)")
-    for e, kept in held:
-        print(f"  held    [{e['score']}] {e['company']} shares {e['to']} with {kept['company']}")
+    for e, why in held:
+        print(f"  held    [{e['score']}] {e['company']}: {why}")
+    for e, firm in warn:
+        print(f"  WARN    [{e['score']}] {e['company']} <{e['to']}> firm already emailed via {firm}")
     for e in blocked:
         print(f"  blocked [{e['score']}] {e['company']}: {'; '.join(e['problems'])}")
 
@@ -142,6 +189,7 @@ def main():
     base = args.url.rstrip("/").removesuffix("/mail")
     done, failed = [], []
 
+    print(f"\ndeck     : {deck.name if deck else 'NONE (--no-deck)'}")
     print(f"\nbuilding {len(ready)} Outlook drafts. Nothing will be sent.\n")
     with sync_playwright() as p:
         ctx = p.chromium.launch_persistent_context(
@@ -170,8 +218,17 @@ def main():
                     failed.append((e, "body insert failed"))
                     continue
 
+                if args.inspect_attach:
+                    md.inspect_attachment_inputs(page)
+                    print("inspect mode: stopping after the first compose window.")
+                    break
+
+                attached = md.attach_deck(page, deck) if deck else None
                 save_draft(page)
-                print(f"  ok    {label}  ->  {e['to']}")
+                mark = "" if attached is not False else "  (DECK NOT ATTACHED)"
+                print(f"  ok    {label}  ->  {e['to']}{mark}")
+                if attached is False:
+                    failed.append((e, "deck not attached"))
                 done.append(e)
                 time.sleep(max(args.pause, 0))
             except KeyboardInterrupt:
@@ -184,7 +241,7 @@ def main():
         print("\n" + "=" * 62)
         print(f"built {len(done)} of {len(ready)} drafts. NOTHING WAS SENT.")
         print("They are in your Outlook Drafts folder.")
-        print("Your turn: check each one, ATTACH THE DECK, send by hand.")
+        print("Your turn: check each one, confirm the attachment, send by hand.")
         print("After sending, log it:  .venv/bin/python scripts/log_sent.py <draft.html>")
         print("=" * 62)
         if failed:

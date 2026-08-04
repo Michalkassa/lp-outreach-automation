@@ -68,7 +68,10 @@ Add score to top of file: `score: XX/100`
 ---
 
 ## Output file update
-Update data/output.csv (stage=research, score filled).
+Update data/output.csv (stage=research, score filled), then refresh both
+workbooks so the change is visible:
+  .venv/bin/python scripts/convert.py export
+  .venv/bin/python scripts/convert.py sync
 data/output.csv uses semicolons (;) as delimiter. No semicolons inside field values.
 Columns: country;language;type;list;company;slug;score;aum;contact_name;contact_title;contact_email;stage;category;bridge;flag;date_sent
 Score is a plain integer 1-100 (not "90/100").

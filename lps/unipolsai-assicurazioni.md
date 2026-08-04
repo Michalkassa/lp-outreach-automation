@@ -21,7 +21,16 @@ Italian insurer context: Europe's second-largest insurance market with multi-bil
 Italian board; import contact Riccardo Baudi [VERIFY currency].
 
 ## Contacts
-1. **Riccardo Baudi** — (import). Email: baudir@pec.unipol.it (import — PEC certified-mail address, unusual for outreach [VERIFY]).
+1. **Riccardo Baudi** — Chief Investment Officer, Unipol Gruppo and UnipolSai (CONFIRMED 2026-08-03
+   via Bloomberg and MarketScreener profiles). Email: no verifiable direct address. The imported
+   baudir@pec.unipol.it is a PEC (certified legal mail), the wrong channel for a first touch.
+   Route via Unipol's published investor relations inbox: investor.relations@unipol.it
+   (unipol.com/en/contacts). Head of IR is Alberto Zoia.
+   Why them: owns the group investment allocation.
+
+2. **Gianluca Banfi** — Head of Alternative Investments, UnipolSai. Email: FIND.
+   Why them: desk-level owner of exactly the bucket this strategy sits in. Likely the better
+   target than the CIO for a first approach, if an address can be confirmed.
    Why them: named door.
 
 ## Recent Activity (last 18 months)

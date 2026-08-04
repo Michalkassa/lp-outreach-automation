@@ -1,432 +1,89 @@
 # REVIEW PACKET — EN drafts (all types)
 
-Total drafts: 50  ·  compiled 2026-07-28
+Total drafts: 60  ·  compiled 2026-08-04
 
 | LP | Variant | Bridge | Words |
 |---|---|---|---|
-| ABA Mandatory Pension Fund | - | fit - an alternatives programme with fund commit | 159 |
-| Allianz Hrvatska | - | fit - a regional book where new money has been g | 156 |
-| Allianz Hungária Nyugdíjpénztár | - | fit - a member fund seeking steady, protected re | 140 |
-| Allianz Hungária Zrt. | - | fit - a conservative insurance balance sheet wit | 155 |
-| Allianz-Țiriac Asigurări | - | fit - a bond-led insurance book | 135 |
-| AZ Mandatory B-Category | - | fit - Croatia's largest pension book, still bond | 135 |
-| AZ Mandatory Pension Fund | - | niche European private credit strategies | 133 |
-| AZ Voluntary Pension Fund | - | fit (reach) - a member fund seeking steady, prot | 136 |
-| AZT Viitorul Tău | - | niche European private credit strategies | 139 |
-| BCR Pensii | - | fit - a Pillar II fund with room to put private  | 144 |
-| BRD Pensii | - | fit - alternatives headroom that is available bu | 160 |
-| Cometa | - | niche European private credit strategies | 122 |
-| Croatia osiguranje d.d. | - | European real asset debt | 126 |
-| ERGO Hestia | - | fit - a large bond-led insurance balance sheet w | 156 |
-| Erste Mandatory Pension Fund | - | European real asset debt | 144 |
-| Ethniki Asfalistiki | - | fit - a large, bond-led insurance book | 134 |
-| Eurolife FFH | - | fit - a large insurance book that wants yield wi | 143 |
-| Foncer | - | fit - a fund with room for a real-economy sleeve | 143 |
-| Fonchim | - | niche European private credit strategies | 179 |
-| Fondenergia | - | fit - a fund building a real-economy allocation | 133 |
-| Fondo Alifond | - | fit - an Italian category fund building out its  | 159 |
-| Fondo Arco | - | niche European private credit strategies | 154 |
-| Fondo BCC | - | fit - a member fund seeking yield beyond its bon | 139 |
-| Fondo Eurofer | - | fit - a fund already comfortable with long-lived | 162 |
-| Fondo Fonte | - | fit (building) - a large fund weighing its first | 140 |
-| Fondo Gomma Plastica | - | fit - a fund with room to add a real-economy sle | 141 |
-| Fondo Laborfonds | - | fit (reach) - a fund already writing real-econom | 141 |
-| Fondo Pegaso | - | fit (building) - a fund active in real-economy c | 144 |
-| Fondo Poste | - | fit - a large occupational fund seeking protecte | 136 |
-| Fondo Priamo | - | fit - a fund that wants steady, protected return | 138 |
-| Fondo Telemaco | - | fit - a fund building a real-economy allocation | 141 |
-| Generali Italia | - | special situations credit | 150 |
-| Generali Pensii | - | fit - a Pillar II book whose parent group alread | 158 |
-| Intesa Sanpaolo Assicura | - | fit - a large insurance balance sheet diversifyi | 142 |
-| Kapitalska Družba (KAD) | - | special situations credit | 139 |
-| Metropolitan Life Pensii | - | niche European private credit strategies | 130 |
-| Modra Zavarovalnica (Pension) | - | niche European private credit strategies | 138 |
-| NN Asigurări de Viață | - | fit - a long-duration life book looking for yiel | 157 |
-| NN Pensii | - | niche European private credit strategies | 151 |
-| OTP Nyugdíjpénztár | - | niche European private credit strategies | 167 |
-| Poste Vita | - | European real asset debt | 129 |
-| Prevaer | - | fit - a category fund whose members work around  | 157 |
-| Prevedi | - | fit - a membership whose own working life is bui | 158 |
-| Previ Moda | - | fit - an Italian category fund with room to dive | 155 |
-| Previbank | - | fit - a credit-native membership that reads a lo | 161 |
-| Previdenza Cooperativa | - | fit - a fund that measures a manager by conduct  | 160 |
-| PZU SA | - | special situations credit | 149 |
-| Solidarieta Veneto | - | fit (reach) - a fund rooted in a regional credit | 139 |
-| Warta | - | fit - a large insurance book where the credit si | 154 |
-| Zavarovalnica Triglav | - | fit (building) - a large, locally-run insurance  | 136 |
+| Adriatic Osiguranje | - | fit - a regional book where new money has been g | 125 |
+| ALTUM | - | fit - a large, bond-led portfolio looking to div | 120 |
+| Asirom Vienna Insurance Group | - | fit - a book weighted to government paper and lo | 127 |
+| BCR Asigurări de Viață | - | fit - a growing insurance book building out its  | 128 |
+| Benefia | - | fit - a sizeable book looking to diversify witho | 123 |
+| BT Pensii | - | fit - a Pillar II fund with room inside its priv | 123 |
+| Carpathia | - | fit - a Pillar II fund with room inside its priv | 123 |
+| CDP - Cassa Depositi e Prestiti | - | fit - a balance sheet looking for yield it can h | 129 |
+| CIG Pannónia | - | fit - a balance sheet with room for a clearly bo | 130 |
+| Compensa TU | - | fit - a large, bond-led balance sheet weighing w | 126 |
+| Concordia Pensii | - | fit - a Pillar II fund with room inside its priv | 129 |
+| EIB - European Investment Bank | - | fit - a large, bond-led portfolio looking to div | 121 |
+| Eurolife FFH | - | fit - a conservative balance sheet with room for | 129 |
+| F.I.L.Coop Sanitario | - | fit - a members' fund building a real-economy al | 131 |
+| Generali Biztosító Zrt. | - | fit - a conservative insurance balance sheet wit | 123 |
+| Generali osiguranje | - | fit - a book that holds property but lends again | 128 |
+| Generali Pokojninski | - | fit - a regional pension book with room to diver | 131 |
+| Generali Polska | - | fit - a large, bond-led balance sheet weighing w | 131 |
+| Generali Romania | - | fit - a conservative balance sheet with room for | 125 |
+| Generali Zavarovalnica | - | fit - a conservative insurance balance sheet loo | 122 |
+| Grawe Hrvatska | - | fit - a regional book where new money has been g | 130 |
+| Grawe Romania | - | fit - a growing insurance book building out its  | 128 |
+| Grawe Zavarovalnica | - | fit - a book that holds real assets but lends ag | 125 |
+| Groupama Biztosító Zrt. | - | fit - a conservative insurance balance sheet wit | 123 |
+| Groupama Phoenix | - | fit - a book rebuilt around capital strength and | 129 |
+| HDI Assicurazioni | - | fit - a Solvency II balance sheet with room for  | 131 |
+| Helvetia Italia | - | fit - a large book concentrated in domestic gove | 122 |
+| Honvéd Nyugdíjpénztár | - | fit - a voluntary fund whose members expect stea | 123 |
+| ICO - Instituto de Crédito Oficial | - | fit - a balance sheet looking for yield without  | 129 |
+| Interlife Insurance | - | fit - a long-duration book that needs yield it c | 125 |
+| InterRisk | - | fit - a large, bond-led balance sheet weighing w | 125 |
+| Link4 | - | fit - a balance sheet with scale enough to hold  | 130 |
+| Merkur osiguranje | - | fit - a regional book where new money has been g | 125 |
+| MetLife Hungary | - | fit - a balance sheet with room for a clearly bo | 129 |
+| MKB Nyugdíjpénztár | - | fit - a book with room to put private capital to | 128 |
+| MKB Union | - | fit - a conservative insurance balance sheet wit | 129 |
+| Nobis Compagnia | - | fit - a large book concentrated in domestic gove | 122 |
+| Omniasig VIG | - | fit - a book weighted to government paper and lo | 122 |
+| Pokojninska družba A | - | fit - a regional pension book with room to diver | 131 |
+| Polisa Życie | - | fit - a sizeable book looking to diversify witho | 123 |
+| Posta Biztosító | - | fit - a conservative insurance balance sheet wit | 129 |
+| Prva Osebna Zavarovalnica | - | fit - a regional book with room for a clearly bo | 129 |
+| Prva Pokojninska družba | - | fit - a supplementary fund whose members expect  | 123 |
+| Raifeisen Voluntary Pension Fund | - | fit - a member fund looking for yield beyond gov | 122 |
+| Raiffeisen Pensii | - | fit - a large pension pool still weighted almost | 128 |
+| Sava Pokojninska | - | fit - a regional pension book with room to diver | 131 |
+| SIGNAL Biztosító | - | fit - a balance sheet with room for a clearly bo | 129 |
+| Signal Iduna | - | fit - a growing insurance book building out its  | 128 |
+| TEA Interamerican | - | fit - an occupational fund building its allocati | 124 |
+| TEA OTE | - | fit - an occupational fund building its allocati | 124 |
+| Triglav osiguranje | - | fit - a conservative balance sheet with room for | 126 |
+| Triglav Pokojninska | - | fit - a regional pension book with room to diver | 125 |
+| TUZ Ubezpieczenia | - | fit - a sizeable book looking to diversify witho | 123 |
+| Union Vienna Insurance Group | - | fit - a balance sheet with room for a clearly bo | 130 |
+| UnipolSai Assicurazioni | - | fit - a balance sheet looking for yield it can h | 129 |
+| Vasutas Nyugdíjpénztár | - | fit - a member-owned fund with room to diversify | 124 |
+| Ydrogeios Insurance | - | fit - a long-duration book that needs yield it c | 129 |
+| Zav Vita (Pension) | - | fit - a regional book with room for a clearly bo | 130 |
+| Zavarovalnica Sava (Pension) | - | fit - a book that holds real assets but lends ag | 125 |
+| Zurich Italia | - | fit - a balance sheet looking for yield it can h | 125 |
 
 ---
 
-## ABA Mandatory Pension Fund — fit - an alternatives programme with fund commit (-)
-
-**Subject:** Valori Capital, special situations credit, 19% IRR
-
-Dear Ms. Marić,
-
-There may be a fit with an alternatives programme that already commits to funds but has no credit line inside it.
-
-We provide private credit backed by European real estate, in secured, bilateral transactions ranging from €10M to €50M, adding collateral and current yield to a book otherwise weighted to equity risk.
-
-We are currently fundraising for our €400M target fund, with a planned close by April 2027, €50M committed and €1M of our own capital in it. Our roots are in this region and we underwrite here ourselves.
-
-- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
-
-Our deck is attached for your review.
-
-If this interests you, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## Allianz Hrvatska — fit - a regional book where new money has been g (-)
-
-**Subject:** Valori Capital, European real asset debt, 15%+ net IRR
-
-Dear Ms. Jakovac,
-
-I am reaching out because our approach fits a book whose incremental euros have been going into government paper.
-
-We provide private credit backed by European real estate, in secured, bilateral transactions ranging from €10M to €50M. A small senior sleeve changes the yield profile without changing the risk posture.
-
-Our first vintage under the Valori brand is in placement, targeting €400M by April 2027, with €50M committed and €1M of it our own. We know this region from the ground up.
-
-- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
-
-Our deck is attached.
-
-If this fits your current mandate, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## Allianz Hungária Nyugdíjpénztár — fit - a member fund seeking steady, protected re (-)
-
-**Subject:** Valori Capital, niche European private credit strategies, 15%+ net IRR
-
-Dear Mr. Marusinecz,
-
-We run a private credit strategy backed by European real estate, which would be a natural fit to a member fund seeking steady, protected returns.
-
-The deals are bilateral, €10M to €50M, and the collateral protects the principal.
-
-We are now raising our first vintage under the Valori brand, targeting €400M by April 2027. €50M is committed and €1M is our own. We are keeping the founding group deliberately small.
-
-- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- **Target Returns:** 15%+ net IRR to LPs, 15%+ unlevered at the asset level.
-
-Our deck is attached.
-
-If a specialised European real asset debt manager fits your current mandate or co-investment interests, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## Allianz Hungária Zrt. — fit - a conservative insurance balance sheet wit (-)
-
-**Subject:** Valori Capital, European real asset debt, private credit backed by European real estate
-
-Dear Mr. Bacsó,
-
-Our strategy could be a good fit for a conservative balance sheet without a dedicated private credit sleeve.
-
-We provide private credit backed by European real estate, in bilateral transactions ranging from €10M to €50M, secured against the property behind each loan.
-
-We are targeting €400M by April 2027. €50M is committed and €1M is our own. I am available directly for questions about the structure or the pipeline.
-
-- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
-
-Our deck is attached.
-
-If a specialised European real asset debt manager fits your current mandate, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## Allianz-Țiriac Asigurări — fit - a bond-led insurance book (-)
+## Adriatic Osiguranje — fit - a regional book where new money has been g (-)
 
 **Subject:** Valori Capital, European real asset debt, 19% IRR
 
-Dear Mr. Soncutean,
+Dear Mr. Pavić,
 
-I'm reaching out because our approach fits a bond-led insurance book.
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
 
-We provide private credit backed by European real estate, secured and bilateral, in tickets of €10M to €50M, protection ahead of yield.
-
-We are now raising our first vintage under the Valori brand, targeting €400M by April 2027. €50M is committed and €1M is our own. We are keeping the founding group deliberately small.
-
-- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- **Target Returns:** 15%+ net IRR to LPs, 15%+ unlevered at the asset level.
-
-Our deck is attached.
-
-If a specialised European real asset debt manager fits your current mandate or co-investment interests, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## AZ Mandatory B-Category — fit - Croatia's largest pension book, still bond (-)
-
-**Subject:** Valori Capital, niche European private credit strategies, private credit backed by European real estate
-
-Dear Mr. Buk,
-
-I'm reaching out because our approach fits Croatia's largest pension book, still bond-led.
-
-We provide private credit backed by European real estate, secured and bilateral, in tickets of €10M to €50M, protection ahead of yield.
-
-We are now raising our first vintage under the Valori brand, targeting €400M by April 2027. €50M is committed and €1M is our own. I am handling these conversations myself.
-
-- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- **Target Returns:** 15%+ net IRR to LPs, 15%+ unlevered at the asset level.
-
-Our deck is attached.
-
-If a specialised European real asset debt manager fits your current mandate or co-investment interests, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## AZ Mandatory Pension Fund — niche European private credit strategies (-)
-
-**Subject:** Valori Capital, niche European private credit strategies, €1.35B underwritten at 19% IRR
-
-Dear Mr. Buk,
-
-I'm reaching out because our approach fits a member fund seeking steady, protected returns.
-
-We provide private credit backed by European real estate, secured and bilateral, in tickets of €10M to €50M, protection ahead of yield.
-
-We are currently fundraising for our latest private credit strategy, targeting €400M by April 2027. To date, €50M has been committed, including €1M from our own capital.
-
-- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
-
-Our deck is attached.
-
-If a specialised European real asset debt manager fits your current mandate or co-investment interests, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## AZ Voluntary Pension Fund — fit (reach) - a member fund seeking steady, prot (-)
-
-**Subject:** Valori Capital, niche European private credit strategies, first vintage
-
-Dear Mr. Buk,
-
-I'm reaching out because our approach fits a member fund seeking steady, protected returns.
-
-We provide private credit backed by European real estate, secured and bilateral, in tickets of €10M to €50M, protection ahead of yield.
-
-We are now raising our first vintage under the Valori brand, targeting €400M by April 2027. €50M is committed and €1M is our own. I am handling these conversations myself.
-
-- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- **Target Returns:** 15%+ net IRR to LPs, 15%+ unlevered at the asset level.
-
-Our deck is attached.
-
-If a specialised European real asset debt manager fits your current mandate or co-investment interests, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## AZT Viitorul Tău — niche European private credit strategies (-)
-
-**Subject:** Valori Capital, niche European private credit strategies, first vintage
-
-Dear Mr. Pop,
-
-I wanted to reach out as I believe our private credit strategy could be a good fit for your investment approach.
-
-We provide secured, bilateral private credit backed by European real estate, offering diversification beyond traditional government bonds for large, bond-focused portfolios, with tickets ranging from €10M to €50M.
-
-We are now raising our first vintage, targeting €400M by April 2027. €50M is committed and €1M is our own.
-
-- Track Record: €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- Current Dynamics: €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- Target Returns: 15%+ net IRR to LPs, 15%+ unlevered at the asset level.
-
-Our deck is attached.
-
-If a specialised European real asset debt manager fits your current mandate or co-investment interests, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## BCR Pensii — fit - a Pillar II fund with room to put private  (-)
-
-**Subject:** Valori Capital, European real asset debt, real-estate-backed private credit
-
-Dear Mr. Popescu,
-
-We run a private credit strategy backed by European real estate, which would be a natural fit to a Pillar II fund with room to put private capital to work.
-
-We work bilaterally, in tickets of €10M to €50M, backed by real estate collateral.
-
-We are now raising our first vintage under the Valori brand, targeting €400M by April 2027. €50M is committed and €1M is our own. I am handling these conversations myself.
-
-- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- **Target Returns:** 15%+ net IRR to LPs, 15%+ unlevered at the asset level.
-
-Our deck is attached.
-
-If a specialised European real asset debt manager fits your current mandate or co-investment interests, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## BRD Pensii — fit - alternatives headroom that is available bu (-)
-
-**Subject:** Valori Capital, niche European private credit strategies, €1.35B underwritten at 19% IRR
-
-Dear Ms. Morar,
-
-Our strategy could be a natural fit for a fund with room in its alternatives allowance that has not yet been put to work.
-
-We provide private credit backed by European real estate, in bilateral transactions ranging from €10M to €50M, with strong downside protection from the property behind each loan.
-
-We are now raising our first vintage under the Valori brand, targeting €400M by April 2027, with €50M committed and €1M of it our own. I am available directly for questions on how the structure works.
-
-- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
-
-Our deck is attached.
-
-If a specialised European real asset debt manager aligns with your current mandate, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## Cometa — niche European private credit strategies (-)
-
-**Subject:** Valori Capital, niche European private credit strategies, first vintage
-
-Dear Mr. Spiniello,
-
-I'm reaching out as I believe there may be a fit with your fund's existing real-economy allocation.
-
-We provide bilateral, secured private credit backed by European real estate, offering institutional investors diversification opportunities through €10M–€50M investment tickets.
+We think our strategy might fit into your portfolio and may nicely complement a regional book where new money has been going into government paper.
 
 We are targeting €400M by April 2027. €50M is committed and €1M is our own.
 
-- Track Record: €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- Current Dynamics: €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- Target Returns: 15%+ net IRR to LPs, 15%+ unlevered at the asset level.
-
-Our deck is attached.
-
-If a specialised European real asset debt manager fits your current mandate or co-investment interests, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## Croatia osiguranje d.d. — European real asset debt (-)
-
-**Subject:** Valori Capital, European real asset debt, first vintage
-
-Dear Mr. Tomašković,
-
-I am reaching out as we manage a private credit strategy backed by European real estate, designed to complement large, bond-led insurance portfolios.
-
-We originate bilateral transactions ranging from €10M to €50M, with a focus on downside protection ahead of yield.
-
-We are targeting €400M by April 2027. €50M is committed and €1M is our own.
-
-- Track Record: €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- Current Dynamics: €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- Target Returns: 15%+ net IRR to LPs, 15%+ unlevered at the asset level.
-
-Our deck is attached.
-
-If a specialised European real asset debt manager fits your current mandate or co-investment interests, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## ERGO Hestia — fit - a large bond-led insurance balance sheet w (-)
-
-**Subject:** Valori Capital, European real asset debt, private credit backed by European real estate
-
-Dear Mr. Borowiński,
-
-There may be a fit with a large, bond-led balance sheet weighing where its next increment of yield comes from.
-
-We provide private credit backed by European real estate, in secured, bilateral transactions ranging from €10M to €50M, with capital protection alongside yield in every position.
-
-Our first vintage under the Valori brand is in placement, targeting €400M by April 2027, with €50M committed and €1M of our own. I would rather have one substantive conversation than a series of short ones.
-
 - **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
 - **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
 
-Our deck is attached.
-
-If this fits your current mandate, I would welcome a brief introductory call.
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
 
 Kind regards,
 
@@ -435,515 +92,23 @@ Partner, Valori Capital
 
 ---
 
-## Erste Mandatory Pension Fund — European real asset debt (-)
-
-**Subject:** Valori Capital, European real asset debt, first vintage
-
-Dear Mr. Vlaić,
-
-I wanted to reach out because our strategy may be a good fit for a portfolio already active in real assets.
-
-We provide private credit backed by European real estate, with secured, bilateral transactions ranging from €10M to €50M.
-
-We are currently €50M into our fundraising process, targeting a €400M fund size by April 2027. This includes €1M of our own capital.
-
-- Track Record: €1.35B previously underwritten at a 19% IRR, supported by over 50 years of combined experience.
-- Current Dynamics: €50M committed and a €100M+ proprietary pipeline, predominantly bilateral.
-- Target Returns: 15%+ net IRR to LPs, with 15%+ unlevered returns at the asset level.
-
-I have attached our deck for your review.
-
-If a specialised European real asset debt manager aligns with your current mandate or co-investment interests, I would welcome the opportunity for a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## Ethniki Asfalistiki — fit - a large, bond-led insurance book (-)
-
-**Subject:** Valori Capital, European real asset debt, real-estate-backed private credit
-
-Dear Mr. Mazarakis,
-
-I'm reaching out because our approach fits a large, bond-led insurance book.
-
-We provide private credit backed by European real estate, secured and bilateral, in tickets of €10M to €50M.
-
-We are now raising our first vintage under the Valori brand, targeting €400M by April 2027. €50M is committed and €1M is our own. I am reaching out early, before we widen the round.
-
-- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- **Target Returns:** 15%+ net IRR to LPs, 15%+ unlevered at the asset level.
-
-Our deck is attached.
-
-If a specialised European real asset debt manager fits your current mandate or co-investment interests, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## Eurolife FFH — fit - a large insurance book that wants yield wi (-)
-
-**Subject:** Valori Capital, special situations credit, 15%+ net IRR
-
-Dear Mr. Sarrigeorgiou,
-
-I'm reaching out because our approach fits a large insurance book that wants yield without more risk.
-
-We provide private credit backed by European real estate, bilateral and backed by real estate collateral, in tickets of €10M to €50M.
-
-We are now raising our first vintage under the Valori brand, targeting €400M by April 2027. €50M is committed and €1M is our own. I would rather do this directly than through an agent.
-
-- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- **Target Returns:** 15%+ net IRR to LPs, 15%+ unlevered at the asset level.
-
-Our deck is attached.
-
-If a specialised European real asset debt manager fits your current mandate or co-investment interests, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## Foncer — fit - a fund with room for a real-economy sleeve (-)
-
-**Subject:** Valori Capital, niche European private credit strategies, 15%+ net IRR
-
-Dear Mr. Giovanardi,
-
-We run a private credit strategy backed by European real estate, which would be a natural fit to a fund with room for a real-economy sleeve.
-
-The deals are bilateral, €10M to €50M, and the collateral protects the principal.
-
-We are now raising our first vintage under the Valori brand, targeting €400M by April 2027. €50M is committed and €1M is our own. I am reaching out early, before we widen the round.
-
-- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- **Target Returns:** 15%+ net IRR to LPs, 15%+ unlevered at the asset level.
-
-Our deck is attached.
-
-If a specialised European real asset debt manager fits your current mandate or co-investment interests, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## Fonchim — niche European private credit strategies (-)
-
-**Subject:** Valori Capital, niche European private credit strategies, first vintage
-
-Dear Mr. Tomasolli,
-
-We operate a private credit strategy backed by European real estate, and I believe it may be a good fit for your investment approach.
-
-We focus on delivering attractive risk-adjusted returns through secured, bilateral transactions.
-
-Our strategy is designed for investors seeking capital protection alongside yield, with deals ranging from €10M to €50M and secured against the underlying real estate.
-
-We are currently €50M into raising our €400M target fund, with a planned close by April 2027. The fund includes €1M of our own capital, with the initial close reserved for a carefully selected group of founding investors.
-
-- Track Record: €1.35B previously underwritten at a 19% IRR, supported by over 50 years of combined experience.
-- Current Dynamics: €50M committed and a €100M+ proprietary pipeline, predominantly bilateral.
-- Target Returns: 15%+ net IRR to LPs, with 15%+ unlevered returns at the asset level.
-
-Our deck is attached for your review.
-
-If a specialised European real asset debt manager aligns with your current mandate or co-investment interests, I would welcome the opportunity for a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## Fondenergia — fit - a fund building a real-economy allocation (-)
-
-**Subject:** Valori Capital, niche European private credit strategies, real-estate-backed private credit
-
-Dear Mr. Cribari,
-
-I'm reaching out because our approach fits a fund building a real-economy allocation.
-
-We provide private credit backed by European real estate, secured and bilateral, in tickets of €10M to €50M.
-
-We are now raising our first vintage under the Valori brand, targeting €400M by April 2027. €50M is committed and €1M is our own. We are keeping the founding group deliberately small.
-
-- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- **Target Returns:** 15%+ net IRR to LPs, 15%+ unlevered at the asset level.
-
-Our deck is attached.
-
-If a specialised European real asset debt manager fits your current mandate or co-investment interests, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## Fondo Alifond — fit - an Italian category fund building out its  (-)
-
-**Subject:** Valori Capital, niche European private credit strategies, 15%+ net IRR
-
-Dear Mr. Barigazzi,
-
-I am reaching out because our approach fits a fund building out a real-economy allocation with a firm floor under it.
-
-We provide private credit backed by European real estate, in secured, bilateral transactions ranging from €10M to €50M, where the collateral sits ahead of the return.
-
-We are currently €50M into raising our €400M target fund, with a planned close by April 2027, and €1M of that is the partners' own capital.
-
-- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
-
-Our deck is attached for your review.
-
-If this interests you, I would welcome the opportunity to introduce the strategy in more detail.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## Fondo Arco — niche European private credit strategies (-)
-
-**Subject:** Valori Capital, niche European private credit strategies, first vintage
-
-Dear Mr. Turchetti,
-
-I'm reaching out because our approach would fit a fund which already backs real-economy credit.
-
-We provide private credit backed by European real estate, secured and bilateral, in tickets of €10M to €50M, protection ahead of yield.
-
-We are currently raising our €400M target fund, with a planned close by April 2027. The strategy has already secured €50M in commitments, including €1M of our own capital, and we are engaging with a select group of investors ahead of the broader fundraising process.
-
-- Track Record: €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- Current Dynamics: €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- Target Returns: 15%+ net IRR to LPs, 15%+ unlevered at the asset level.
-
-Our deck is attached for your review.
-
-I would welcome the opportunity to introduce our approach and discuss whether there could be a fit with your investment objectives.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## Fondo BCC — fit - a member fund seeking yield beyond its bon (-)
-
-**Subject:** Valori Capital, niche European private credit strategies, 15%+ net IRR
-
-Dear Mr. Longo,
-
-We run a private credit strategy backed by European real estate, which would be a natural fit to a member fund seeking yield beyond its bond core.
-
-The deals are bilateral, €10M to €50M, and the collateral protects the principal.
-
-We are now raising our first vintage under the Valori brand, targeting €400M by April 2027. €50M is committed and €1M is our own. I speak with investors directly.
-
-- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- **Target Returns:** 15%+ net IRR to LPs, 15%+ unlevered at the asset level.
-
-Our deck is attached.
-
-If a specialised European real asset debt manager fits your current mandate or co-investment interests, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## Fondo Eurofer — fit - a fund already comfortable with long-lived (-)
-
-**Subject:** Valori Capital, niche European private credit strategies, real-estate-backed private credit
-
-Dear Mr. Pierini,
-
-Our strategy could be a good fit for a fund already comfortable holding long-lived physical assets.
-
-We provide the credit side of that world, private credit backed by European real estate, in bilateral transactions ranging from €10M to €50M and in a senior, secured position.
-
-The fundraise is underway for our €400M target fund, with a planned close by April 2027 and €50M committed. The initial close is reserved for a carefully selected group of founding investors.
-
-- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
-
-Our deck is attached.
-
-If a specialised European real asset debt manager fits your current mandate, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## Fondo Fonte — fit (building) - a large fund weighing its first (-)
-
-**Subject:** Valori Capital, niche European private credit strategies, first vintage
-
-Dear Mr. Grifoni,
-
-We run a private credit strategy backed by European real estate, which would be a natural fit to a large fund weighing its first real-economy allocation.
-
-We work bilaterally, in tickets of €10M to €50M, backed by real estate collateral.
-
-We are now raising our first vintage under the Valori brand, targeting €400M by April 2027. €50M is committed and €1M is our own. I am handling these conversations myself.
-
-- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- **Target Returns:** 15%+ net IRR to LPs, 15%+ unlevered at the asset level.
-
-Our deck is attached.
-
-If a specialised European real asset debt manager fits your current mandate or co-investment interests, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## Fondo Gomma Plastica — fit - a fund with room to add a real-economy sle (-)
-
-**Subject:** Valori Capital, niche European private credit strategies, private credit backed by European real estate
-
-Dear Mr. Spadari,
-
-I'm reaching out because our approach fits a fund with room to add a real-economy sleeve.
-
-We provide private credit backed by European real estate, secured and bilateral, in tickets of €10M to €50M, protection ahead of yield.
-
-We are now raising our first vintage under the Valori brand, targeting €400M by April 2027. €50M is committed and €1M is our own. I wanted to reach you before the wider raise.
-
-- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- **Target Returns:** 15%+ net IRR to LPs, 15%+ unlevered at the asset level.
-
-Our deck is attached.
-
-If a specialised European real asset debt manager fits your current mandate or co-investment interests, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## Fondo Laborfonds — fit (reach) - a fund already writing real-econom (-)
-
-**Subject:** Valori Capital, niche European private credit strategies, first vintage
-
-Dear Mr. Pavesi,
-
-I'm reaching out because there may be a fit for a fund already writing real-economy credit at this size.
-
-We provide private credit backed by European real estate, bilateral and backed by real estate collateral, in tickets of €10M to €50M.
-
-We are now raising our first vintage under the Valori brand, targeting €400M by April 2027. €50M is committed and €1M is our own. I am keeping the group small.
-
-- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- **Target Returns:** 15%+ net IRR to LPs, 15%+ unlevered at the asset level.
-
-Our deck is attached.
-
-If a specialised European real asset debt manager fits your current mandate or co-investment interests, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## Fondo Pegaso — fit (building) - a fund active in real-economy c (-)
-
-**Subject:** Valori Capital, niche European private credit strategies, first vintage
-
-Dear Mr. Pasquadibisceglie,
-
-We run a private credit strategy backed by European real estate, which would be a natural fit to a fund active in real-economy credit at our ticket size.
-
-The deals are bilateral, €10M to €50M, with protection ahead of yield.
-
-We are now raising our first vintage under the Valori brand, targeting €400M by April 2027. €50M is committed and €1M is our own. I would rather do this directly than through an agent.
-
-- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- **Target Returns:** 15%+ net IRR to LPs, 15%+ unlevered at the asset level.
-
-Our deck is attached.
-
-If a specialised European real asset debt manager fits your current mandate or co-investment interests, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## Fondo Poste — fit - a large occupational fund seeking protecte (-)
-
-**Subject:** Valori Capital, niche European private credit strategies, €1.35B underwritten at 19% IRR
-
-Dear Mr. Metta,
-
-I'm reaching out because our approach fits a large occupational fund seeking protected yield.
-
-We provide private credit backed by European real estate, secured and bilateral, in tickets of €10M to €50M.
-
-We are now raising our first vintage under the Valori brand, targeting €400M by April 2027. €50M is committed and €1M is our own. I would rather do this directly than through an agent.
-
-- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- **Target Returns:** 15%+ net IRR to LPs, 15%+ unlevered at the asset level.
-
-Our deck is attached.
-
-If a specialised European real asset debt manager fits your current mandate or co-investment interests, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## Fondo Priamo — fit - a fund that wants steady, protected return (-)
-
-**Subject:** Valori Capital, niche European private credit strategies, real-estate-backed private credit
-
-Dear Mr. Colamussi,
-
-I'm reaching out because our approach fits a fund that wants steady, protected returns for its members.
-
-We provide private credit backed by European real estate, secured and bilateral, in tickets of €10M to €50M, protection ahead of yield.
-
-We are now raising our first vintage under the Valori brand, targeting €400M by April 2027. €50M is committed and €1M is our own. I speak with investors directly.
-
-- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- **Target Returns:** 15%+ net IRR to LPs, 15%+ unlevered at the asset level.
-
-Our deck is attached.
-
-If a specialised European real asset debt manager fits your current mandate or co-investment interests, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## Fondo Telemaco — fit - a fund building a real-economy allocation (-)
-
-**Subject:** Valori Capital, niche European private credit strategies, 15%+ net IRR
-
-Dear Mr. Varani,
-
-We run a private credit strategy backed by European real estate, which would be a natural fit to a fund building a real-economy allocation.
-
-We work bilaterally, in tickets of €10M to €50M, backed by real estate collateral.
-
-We are now raising our first vintage under the Valori brand, targeting €400M by April 2027. €50M is committed and €1M is our own. I wanted to reach you before the wider raise.
-
-- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- **Target Returns:** 15%+ net IRR to LPs, 15%+ unlevered at the asset level.
-
-Our deck is attached.
-
-If a specialised European real asset debt manager fits your current mandate or co-investment interests, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## Generali Italia — special situations credit (-)
-
-**Subject:** Valori Capital, special situations credit, first vintage
-
-Dear Mr. Martorana,
-
-I wanted to reach out regarding a potential fit with your balance sheet allocation.
-
-We provide private credit backed by European real estate, offering secured, bilateral transactions in €10M to €50M tickets designed for investors seeking durable yield.
-
-We are currently preparing the next stage of our fundraise, targeting €400M by April 2027, with €50M already committed and €1M of our own capital invested.
-
-We are prioritising relationships with a small group of long-term partners ahead of the broader raise.
-
-- Track Record: €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- Current Dynamics: €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- Target Returns: 15%+ net IRR to LPs, 15%+ unlevered at the asset level.
-
-Our deck is attached.
-
-If a specialised European real asset debt manager fits your current mandate or co-investment interests, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## Generali Pensii — fit - a Pillar II book whose parent group alread (-)
+## ALTUM — fit - a large, bond-led portfolio looking to div (-)
 
 **Subject:** Valori Capital, niche European private credit strategies, 19% IRR
 
-Dear Ms. Mancaș,
+Dear Mr. Berzins,
 
-There may be a fit with a pension book sitting inside a group that already knows private credit well.
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
 
-We provide private credit backed by European real estate, in secured, bilateral transactions ranging from €10M to €50M, with the underlying property providing strong downside protection.
+We think our strategy might fit into your portfolio and may nicely complement a large, bond-led portfolio looking to diversify.
 
-We are targeting €400M by April 2027. €50M is committed and €1M is our own. Our pipeline is concentrated in Central and South Eastern Europe, close to the markets you follow.
+We are targeting €400M by April 2027. €50M is committed and €1M is our own.
 
 - **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
 - **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
 
-Our deck is attached.
-
-If a specialised European real asset debt manager aligns with your current mandate, I would welcome a brief introductory call.
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
 
 Kind regards,
 
@@ -952,241 +117,23 @@ Partner, Valori Capital
 
 ---
 
-## Intesa Sanpaolo Assicura — fit - a large insurance balance sheet diversifyi (-)
-
-**Subject:** Valori Capital, European real asset debt, €1.35B underwritten at 19% IRR
-
-Dear Ms. Borla,
-
-We run a private credit strategy backed by European real estate, which would be a natural fit to a large insurance balance sheet diversifying beyond bonds.
-
-The deals are bilateral, €10M to €50M, with protection ahead of yield.
-
-We are now raising our first vintage under the Valori brand, targeting €400M by April 2027. €50M is committed and €1M is our own. I am reaching out early, before we widen the round.
-
-- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- **Target Returns:** 15%+ net IRR to LPs, 15%+ unlevered at the asset level.
-
-Our deck is attached.
-
-If a specialised European real asset debt manager fits your current mandate or co-investment interests, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## Kapitalska Družba (KAD) — special situations credit (-)
-
-**Subject:** Valori Capital, special situations credit, first vintage
-
-Dear Mr. Djalil,
-
-I am reaching out as I believe there may be a fit between your existing alternatives allocation and our European real estate private credit strategy.
-
-We provide secured, bilateral financing in €10M to €50M tickets, focused on capital preservation and durable yield generation.
-
-The fundraise is underway for our €400M target fund, with €50M already committed, including €1M of our own capital, and a targeted close in April 2027.
-
-- Track Record: €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- Current Dynamics: €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- Target Returns: 15%+ net IRR to LPs, 15%+ unlevered at the asset level.
-
-Our deck is attached.
-
-If a specialised European real asset debt manager fits your current mandate or co-investment interests, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## Metropolitan Life Pensii — niche European private credit strategies (-)
-
-**Subject:** Valori Capital, niche European private credit strategies, first vintage
-
-Dear Ms. Dragomir,
-
-I'm reaching out because our approach could fit a large fund with unutilized private credit allocation.
-
-We provide private credit backed by European real estate, secured and bilateral, in tickets of €10M to €50M, protection ahead of yield.
-
-We are currently in the process of fundraising, targeting €400M by April 2027, with €50M committed and €1M of our own capital.
-
-- Track Record: €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- Current Dynamics: €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- Target Returns: 15%+ net IRR to LPs, 15%+ unlevered at the asset level.
-
-Our deck is attached.
-
-If a specialised European real asset debt manager fits your current mandate or co-investment interests, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## Modra Zavarovalnica (Pension) — niche European private credit strategies (-)
-
-**Subject:** Valori Capital, niche European private credit strategies, first vintage
-
-Dear Mr. Matzele,
-
-Given your role as a specialised pension asset manager, our European real estate private credit strategy could be a natural fit.
-
-Valori provides secured, bilateral financing in €10M to €50M tickets, backed by the underlying real estate collateral.
-
-We have already secured €50M towards our €400M target fund, with a planned close by April 2027. This includes €1M of our own capital, reflecting strong alignment with our investors.
-
-- Track Record: €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- Current Dynamics: €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- Target Returns: 15%+ net IRR to LPs, 15%+ unlevered at the asset level.
-
-Our deck is attached.
-
-If a specialised European real asset debt manager fits your current mandate or co-investment interests, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## NN Asigurări de Viață — fit - a long-duration life book looking for yiel (-)
+## Asirom Vienna Insurance Group — fit - a book weighted to government paper and lo (-)
 
 **Subject:** Valori Capital, European real asset debt, 15%+ net IRR
 
-Dear Mr. Kaushik,
+Dear Mr. Rosu,
 
-I am reaching out because our approach fits a long-duration book that needs yield it can hold with confidence.
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
 
-We provide private credit backed by European real estate, in secured, bilateral transactions ranging from €10M to €50M, focused on capital preservation and durable yield generation.
+We think our strategy might fit into your portfolio and may nicely complement a book weighted to government paper and looking further.
 
-We are currently fundraising for our €400M target fund, with a planned close by April 2027, €50M committed and €1M of our own capital in it. Our pipeline sits mainly in Central and South Eastern Europe, where we inspect every asset ourselves.
-
-- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
-
-Our deck is attached.
-
-If this fits your current mandate, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## NN Pensii — niche European private credit strategies (-)
-
-**Subject:** Valori Capital, niche European private credit strategies, first vintage
-
-Dear Mr. Tantaru,
-
-I am reaching out as there may be a fit with your investment approach.
-
-We provide private credit backed by European real estate, structured through secured, bilateral transactions ranging from €10M to €50M, with the underlying property providing strong downside protection.
-
-We are raising our €400M target fund, with a planned close by April 2027. The fund has already secured €50M in commitments, including €1M of our own capital.
-
-- Track Record: €1.35B previously underwritten at a 19% IRR, supported by over 50 years of combined experience.
-- Current Dynamics: €50M committed and a €100M+ proprietary pipeline, predominantly bilateral.
-- Target Returns: 15%+ net IRR to LPs, with 15%+ unlevered returns at the asset level.
-
-Our deck is attached for further detail.
-
-If this interests you, I would appreciate a quick call to introduce the strategy in more detail and explore whether it could complement your current investment objectives.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## OTP Nyugdíjpénztár — niche European private credit strategies (-)
-
-**Subject:** Valori Capital, niche European private credit strategies, first vintage
-
-Dear Mr. Budai,
-
-I am reaching out as there may be a fit between OTP's investment activities and our European real estate private credit strategy.
-
-We provide secured, bilateral financing backed by European real estate, with transactions ranging from €10M to €50M and a focus on capital preservation alongside attractive yield.
-
-We are raising our €400M target fund, with €50M already committed and €1M of our own capital invested. The initial investor base is being built selectively with a small group of aligned partners ahead of the broader fundraising process.
-
-- Track Record: €1.35B previously underwritten at a 19% IRR, supported by over 50 years of combined experience.
-- Current Dynamics: €50M committed and a €100M+ proprietary pipeline, predominantly bilateral.
-- Target Returns: 15%+ net IRR to LPs, with 15%+ unlevered returns at the asset level.
-
-Our deck is attached for your review.
-
-If this sounds interesting, I would welcome the opportunity to introduce the strategy in more detail and discuss whether it could complement OTP's investment objectives.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## Poste Vita — European real asset debt (-)
-
-**Subject:** Valori Capital, European real asset debt, first vintage
-
-Dear Mr. Greco,
-
-I wanted to reach out because our strategy is designed for large, bond-led portfolios looking to diversify beyond traditional government bonds without compromising on security.
-
-We provide private credit backed by European real estate, through secured, bilateral transactions ranging from €10M to €50M.
-
-We are raising our €400M target fund, with €50M already committed and €1M of our own.
-
-- Track Record: €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- Current Dynamics: €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- Target Returns: 15%+ net IRR to LPs, 15%+ unlevered at the asset level.
-
-Our deck is attached.
-
-If a specialised European real asset debt manager fits your current mandate or co-investment interests, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## Prevaer — fit - a category fund whose members work around  (-)
-
-**Subject:** Valori Capital, niche European private credit strategies, private credit backed by European real estate
-
-Dear Mr. Barlafante,
-
-I am reaching out because our approach fits a fund used to assets that are physical and long-lived.
-
-We provide private credit backed by European real estate, in secured, bilateral transactions ranging from €10M to €50M, structured so the collateral does the work before the yield does.
-
-We are now raising our first vintage under the Valori brand, targeting €400M by April 2027, with €50M committed and €1M of our own. I am glad to walk through the underwriting on any asset in the pipeline.
+The fund targets €400M with a close by April 2027, of which €50M is committed and €1M is our own.
 
 - **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
 - **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
 
-Our deck is attached.
-
-If this fits your current mandate, I would welcome a brief introductory call.
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
 
 Kind regards,
 
@@ -1195,25 +142,23 @@ Partner, Valori Capital
 
 ---
 
-## Prevedi — fit - a membership whose own working life is bui (-)
+## BCR Asigurări de Viață — fit - a growing insurance book building out its  (-)
 
-**Subject:** Valori Capital, niche European private credit strategies, 19% IRR
+**Subject:** Valori Capital, European real asset debt, private credit backed by European real estate
 
-Dear Mr. Ballarin,
+Dear Mr. Stavrositu,
 
-There may be a fit with a fund whose members already understand what stands behind a building.
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
 
-We provide private credit backed by European real estate, in secured, bilateral transactions ranging from €10M to €50M, with the property itself carrying the downside protection.
+We think our strategy might fit into your portfolio and may nicely complement a growing insurance book building out its investment side.
 
-We are targeting €400M by April 2027. €50M is committed and €1M is our own. I handle these conversations myself, so any question about how a loan is structured gets a direct answer.
+We are raising €400M with a planned close by April 2027. €50M is already committed, including €1M of our own capital.
 
 - **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
 - **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
 
-Our deck is attached.
-
-If a specialised European real asset debt manager fits your current mandate, I would welcome a brief introductory call.
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
 
 Kind regards,
 
@@ -1222,25 +167,48 @@ Partner, Valori Capital
 
 ---
 
-## Previ Moda — fit - an Italian category fund with room to dive (-)
+## Benefia — fit - a sizeable book looking to diversify witho (-)
+
+**Subject:** Valori Capital, European real asset debt, 19% IRR
+
+Dear Mr. Kurowski,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a sizeable book looking to diversify without adding equity risk.
+
+We are targeting €400M by April 2027. €50M is committed and €1M is our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## BT Pensii — fit - a Pillar II fund with room inside its priv (-)
 
 **Subject:** Valori Capital, niche European private credit strategies, €1.35B underwritten at 19% IRR
 
-Dear Mr. Cappuccio,
+Dear Ms. Cojocaru,
 
-Our strategy could be a good fit for a fund looking past its bond core without taking on equity risk to do it.
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
 
-We provide private credit backed by European real estate, bilateral and secured, in transactions ranging from €10M to €50M.
+We think our strategy might fit into your portfolio and may nicely complement a Pillar II fund with room inside its private-capital allowance.
 
-We are currently fundraising for our €400M target fund, with a planned close by April 2027 and €50M already committed. We are keeping the founding investor group deliberately small.
+We are targeting €400M by April 2027. €50M is committed and €1M is our own.
 
 - **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
 - **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
 
-Our deck is attached for your review.
-
-If this interests you, I would welcome the opportunity to introduce the strategy in more detail.
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
 
 Kind regards,
 
@@ -1249,25 +217,23 @@ Partner, Valori Capital
 
 ---
 
-## Previbank — fit - a credit-native membership that reads a lo (-)
+## Carpathia — fit - a Pillar II fund with room inside its priv (-)
 
-**Subject:** Valori Capital, niche European private credit strategies, real-estate-backed private credit
+**Subject:** Valori Capital, niche European private credit strategies, 19% IRR
 
-Dear Mr. Laruccia,
+Dear Mr. Ratiu,
 
-Our strategy could be a good fit for a fund whose members assess credit for a living.
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
 
-We provide private credit backed by European real estate, secured against the underlying property, in bilateral transactions ranging from €10M to €50M. The covenants are ours to set because the deals are negotiated directly.
+We think our strategy might fit into your portfolio and may nicely complement a Pillar II fund with room inside its private-capital allowance.
 
-The fundraise is underway for our €400M target fund, with a planned close by April 2027 and €50M already committed. We are building the initial investor base selectively ahead of the broader process.
+We are targeting €400M by April 2027. €50M is committed and €1M is our own.
 
 - **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
 - **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
 
-Our deck is attached for your review.
-
-If this interests you, I would welcome the opportunity to introduce the strategy in more detail.
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
 
 Kind regards,
 
@@ -1276,108 +242,23 @@ Partner, Valori Capital
 
 ---
 
-## Previdenza Cooperativa — fit - a fund that measures a manager by conduct  (-)
-
-**Subject:** Valori Capital, niche European private credit strategies, 15%+ net IRR
-
-Dear Mr. Budassi,
-
-There may be a fit with a fund that weighs how a manager behaves as heavily as what it returns.
-
-We provide private credit backed by European real estate, in secured, bilateral transactions ranging from €10M to €50M, where protection of the members' capital comes before the headline number.
-
-The fundraise is underway for our €400M target fund, with a planned close by April 2027 and €50M committed, €1M of it our own. A meaningful share of our profits goes back into the communities we operate in.
-
-- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
-
-Our deck is attached.
-
-If a specialised European real asset debt manager fits your current mandate, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## PZU SA — special situations credit (-)
-
-**Subject:** Valori Capital, special situations credit, first vintage
-
-Dear Mr. Sołdek,
-
-We are operating a private credit strategy backed by European real estate, which would be a natural fit to an insurer leaning further into alternatives.
-
-The transactions are bilateral, ranging from €10M to €50M, and are secured by high-quality real estate collateral designed to provide strong downside protection.
-
-The fundraising is underway for our €400M target fund size, with €50M already secured and €1M of our own capital invested.
-
-I am reaching out early, before we widen the round.
-
-- Track Record: €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- Current Dynamics: €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- Target Returns: 15%+ net IRR to LPs, 15%+ unlevered at the asset level.
-
-Our deck is attached.
-
-If a specialised European real asset debt manager fits your current mandate or co-investment interests, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## Solidarieta Veneto — fit (reach) - a fund rooted in a regional credit (-)
-
-**Subject:** Valori Capital, niche European private credit strategies, first vintage
-
-Dear Mr. Stefan,
-
-I'm reaching out because our approach fits a fund rooted in a regional credit culture.
-
-We provide private credit backed by European real estate, secured and bilateral, in tickets of €10M to €50M, protection ahead of yield.
-
-We are now raising our first vintage under the Valori brand, targeting €400M by April 2027. €50M is committed and €1M is our own. We are keeping the founding group deliberately small.
-
-- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- **Target Returns:** 15%+ net IRR to LPs, 15%+ unlevered at the asset level.
-
-Our deck is attached.
-
-If a specialised European real asset debt manager fits your current mandate or co-investment interests, I would welcome a brief introductory call.
-
-Kind regards,
-
-Jozef Martinak
-Partner, Valori Capital
-
----
-
-## Warta — fit - a large insurance book where the credit si (-)
+## CDP - Cassa Depositi e Prestiti — fit - a balance sheet looking for yield it can h (-)
 
 **Subject:** Valori Capital, European real asset debt, real-estate-backed private credit
 
-Dear Mr. Parkot,
+Dear Mr. Scannapieco,
 
-Our strategy could be a natural fit for a large book where property is held but the lending side is thin.
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
 
-We provide private credit backed by European real estate, senior and bilaterally negotiated, in transactions ranging from €10M to €50M.
+We think our strategy might fit into your portfolio and may nicely complement a balance sheet looking for yield it can hold with confidence.
 
-We are targeting €400M by April 2027. €50M is committed and €1M is our own. I handle these conversations personally rather than through an intermediary.
+The fund targets €400M with a close by April 2027, of which €50M is committed and €1M is our own.
 
 - **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
 - **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
 
-Our deck is attached.
-
-If a specialised European real asset debt manager aligns with your current mandate, I would welcome a brief introductory call.
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
 
 Kind regards,
 
@@ -1386,25 +267,1298 @@ Partner, Valori Capital
 
 ---
 
-## Zavarovalnica Triglav — fit (building) - a large, locally-run insurance  (-)
+## CIG Pannónia — fit - a balance sheet with room for a clearly bo (-)
 
-**Subject:** Valori Capital, European real asset debt, first vintage
+**Subject:** Valori Capital, European real asset debt, 15%+ net IRR
 
-Dear Mr. Slapar,
+Dear Mr. Fedák,
 
-We run a private credit strategy backed by European real estate, which would be a natural fit to a large, locally-run insurance book.
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
 
-We work bilaterally, in tickets of €10M to €50M, backed by real estate collateral.
+We think our strategy might fit into your portfolio and may nicely complement a balance sheet with room for a clearly bounded credit allocation.
 
-We are now raising our first vintage under the Valori brand, targeting €400M by April 2027. €50M is committed and €1M is our own. I speak with investors directly.
+We are raising €400M with a planned close by April 2027. €50M is already committed, including €1M of our own capital.
 
 - **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
-- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline, mostly bilateral.
-- **Target Returns:** 15%+ net IRR to LPs, 15%+ unlevered at the asset level.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
 
-Our deck is attached.
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
 
-If a specialised European real asset debt manager fits your current mandate or co-investment interests, I would welcome a brief introductory call.
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Compensa TU — fit - a large, bond-led balance sheet weighing w (-)
+
+**Subject:** Valori Capital, European real asset debt, €1.35B underwritten at 19% IRR
+
+Dear Ms. Wlodarczyk-Moczkowska,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a large, bond-led balance sheet weighing where its next yield comes from.
+
+Our target is €400M by April 2027, with €50M committed and €1M of it our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Concordia Pensii — fit - a Pillar II fund with room inside its priv (-)
+
+**Subject:** Valori Capital, niche European private credit strategies, €1.35B underwritten at 19% IRR
+
+Dear Mr. Sucu,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a Pillar II fund with room inside its private-capital allowance.
+
+We are raising €400M with a planned close by April 2027. €50M is already committed, including €1M of our own capital.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## EIB - European Investment Bank — fit - a large, bond-led portfolio looking to div (-)
+
+**Subject:** Valori Capital, niche European private credit strategies, private credit backed by European real estate
+
+Dear Mr. President],
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a large, bond-led portfolio looking to diversify.
+
+Our target is €400M by April 2027, with €50M committed and €1M of it our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Eurolife FFH — fit - a conservative balance sheet with room for (-)
+
+**Subject:** Valori Capital, European real asset debt, real-estate-backed private credit
+
+Dear Ms. Nitulescu,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a conservative balance sheet with room for a bounded credit allocation.
+
+The fund targets €400M with a close by April 2027, of which €50M is committed and €1M is our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## F.I.L.Coop Sanitario — fit - a members' fund building a real-economy al (-)
+
+**Subject:** Valori Capital, niche European private credit strategies, real-estate-backed private credit
+
+Dear Ms. Valentini,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a members' fund building a real-economy allocation with a firm floor under it.
+
+The fund targets €400M with a close by April 2027, of which €50M is committed and €1M is our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Generali Biztosító Zrt. — fit - a conservative insurance balance sheet wit (-)
+
+**Subject:** Valori Capital, European real asset debt, €1.35B underwritten at 19% IRR
+
+Dear Mr. Erdős,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a conservative insurance balance sheet without a dedicated credit sleeve.
+
+We are targeting €400M by April 2027. €50M is committed and €1M is our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Generali osiguranje — fit - a book that holds property but lends again (-)
+
+**Subject:** Valori Capital, European real asset debt, 19% IRR
+
+Dear Mr. Carini,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a book that holds property but lends against very little.
+
+The fund targets €400M with a close by April 2027, of which €50M is committed and €1M is our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Generali Pokojninski — fit - a regional pension book with room to diver (-)
+
+**Subject:** Valori Capital, niche European private credit strategies, 15%+ net IRR
+
+Dear Mr. šmigić,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a regional pension book with room to diversify beyond its core holdings.
+
+We are raising €400M with a planned close by April 2027. €50M is already committed, including €1M of our own capital.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Generali Polska — fit - a large, bond-led balance sheet weighing w (-)
+
+**Subject:** Valori Capital, European real asset debt, real-estate-backed private credit
+
+Dear Mr. Hodgkiss,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a large, bond-led balance sheet weighing where its next yield comes from.
+
+We are raising €400M with a planned close by April 2027. €50M is already committed, including €1M of our own capital.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Generali Romania — fit - a conservative balance sheet with room for (-)
+
+**Subject:** Valori Capital, European real asset debt, 15%+ net IRR
+
+Dear Mr. Marin,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a conservative balance sheet with room for a bounded credit allocation.
+
+Our target is €400M by April 2027, with €50M committed and €1M of it our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Generali Zavarovalnica — fit - a conservative insurance balance sheet loo (-)
+
+**Subject:** Valori Capital, European real asset debt, private credit backed by European real estate
+
+Dear Ms. Hrovat,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a conservative insurance balance sheet looking for durable yield.
+
+We are targeting €400M by April 2027. €50M is committed and €1M is our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Grawe Hrvatska — fit - a regional book where new money has been g (-)
+
+**Subject:** Valori Capital, European real asset debt, €1.35B underwritten at 19% IRR
+
+Dear Ms. Kapetanović,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a regional book where new money has been going into government paper.
+
+The fund targets €400M with a close by April 2027, of which €50M is committed and €1M is our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Grawe Romania — fit - a growing insurance book building out its  (-)
+
+**Subject:** Valori Capital, European real asset debt, 19% IRR
+
+Dear Mr. Calin,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a growing insurance book building out its investment side.
+
+We are raising €400M with a planned close by April 2027. €50M is already committed, including €1M of our own capital.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Grawe Zavarovalnica — fit - a book that holds real assets but lends ag (-)
+
+**Subject:** Valori Capital, European real asset debt, real-estate-backed private credit
+
+Dear Mr. Kastelic,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a book that holds real assets but lends against very little.
+
+Our target is €400M by April 2027, with €50M committed and €1M of it our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Groupama Biztosító Zrt. — fit - a conservative insurance balance sheet wit (-)
+
+**Subject:** Valori Capital, European real asset debt, 15%+ net IRR
+
+Dear Mr. Jeanjean,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a conservative insurance balance sheet without a dedicated credit sleeve.
+
+We are targeting €400M by April 2027. €50M is committed and €1M is our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Groupama Phoenix — fit - a book rebuilt around capital strength and (-)
+
+**Subject:** Valori Capital, European real asset debt, private credit backed by European real estate
+
+Dear Mr. Feki,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a book rebuilt around capital strength and looking for durable yield.
+
+The fund targets €400M with a close by April 2027, of which €50M is committed and €1M is our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## HDI Assicurazioni — fit - a Solvency II balance sheet with room for  (-)
+
+**Subject:** Valori Capital, European real asset debt, €1.35B underwritten at 19% IRR
+
+Dear Mr. Albergo,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a Solvency II balance sheet with room for a distinct credit allocation.
+
+We are raising €400M with a planned close by April 2027. €50M is already committed, including €1M of our own capital.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Helvetia Italia — fit - a large book concentrated in domestic gove (-)
+
+**Subject:** Valori Capital, European real asset debt, 19% IRR
+
+Dear Mr. Signorini,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a large book concentrated in domestic government paper.
+
+Our target is €400M by April 2027, with €50M committed and €1M of it our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Honvéd Nyugdíjpénztár — fit - a voluntary fund whose members expect stea (-)
+
+**Subject:** Valori Capital, niche European private credit strategies, private credit backed by European real estate
+
+Dear Mr. Póda,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a voluntary fund whose members expect steady, protected returns.
+
+Our target is €400M by April 2027, with €50M committed and €1M of it our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## ICO - Instituto de Crédito Oficial — fit - a balance sheet looking for yield without  (-)
+
+**Subject:** Valori Capital, niche European private credit strategies, 15%+ net IRR
+
+Dear Mr. Illueca,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a balance sheet looking for yield without added equity risk.
+
+We are raising €400M with a planned close by April 2027. €50M is already committed, including €1M of our own capital.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Interlife Insurance — fit - a long-duration book that needs yield it c (-)
+
+**Subject:** Valori Capital, European real asset debt, private credit backed by European real estate
+
+Dear Mr. Votsaridis,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a long-duration book that needs yield it can hold with confidence.
+
+Our target is €400M by April 2027, with €50M committed and €1M of it our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## InterRisk — fit - a large, bond-led balance sheet weighing w (-)
+
+**Subject:** Valori Capital, European real asset debt, real-estate-backed private credit
+
+Dear Mr. Narloch,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a large, bond-led balance sheet weighing where its next yield comes from.
+
+We are targeting €400M by April 2027. €50M is committed and €1M is our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Link4 — fit - a balance sheet with scale enough to hold  (-)
+
+**Subject:** Valori Capital, European real asset debt, real-estate-backed private credit
+
+Dear Ms. Sudzinska,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a balance sheet with scale enough to hold a distinct credit allocation.
+
+The fund targets €400M with a close by April 2027, of which €50M is committed and €1M is our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Merkur osiguranje — fit - a regional book where new money has been g (-)
+
+**Subject:** Valori Capital, European real asset debt, €1.35B underwritten at 19% IRR
+
+Dear Mr. Klemenčič,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a regional book where new money has been going into government paper.
+
+We are targeting €400M by April 2027. €50M is committed and €1M is our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## MetLife Hungary — fit - a balance sheet with room for a clearly bo (-)
+
+**Subject:** Valori Capital, European real asset debt, 19% IRR
+
+Dear Ms. Spadlo-Kolano,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a balance sheet with room for a clearly bounded credit allocation.
+
+The fund targets €400M with a close by April 2027, of which €50M is committed and €1M is our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## MKB Nyugdíjpénztár — fit - a book with room to put private capital to (-)
+
+**Subject:** Valori Capital, niche European private credit strategies, 19% IRR
+
+Dear Mr. Simon,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a book with room to put private capital to work.
+
+The fund targets €400M with a close by April 2027, of which €50M is committed and €1M is our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## MKB Union — fit - a conservative insurance balance sheet wit (-)
+
+**Subject:** Valori Capital, European real asset debt, real-estate-backed private credit
+
+Dear Mr. Barna,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a conservative insurance balance sheet without a dedicated credit sleeve.
+
+We are raising €400M with a planned close by April 2027. €50M is already committed, including €1M of our own capital.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Nobis Compagnia — fit - a large book concentrated in domestic gove (-)
+
+**Subject:** Valori Capital, European real asset debt, 15%+ net IRR
+
+Dear Mr. Nostini,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a large book concentrated in domestic government paper.
+
+Our target is €400M by April 2027, with €50M committed and €1M of it our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Omniasig VIG — fit - a book weighted to government paper and lo (-)
+
+**Subject:** Valori Capital, European real asset debt, 19% IRR
+
+Dear Mr. Tecău,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a book weighted to government paper and looking further.
+
+We are targeting €400M by April 2027. €50M is committed and €1M is our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Pokojninska družba A — fit - a regional pension book with room to diver (-)
+
+**Subject:** Valori Capital, niche European private credit strategies, real-estate-backed private credit
+
+Dear Mr. Hribar,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a regional pension book with room to diversify beyond its core holdings.
+
+We are raising €400M with a planned close by April 2027. €50M is already committed, including €1M of our own capital.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Polisa Życie — fit - a sizeable book looking to diversify witho (-)
+
+**Subject:** Valori Capital, European real asset debt, private credit backed by European real estate
+
+Dear Mr. Banaśkiewicz,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a sizeable book looking to diversify without adding equity risk.
+
+We are targeting €400M by April 2027. €50M is committed and €1M is our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Posta Biztosító — fit - a conservative insurance balance sheet wit (-)
+
+**Subject:** Valori Capital, European real asset debt, 15%+ net IRR
+
+Dear Mr. Kovacs,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a conservative insurance balance sheet without a dedicated credit sleeve.
+
+We are raising €400M with a planned close by April 2027. €50M is already committed, including €1M of our own capital.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Prva Osebna Zavarovalnica — fit - a regional book with room for a clearly bo (-)
+
+**Subject:** Valori Capital, European real asset debt, 15%+ net IRR
+
+Dear Ms. Hajdinjak,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a regional book with room for a clearly bounded credit allocation.
+
+The fund targets €400M with a close by April 2027, of which €50M is committed and €1M is our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Prva Pokojninska družba — fit - a supplementary fund whose members expect  (-)
+
+**Subject:** Valori Capital, niche European private credit strategies, 15%+ net IRR
+
+Dear Mr. Rovanšek,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a supplementary fund whose members expect steady, protected returns.
+
+Our target is €400M by April 2027, with €50M committed and €1M of it our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Raifeisen Voluntary Pension Fund — fit - a member fund looking for yield beyond gov (-)
+
+**Subject:** Valori Capital, niche European private credit strategies, €1.35B underwritten at 19% IRR
+
+Dear Mr. Šumanović,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a member fund looking for yield beyond government bonds.
+
+We are targeting €400M by April 2027. €50M is committed and €1M is our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Raiffeisen Pensii — fit - a large pension pool still weighted almost (-)
+
+**Subject:** Valori Capital, niche European private credit strategies, 19% IRR
+
+Dear Mr. Negru,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a large pension pool still weighted almost entirely to bonds.
+
+The fund targets €400M with a close by April 2027, of which €50M is committed and €1M is our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Sava Pokojninska — fit - a regional pension book with room to diver (-)
+
+**Subject:** Valori Capital, niche European private credit strategies, real-estate-backed private credit
+
+Dear Mr. Plos,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a regional pension book with room to diversify beyond its core holdings.
+
+We are raising €400M with a planned close by April 2027. €50M is already committed, including €1M of our own capital.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## SIGNAL Biztosító — fit - a balance sheet with room for a clearly bo (-)
+
+**Subject:** Valori Capital, European real asset debt, €1.35B underwritten at 19% IRR
+
+Dear Mr. Wilfried-Kempchen,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a balance sheet with room for a clearly bounded credit allocation.
+
+The fund targets €400M with a close by April 2027, of which €50M is committed and €1M is our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Signal Iduna — fit - a growing insurance book building out its  (-)
+
+**Subject:** Valori Capital, European real asset debt, 19% IRR
+
+Dear Mr. Yetsikul,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a growing insurance book building out its investment side.
+
+We are raising €400M with a planned close by April 2027. €50M is already committed, including €1M of our own capital.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## TEA Interamerican — fit - an occupational fund building its allocati (-)
+
+**Subject:** Valori Capital, niche European private credit strategies, private credit backed by European real estate
+
+Dear Mr. Thompolous,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement an occupational fund building its allocation from a standing start.
+
+Our target is €400M by April 2027, with €50M committed and €1M of it our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## TEA OTE — fit - an occupational fund building its allocati (-)
+
+**Subject:** Valori Capital, niche European private credit strategies, 15%+ net IRR
+
+Dear Mr. Nebis,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement an occupational fund building its allocation from a standing start.
+
+Our target is €400M by April 2027, with €50M committed and €1M of it our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Triglav osiguranje — fit - a conservative balance sheet with room for (-)
+
+**Subject:** Valori Capital, European real asset debt, real-estate-backed private credit
+
+Dear Mr. Djekanović,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a conservative balance sheet with room for a small senior credit sleeve.
+
+Our target is €400M by April 2027, with €50M committed and €1M of it our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Triglav Pokojninska — fit - a regional pension book with room to diver (-)
+
+**Subject:** Valori Capital, niche European private credit strategies, private credit backed by European real estate
+
+Dear Mr. Uršič,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a regional pension book with room to diversify beyond its core holdings.
+
+We are targeting €400M by April 2027. €50M is committed and €1M is our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## TUZ Ubezpieczenia — fit - a sizeable book looking to diversify witho (-)
+
+**Subject:** Valori Capital, European real asset debt, 15%+ net IRR
+
+Dear Mr. Matusiewicz,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a sizeable book looking to diversify without adding equity risk.
+
+We are targeting €400M by April 2027. €50M is committed and €1M is our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Union Vienna Insurance Group — fit - a balance sheet with room for a clearly bo (-)
+
+**Subject:** Valori Capital, European real asset debt, private credit backed by European real estate
+
+Dear Mr. Havas,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a balance sheet with room for a clearly bounded credit allocation.
+
+We are raising €400M with a planned close by April 2027. €50M is already committed, including €1M of our own capital.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## UnipolSai Assicurazioni — fit - a balance sheet looking for yield it can h (-)
+
+**Subject:** Valori Capital, European real asset debt, real-estate-backed private credit
+
+Dear Mr. Baudi,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a balance sheet looking for yield it can hold with confidence.
+
+The fund targets €400M with a close by April 2027, of which €50M is committed and €1M is our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Vasutas Nyugdíjpénztár — fit - a member-owned fund with room to diversify (-)
+
+**Subject:** Valori Capital, niche European private credit strategies, €1.35B underwritten at 19% IRR
+
+Dear Ms. Tohai,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a member-owned fund with room to diversify beyond its bond core.
+
+We are targeting €400M by April 2027. €50M is committed and €1M is our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Ydrogeios Insurance — fit - a long-duration book that needs yield it c (-)
+
+**Subject:** Valori Capital, European real asset debt, private credit backed by European real estate
+
+Dear Mr. Kaskarelis,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a long-duration book that needs yield it can hold with confidence.
+
+The fund targets €400M with a close by April 2027, of which €50M is committed and €1M is our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Zav Vita (Pension) — fit - a regional book with room for a clearly bo (-)
+
+**Subject:** Valori Capital, European real asset debt, 15%+ net IRR
+
+Dear Ms. Smolnikar,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a regional book with room for a clearly bounded credit allocation.
+
+We are raising €400M with a planned close by April 2027. €50M is already committed, including €1M of our own capital.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Zavarovalnica Sava (Pension) — fit - a book that holds real assets but lends ag (-)
+
+**Subject:** Valori Capital, European real asset debt, €1.35B underwritten at 19% IRR
+
+Dear Mr. Dolničar,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a book that holds real assets but lends against very little.
+
+Our target is €400M by April 2027, with €50M committed and €1M of it our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
+
+Kind regards,
+
+Jozef Martinak
+Partner, Valori Capital
+
+---
+
+## Zurich Italia — fit - a balance sheet looking for yield it can h (-)
+
+**Subject:** Valori Capital, European real asset debt, private credit backed by European real estate
+
+Dear Mr. Semenzato,
+
+We are currently fundraising for our European opportunistic private credit fund backed by real estate collateral, in tickets of €10M to €50M.
+
+We think our strategy might fit into your portfolio and may nicely complement a balance sheet looking for yield it can hold with confidence.
+
+Our target is €400M by April 2027, with €50M committed and €1M of it our own.
+
+- **Track Record:** €1.35B underwritten previously at a 19% IRR, over 50 years of combined experience.
+- **Current Dynamics:** €50M committed and a €100M+ proprietary pipeline.
+- **Target Returns:** 15%+ net IRR to LPs (15%+ unlevered at the asset level).
+
+Please find attached our presentation. If you are interested, I would be happy to have a 20 minute short introductory call.
 
 Kind regards,
 

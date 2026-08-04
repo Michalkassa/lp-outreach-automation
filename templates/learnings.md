@@ -1,97 +1,75 @@
 # LEARNINGS — read before every draft. Only /calibrate edits this.
-# Basis: v4 framework + CALIBRATION 2026-07-22 (15 sent edits). Canon = voice.md / voice-sk.md.
-# GOLD-STANDARD BANK: templates/sent-examples.md — 15 of the user's final edited emails.
-# Read it before drafting and DRAW phrasing/structure/register from it (never copy verbatim).
+# Canon = templates/voice.md (Structure v5, 2026-08-03).
 #
-# CALIBRATION 2026-07-28 — 27 sent (20 en, 7 sk), ZERO new style signal.
-# Every sent file is byte-identical to its draft, because the 2026-07-22 pass
-# rewrote the drafts to match the user's final versions (sent frontmatter reads
-# "revision: user final (calibration) 2026-07-22"). The draft-vs-sent delta was
-# already consumed on that date and cannot be re-derived from these files. So
-# nothing below changed on style grounds. Treat the Confirmed list as still
-# current, not as re-validated.
+# STRUCTURAL LEARNINGS CLEARED 2026-08-03 on Michal's instruction.
+# The v4 CONFIRMED items described an email shape that v5 replaces: the hedged
+# "I am reaching out" opener, the fund-status variants, the protection clause,
+# the selectivity line and the two close forms. They were true observations about
+# a structure that is no longer in use, so keeping them would pull drafts back
+# toward v4. They are recorded under RETIRED below rather than deleted, so the
+# history of why they existed is not lost.
+#
+# templates/sent-examples.md is a v4 archive. Do NOT draw structure from it.
+# Register and word choice are still useful; shape is not.
 
-## CONFIRMED (2+ occurrences in the 15 edits) — apply every time
-1. **"deals"/"tickets" → "transactions ranging from €10M to €50M".** Say "secured,
-   bilateral transactions ranging from €10M to €50M" (or "tickets ranging from"). Never "deals".
-2. **Hedged fit opener that names the LP's real situation (from research).** Pattern:
-   "I am reaching out as/because there may be a fit with [your X]" or "our strategy could
-   be a good fit for [X]". [X] is a concrete research profile, e.g. "your existing
-   alternatives allocation", "a large fund with unutilized private credit allocation",
-   "large, bond-led portfolios diversifying beyond government bonds", "your balance sheet
-   allocation", "a portfolio already active in real assets", "your fund's existing
-   real-economy allocation". Sometimes name the LP directly (OTP). Hedge words:
-   "there may be a fit", "could be a good/natural fit". Softer than the blunt "our approach fits X".
-3. **Present-tense, experienced verbs; NEVER "We are building".** Use "We provide /
-   We operate / We manage / We originate / We run". "We are building our first fund now"
-   is banned (the user confirmed it was an error). The team is experienced (€1.35B, 19% IRR).
-4. **Fund-status default (simple): "We are targeting €400M by April 2027. €50M is
-   committed and €1M is our own."** Vary it: "We are currently fundraising for our latest
-   private credit strategy…", "We are now raising our first vintage…", "We are currently
-   €50M into raising our €400M target fund, with a planned close by April 2027…", "The
-   fundraise is underway for our €400M target fund…". Keep "by April 2027" (usually retained).
-5. **Protection as a fuller professional clause** (not only terse "protection ahead of
-   yield"): "with the underlying property providing strong downside protection", "secured
-   against the underlying real estate", "focused on capital preservation and durable yield
-   generation", "capital protection alongside yield". (Short "protection ahead of yield" still OK.)
-6. **Selectivity woven into the fund-status paragraph:** "the initial investor base is
-   being built selectively with a small group of aligned partners ahead of the broader
-   fundraising process" / "the initial close reserved for a carefully selected group of
-   founding investors" / "engaging with a select group of investors ahead of the broader raise".
-7. **Close — two accepted forms.** Standard: "Our deck is attached. If a specialised
-   European real asset debt manager fits your current mandate or co-investment interests,
-   I would welcome a brief introductory call." OR softer: "Our deck is attached for your
-   review. If this interests you, I would welcome the opportunity to introduce the strategy
-   in more detail and discuss whether it could complement [LP]'s investment objectives."
-   "aligns with" is an accepted alt to "fits".
-8. **Register more formal/professional throughout:** "risk-adjusted returns", "capital
-   preservation", "for your review", "the opportunity for a brief introductory call".
+## CONFIRMED (2+ occurrences) — apply every time
+(still empty. Nothing has been observed twice.)
 
 ## HYPOTHESES (single occurrence — watch, do not force)
-- Bullets occasionally reworded ("previously underwritten", "supported by over 50 years",
-  "predominantly bilateral", "with 15%+ unlevered returns at the asset level"). Labels never
-  change. Many kept the original — treat as an optional variant, not a rule.
-- Personal touch sometimes on its own line, sometimes folded into the fund-status sentence.
+From CALIBRATION 2026-08-03. Of 68 sent records, 67 are byte-identical to their
+draft and exactly ONE carries a real edit: Eurolife FFH, the only send logged
+from the compose window rather than written in bulk. Everything below rests on
+that single email, against a v4 draft. Watch for it, do not treat it as a rule.
 
-## RETIRE (stopped doing)
-- "We are building a private credit strategy" / "We are building our first fund now" — banned.
-- The single terse "…in tickets of €10M to €50M, protection ahead of yield." as the ONLY
-  form — now expanded and varied per Confirmed #1 and #5.
-- SK "Budujeme…" opener — replaced by "Naša stratégia … prirodzene dopĺňa …" (voice-sk.md).
+- Register lifted throughout: "approach fits" -> "strategy is well aligned with
+  the needs of"; "now" -> "currently"; "is committed and" -> "has been
+  committed, including". The instinct is toward the more formal construction.
+- Ticket phrasing expanded: "in tickets of" -> "with typical ticket sizes
+  ranging from".
+- "€1M is our own" -> "€1M of our own capital".
+- The personal touch was cut entirely: "I would rather do this directly than
+  through an agent." was deleted. v5 already retires that line.
+- NOTE A TENSION: this edit ADDED the word "bilateral", which v5 later retired
+  on Michal's explicit instruction. The instruction is newer and deliberate, so
+  v5 stands. Recorded because one observed edit pulling against a stated rule is
+  worth seeing if it recurs.
 
-## STILL TRUE (v4)
-- Never open with the LP's company name as the first word (naming them mid-sentence is fine,
-  e.g. "a fit between OTP's activities and our strategy").
-- Three bold trust bullets; deck line; a close that explicitly asks for a call.
+## RETIRED — true of v4, replaced by the v5 structure in voice.md
+- "deals"/"tickets" -> "transactions ranging from €10M to €50M". v5 puts the
+  tickets in the opening sentence as "in tickets of €10M to €50M" and retires
+  "bilateral" entirely.
+- Hedged fit opener naming the LP's real situation. v5 opens with the product
+  and hedges in part 2 instead.
+- Fund-status variants woven into a mid-motion paragraph. v5 gives the raise its
+  own plain paragraph.
+- Protection as a fuller professional clause. Not in the v5 structure.
+- Selectivity woven into the fund-status paragraph. Not in the v5 structure.
+- The two accepted close forms and the deck line. v5 closes on the 20 minute
+  call and carries no deck line.
+- More formal register throughout. v5 is plainer by design.
+
+## STILL TRUE (carried into v5)
+- Present-tense, experienced verbs. "We are building our first fund" stays banned:
+  the brand is new, the team is not.
+- Never open with the LP's company name as the first word.
+- Three bold trust bullets, exact numbers.
 - No em-dashes, no semicolons. Every number matches Fund facts.
-- SK: keep "private credit" in English; "Pričom ochrana kapitálu je našou hlavnou prioritou.";
-  "Naša prezentácia je v prílohe." close; no "Budujeme".
-
-## DRIFT CAUGHT BY CALIBRATION (not a style edit — a rule that stopped being applied)
-- **Retired subject ending survived in old drafts (15 occurrences, 2026-07-28).**
-  caption.md retires "first vintage" as the Subject ending, but every draft from the
-  2026-07-22 batch still carried "Valori Capital, [category], first vintage". Left alone
-  they would have gone out with near-identical subjects, which is the mass-send signal
-  caption.md exists to prevent. All 15 rotated onto the approved endings, zero adjacent
-  duplicates. BEFORE DRAFTING: generate the Subject from caption.md fresh. Never inherit
-  a subject from an older draft of the same LP, and never reuse a retired ending.
-- Check-before-send: no draft's subject ending should repeat the one immediately
-  before it in its review packet.
-- **Bold markers lost on the trust bullets (15 occurrences, 2026-07-28).** The whole
-  2026-07-22 batch wrote the bullets as "- Track Record: ..." with no `**`. voice.md
-  requires the label before the colon in bold, and format_html.py produces `<strong>`
-  only from `**`, so those emails paste into Outlook with plain labels and the trust
-  block loses its scan value. 14 of the 15 had already been sent that way. WRITE THE
-  BULLETS EXACTLY AS: "- **Track Record:** ..." and confirm the .html twin shows three
-  `<strong>` before treating a draft as ready.
 
 ## DATA-FIXES seen (not style — verify contacts)
-- PZU → "Sołdek" (draft had Trela). Modra → "Matzele" (shortened from Golob Matzele).
-- Generali Versicherung → "gregor.pilgram@" (import had the typo "greogor.pilgram@";
+- PZU -> "Sołdek" (draft had Trela). Modra -> "Matzele" (shortened from Golob Matzele).
+- Generali Versicherung -> "gregor.pilgram@" (import had the typo "greogor.pilgram@";
   corrected 2026-07-28 from the import's own First Name field and the LinkedIn slug).
-- KOOPERATIVA → "Vladimír Bakeš" (import has "Valdimir Bakes"); short email format unverified.
+- KOOPERATIVA -> "Vladimír Bakeš" (import has "Valdimir Bakes"); short email format unverified.
 
-## PROCESS GAP (blocks future calibration — worth fixing)
-- No file in /sent/ carries the `edits: none|minor|major` field that log-sent.md mandates.
-  Without it, once drafts are regenerated the draft-vs-sent diff goes to zero and there is
-  no record of whether a send was edited at all. Set `edits:` on every future /log-sent.
+## PROCESS GAP (blocks future calibration — measured, not theoretical)
+As of 2026-08-03: 68 sent records, 67 byte-identical to their drafts.
+
+  40 records  source: draft text        edits: none    -> zero signal
+  27 records  no source field at all    edits: absent  -> zero signal
+   1 record   captured from the window  edits: minor   -> the only real data
+
+Records written in bulk are copies of the draft, so the diff is zero by
+construction and no amount of volume changes that. The single useful data point
+came from closing the compose window and answering y, which is what
+make_draft.py prompts for. Until sends are logged that way, calibration will
+keep reporting nothing regardless of how many emails go out.

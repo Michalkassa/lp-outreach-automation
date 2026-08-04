@@ -19,7 +19,12 @@ Log a manual send for the LP in $ARGUMENTS.
    (Track Record / Current Dynamics / Target Returns, or the SK/DE
    equivalents) bold and rendered as a real <ul> bullet list, Calibri 11.
    Render it faithfully from the sent text — do not alter wording.
-4. output.csv: stage=sent, date_sent filled. Do NOT delete the draft files.
+4. output.csv: stage=sent, date_sent filled. Then refresh both workbooks:
+     .venv/bin/python scripts/convert.py export
+     .venv/bin/python scripts/convert.py sync
+   Do NOT delete the draft files. Move them to
+   .archive/sent-drafts-for-calibration/ instead, keeping the folder structure,
+   so /drafts/ shows only pending work while /calibrate can still diff them.
 5. If I edited the draft, suggest running /calibrate.
 
 DATA FILE: data/output.csv — semicolons (;) as delimiter. No semicolons inside field values.

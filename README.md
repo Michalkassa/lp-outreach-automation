@@ -1,9 +1,27 @@
 # LP Outreach System — Valori Capital
 
-A research and email-drafting system for LP cold outreach, running inside
-**Claude Code**. Claude researches investors, scores them, writes draft emails,
+A research and email-drafting system for cold outreach, running inside
+**Claude Code**. Claude researches prospects, scores them, writes draft emails,
 and learns from your edits. A human sends every email manually — Claude never
 touches a mailbox.
+
+## Two programmes
+
+This repo runs two separate outreach programmes. They share the scripts and the
+fund facts in `CLAUDE.md`, and nothing else.
+
+| Programme | Lives in | Audience | Status |
+|---|---|---|---|
+| **LP outreach** | the repo root (`input.xlsx`, `data/`, `lps/`, `drafts/`, `sent/`, `templates/`) | Pension funds and insurance companies, asked to allocate to the fund | **Live.** 228 prospects, drafts in flight. |
+| **Co-GP outreach** | [`co-gp/`](co-gp/README.md) | Sponsors, developers and managers, proposed working alongside us on deals | **Ready, empty.** All scripts work via `--program co-gp`. Scoring rubric and email content still to be defined. |
+
+Every script takes `--program co-gp` to operate on the second programme, or set
+`VALORI_PROGRAM=co-gp` for a session. No flag means `lp`.
+
+Everything below this line describes the **LP programme**. For Co-GP, see
+[`co-gp/README.md`](co-gp/README.md).
+
+---
 
 ---
 
@@ -327,6 +345,25 @@ Type these inside the Claude session. Replace `<LP>` with the company name.
 | `/log-sent <LP>` | Store the final sent version in `sent/`, update `data/output.csv` to `sent` |
 | `/calibrate` | Compare sent emails vs drafts, learn edit patterns, update `learnings.md` |
 | `/weekly-review` | Pipeline summary: funnel counts, send aging, tracker-vs-files consistency, stale research |
+
+---
+
+## The one rule about stages
+
+`data/output.csv` is the source of truth, but you read `input.xlsx` and
+`output.xlsx`. **Any stage change must reach all three**, or the files disagree
+and you are working from a stale view.
+
+Every Claude command that changes a stage now refreshes the workbooks itself.
+If you ever change something by hand:
+
+```
+.venv/bin/python scripts/convert.py export   # data/output.csv -> output.xlsx
+.venv/bin/python scripts/convert.py sync     # stage + score  -> input.xlsx
+```
+
+Check they agree with `scripts/pipeline_status.py`. **Close both workbooks in
+Excel first** — Excel locks the file and the write fails.
 
 ---
 

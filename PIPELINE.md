@@ -97,10 +97,22 @@ allows a single process per profile and the script will tell you if one is
 already running.
 
   - Deck attached. Correct deck version. Check the attachment is there.
+    (The v5 closing line says "Please find attached our presentation", so the
+    email promises it. Sending without it is worse than not mentioning it.)
   - Salutation spelling of the surname, triple-checked.
   - Send Tue to Thu, 08:30 to 10:30 their local time when possible.
   - Max 5 sends per day. Quality of the bridge beats volume, and low
     daily volume from a normal mailbox also keeps deliverability clean.
+
+## RULE — a stage change is not done until both workbooks show it
+data/output.csv is the source of truth, but you work from input.xlsx and
+output.xlsx. After anything moves between research, drafted and sent:
+
+  .venv/bin/python scripts/convert.py export
+  .venv/bin/python scripts/convert.py sync
+
+The Claude commands do this themselves. Do it by hand if you edit the CSV
+directly. Close both workbooks in Excel first or the write fails.
 
 ## STEP 5 — Log (now automatic, confirm with one keystroke)
 When you close the compose window, make_draft.py reads the body back out of it

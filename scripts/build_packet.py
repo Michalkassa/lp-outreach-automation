@@ -21,8 +21,10 @@ import sys
 from datetime import date
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
-DRAFTS = ROOT / "drafts"
+import program
+
+ROOT = program.ROOT
+DRAFTS = program.DRAFTS
 DATED = re.compile(r"^\d{4}-\d{2}-\d{2}-")
 LANGUAGES = ["en", "sk", "de"]
 # Exactly two lists, matching FOLDER ROUTING in .claude/commands/draft.md.
@@ -99,6 +101,22 @@ def type_folders():
 
 
 def main(argv):
+    # program.py already read --program straight from sys.argv; drop it here so
+    # it is not mistaken for a folder name.
+    cleaned = []
+    skip = False
+    for a in argv:
+        if skip:
+            skip = False
+            continue
+        if a == "--program":
+            skip = True
+            continue
+        if a.startswith("--program="):
+            continue
+        cleaned.append(a)
+    argv = cleaned
+
     if argv and argv[0] in ("-h", "--help"):
         print(__doc__)
         return
@@ -112,8 +130,15 @@ def main(argv):
         folders = [(l, f) for l, f in folders
                    if want == l or want == f.name.lower() or want == f"{l}/{f.name}".lower()]
         if not folders:
+            # A real name that simply has no drafts yet is not an error, it is an
+            # empty programme. Only an unrecognised name is worth failing on.
+            known = set(LANGUAGES) | set(LISTS) | {f"{l}/{n}" for l in LANGUAGES for n in LISTS}
+            if want in known:
+                print(f"no drafts under {DRAFTS}/{want}, nothing to compile")
+                return
             sys.exit(f"no draft folder matching '{argv[0]}'\n"
-                     f"       try a language (en, sk, de), a type (insurance), or en/insurance")
+                     f"       try a language (en, sk, de), a list (insurance,"
+                     f" pension-funds), or en/insurance")
 
     total, all_drafts = 0, []
     by_lang = {}

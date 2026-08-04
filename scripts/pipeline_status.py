@@ -12,8 +12,10 @@ from collections import Counter
 from datetime import date
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
-OUTPUT_CSV = ROOT / "data" / "output.csv"
+import program
+
+ROOT = program.ROOT
+OUTPUT_CSV = program.OUTPUT_CSV
 STAGES = ["research", "drafted", "sent"]
 DATED = re.compile(r"^\d{4}-\d{2}-\d{2}-")
 
@@ -54,7 +56,7 @@ def main():
     with open(OUTPUT_CSV, newline="", encoding="utf-8") as f:
         rows = list(csv.DictReader(f, delimiter=";"))
 
-    lps = slugs_in("lps/*.md")
+    lps = slugs_in(f"{program.PROSPECTS.name}/*.md")
     drafts = slugs_in("drafts/**/*.md")
     sent = slugs_in("sent/**/*.md")
 

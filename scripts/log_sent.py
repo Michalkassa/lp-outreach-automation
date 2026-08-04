@@ -21,9 +21,11 @@ import sys
 from datetime import date
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent.parent
-OUTPUT_CSV = ROOT / "data" / "output.csv"
-SENT = ROOT / "sent"
+import program
+
+ROOT = program.ROOT
+OUTPUT_CSV = program.OUTPUT_CSV
+SENT = program.SENT
 DATED = re.compile(r"^\d{4}-\d{2}-\d{2}-")
 
 HEAD = ("<!doctype html><meta charset='utf-8'>"
@@ -67,9 +69,23 @@ def html_to_markdown(body_html: str) -> str:
     return h.strip()
 
 
+def strip_signature(text: str) -> str:
+    """Drop the boilerplate signature so it does not dominate the edit diff.
+
+    The signature is appended when the .html twin is built, so it is present in
+    what we capture from the compose window but absent from the .md source.
+    Comparing them without stripping it reports "major" on every single send.
+    """
+    for marker in ("+421 910 955 005", "The information contained in this communication"):
+        i = text.find(marker)
+        if i != -1:
+            text = text[:i]
+    return text.strip()
+
+
 def classify_edits(draft_text: str, sent_text: str) -> str:
     """none | minor | major, by how much of the wording moved."""
-    a, b = draft_text.split(), sent_text.split()
+    a, b = strip_signature(draft_text).split(), strip_signature(sent_text).split()
     if a == b:
         return "none"
     import difflib

@@ -23,13 +23,15 @@ except ImportError:
     print("Missing dependency. Run:  .venv/bin/pip install openpyxl")
     sys.exit(1)
 
-ROOT         = Path(__file__).resolve().parent.parent
-INPUT_XLSX   = ROOT / "input.xlsx"
-LP_IMPORT    = ROOT / "data" / "lp-import.csv"
-OUTPUT_CSV   = ROOT / "data" / "output.csv"
-OUTPUT_XLSX  = ROOT / "output.xlsx"
-VERIFY_CSV   = ROOT / "data" / "verify.csv"
-VERIFY_XLSX  = ROOT / "verify.xlsx"
+import program
+
+ROOT         = program.ROOT
+INPUT_XLSX   = program.INPUT_XLSX
+LP_IMPORT    = program.LP_IMPORT
+OUTPUT_CSV   = program.OUTPUT_CSV
+OUTPUT_XLSX  = program.OUTPUT_XLSX
+VERIFY_CSV   = program.VERIFY_CSV
+VERIFY_XLSX  = program.VERIFY_XLSX
 
 # ── Column definitions ────────────────────────────────────────────────────────
 # input.xlsx / lp-import.csv columns (what the user fills in)
@@ -376,6 +378,8 @@ def cmd_sync():
                 name = r.get("company", "").strip().lower()
                 info = {"stage": r.get("stage", ""), "score": r.get("score", ""),
                         "country": r.get("country", "")}
+                info["contact_name"] = r.get("contact_name", "")
+                info["contact_email"] = r.get("contact_email", "")
                 out_data[(name, info["country"].strip().lower())] = info
                 if name in out_by_name:
                     ambiguous.add(name)
@@ -415,16 +419,34 @@ def cmd_sync():
         # Use country from output.csv if import row has none
         country = r.get("Country", "") or info.get("country", "")
 
+        # Carry verified contact data back from the tracker. output.csv is the
+        # source of truth once research and verification have run, and the import
+        # file is a first draft: it had PZU SA and PZU OFE sharing one contact,
+        # and none of this session's corrections would otherwise reach input.xlsx.
+        first, last = r.get("First Name", ""), r.get("Last Name", "")
+        email = r.get("Email address", "")
+        tracked_name = (info.get("contact_name") or "").strip()
+        tracked_mail = (info.get("contact_email") or "").strip()
+        placeholder = lambda v: (not v) or "FIND" in v.upper() or v.startswith("[")
+        if tracked_name and not placeholder(tracked_name):
+            parts = tracked_name.split()
+            if len(parts) >= 2:
+                first, last = " ".join(parts[:-1]), parts[-1]
+            else:
+                first, last = tracked_name, ""
+        if tracked_mail and not placeholder(tracked_mail):
+            email = tracked_mail.split("/")[0].strip()
+
         score_int = _to_int(score)
         row_vals = [
             country,
             r.get("Type", ""),
             company,
             r.get("Website", ""),
-            r.get("First Name", ""),
-            r.get("Last Name", ""),
+            first,
+            last,
             r.get("Title", ""),
-            r.get("Email address", ""),
+            email,
             r.get("LinkedIn", r.get("Linkedin ", "")),
             r.get("Considered", ""),
             stage,
@@ -773,7 +795,25 @@ COMMANDS = {
     "verify-import": cmd_verify_import,
 }
 
+def _strip_program(argv):
+    """Drop --program (already consumed by program.py) so the command still parses."""
+    out, skip = [], False
+    for a in argv:
+        if skip:
+            skip = False
+            continue
+        if a == "--program":
+            skip = True
+            continue
+        if a.startswith("--program="):
+            continue
+        out.append(a)
+    return out
+
+
 if __name__ == "__main__":
+    print(f"programme: {program.label()}")
+    sys.argv = [sys.argv[0]] + _strip_program(sys.argv[1:])
     if len(sys.argv) < 2 or sys.argv[1] not in COMMANDS:
         print(__doc__)
         print(f"Available commands: {', '.join(COMMANDS)}")
